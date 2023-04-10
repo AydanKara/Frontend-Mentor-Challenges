@@ -1,5 +1,5 @@
 # Frontend Mentor - Easybank landing page
-PREVIEW SITE --> https://aydankara.github.io/Easybank-landing-page/
+PREVIEW SITE --> https://aydankara.github.io/Frontend-Mentor-Challenges/Easybank-landing-page/
 
 ![Design preview for the Easybank landing page coding challenge](./design/desktop-preview.jpg)
 
