@@ -46,9 +46,11 @@ h2,
 h3,
 h6 {
     margin: 0;
+    color: var(--Dark-Blue);
 }
 
 p {
+    font-size: 18px;
     margin: 0;
     color: var(--Grayish-Blue);
 }
@@ -62,19 +64,19 @@ p {
 }
 
 .container {
-    margin: 0 12%;
+    margin: 0 11.5%;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 25px;
+    padding: 12px 25px;
     border-radius: 22px;
     font-size: 16px;
     color: var(--White);
     background: linear-gradient(-90deg, #2BB7DA 5%, #31D35C 65%);
     border: none;
     cursor: pointer;
-    width: 170px;
+    width: 160px;
     transition: 0.3s ease-in-out all;
 }
 
@@ -91,7 +93,7 @@ header {
 }
 
 .header-row {
-    height: 70px;
+    height: 80px;
     display: flex;
     align-items: center;
     background-color: var(--White);
@@ -105,7 +107,7 @@ header {
 
 .header-nav .menu-list {
     display: flex;
-    column-gap: 20px;
+    column-gap: 30px;
     align-items: center;
 }
 
@@ -130,7 +132,7 @@ header {
 /*! main start */
 /* section next-generation start */
 .next-generation {
-    height: 535px;
+    height: 657px;
     background-color: var(--Very-Light-Gray);
     display: flex;
     align-items: center;
@@ -138,46 +140,47 @@ header {
 }
 
 .next-generation-title {
-    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    margin-top: -15px;
 }
 
 .next-generation-title h1 {
-    font-size: 57px;
+    font-size: 56px;
     font-weight: 300;
     width: 425px;
 }
 
 .next-generation-title p {
     width: 466px;
+    margin-top: 25px;
+    margin-bottom: 55px;
     color: var(--Grayish-Blue);
 }
 
 .next-generation-image {
     position: absolute;
-    top: 0;
-    right: -526px;
+    top: -34px;
+    right: -582px;
     display: flex;
     flex-direction: column;
 }
 
 .next-generation-image img {
-    width: 585px;
+    width: 737px;
+    height: 908px;
     z-index: 2;
 }
 
 .next-generation-image .bg-itro {
     position: relative;
-    right: 157px;
-    top: -846px;
+    right: 175px;
+    top: -1035px;
     background-image: url(./images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 1012px;
-    height: 801px;
-
+    width: 1195px;
+    height: 981px;
 }
 
 /* section next-generation end */
@@ -185,24 +188,23 @@ header {
 /* section easybank-extras start */
 .easybank-extras {
     background-color: var(--Light-Grayish-Blue);
-    height: 535px;
+    height: 677px;
 }
 
 .easybank-extras .title {
-    width: 500px;
-    padding: 60px 0;
+    width: 644px;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .title h2 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 300;
 }
 
 .title p {
-    font-size: 14px;
     line-height: 22px;
 }
 
@@ -224,7 +226,7 @@ header {
 }
 
 .section-box .easybank-box img {
-    width: 50px;
+    width: 70px;
 }
 
 .section-box .easybank-box p {
@@ -237,16 +239,16 @@ header {
 /* section latest-articles start */
 .latest-articles {
     background-color: var(--Very-Light-Gray);
-    height: 535px;
+    height: 657px;
 }
 
 .latest-articles .title {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 85px;
+    padding-bottom: 50px;
 }
 
 .latest-articles .title h2 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 300;
 }
 
@@ -256,7 +258,7 @@ header {
 
 .articles-img {
     width: 100%;
-    height: 190px;
+    height: 200px;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
@@ -291,7 +293,7 @@ header {
 .footer-wrapper {
     background-color: var(--Dark-Blue);
     display: flex;
-    padding: 40px 0;
+    padding: 50px 0;
 }
 
 .footer-wrapper .footer-content {
@@ -303,12 +305,17 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 45px;
+}
+
+.footer-wrapper .right p {
+    font-size: 14px;
 }
 
 .social-media-links {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .social-media-links a:hover {
@@ -316,9 +323,9 @@ header {
 }
 
 .footer-wrapper .center {
-    margin-left: 150px;
+    margin-left: 145px;
     display: flex;
-    gap: 100px;
+    gap: 110px;
 }
 
 .footer-wrapper .center .menu-list {
