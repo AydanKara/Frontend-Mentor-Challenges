@@ -392,7 +392,12 @@ header {
         flex-direction: column;
         margin: 170px 0;
     }
-
+    .next-generation-title h1 {
+        font-size: 48px;
+    }
+    .next-generation-title p {
+        max-width: 340px;
+    }
     .next-generation-image {
         position: absolute;
         top: 95px;
@@ -417,6 +422,14 @@ header {
         width: 1294px;
         height: 981px;
     }
+    .easybank-extras {
+        height: unset;
+        padding-bottom: 50px;
+    }
+    .section-box .easybank-box h3 {
+        min-height: 61px;
+    }
+    
 }
 
 @media (max-width: 768px) {
