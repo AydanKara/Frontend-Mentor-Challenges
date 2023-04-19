@@ -429,7 +429,10 @@ header {
     .section-box .easybank-box h3 {
         min-height: 61px;
     }
-    
+    .latest-articles {
+        height: unset;
+        padding-bottom: 50px;
+    }
 }
 
 @media (max-width: 768px) {
