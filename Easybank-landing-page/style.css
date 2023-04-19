@@ -441,6 +441,13 @@ header {
         height: unset;
         padding-bottom: 50px;
     }
+    .latest-articles .box {
+        width: 100%;
+    }
+    .articles-img {
+        width: 100%;
+        height: unset;
+    }
 }
 
 @media (max-width: 768px) {
