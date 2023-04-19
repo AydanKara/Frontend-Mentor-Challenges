@@ -425,6 +425,14 @@ header {
     .easybank-extras {
         height: unset;
         padding-bottom: 50px;
+        text-align: center;
+    }
+    .section-box {
+        flex-wrap: wrap;
+    }
+    .section-box .easybank-box {
+        align-items: center;
+        text-align: center;
     }
     .section-box .easybank-box h3 {
         min-height: 61px;
