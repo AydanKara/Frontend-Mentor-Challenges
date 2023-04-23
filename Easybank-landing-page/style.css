@@ -392,12 +392,15 @@ header {
         flex-direction: column;
         margin: 170px 0;
     }
+
     .next-generation-title h1 {
         font-size: 48px;
     }
+
     .next-generation-title p {
         max-width: 340px;
     }
+
     .next-generation-image {
         position: absolute;
         top: 95px;
@@ -422,54 +425,75 @@ header {
         width: 1294px;
         height: 981px;
     }
+
     .easybank-extras {
         height: unset;
         padding-bottom: 50px;
         text-align: center;
     }
+
     .easybank-extras .title {
         width: 100%;
     }
+
     .section-box {
         flex-wrap: wrap;
     }
+
     .section-box .easybank-box {
         align-items: center;
         text-align: center;
     }
+
     .section-box .easybank-box h3 {
         min-height: 61px;
     }
+
     .latest-articles {
         height: unset;
         padding-bottom: 50px;
     }
+
     .latest-articles .box {
         width: 100%;
     }
+
     .latest-articles .box-content {
         gap: 30px;
         padding: 40px 60px;
     }
+
     .articles-img {
         width: 100%;
         height: unset;
     }
+
     .footer-wrapper .center {
         margin-left: 60px;
         gap: 65px;
     }
+
     .footer-wrapper .right {
         justify-content: space-between;
-        
+
     }
+
     .footer-wrapper .right p {
         text-align: end;
     }
 }
 
 @media (max-width: 768px) {
-    .container {}
+    .next-generation-image {
+        position: relative;
+        top: -866px;
+        right: -32px;
+    }
+    .next-generation-image .bg-itro {
+        right: 270px;
+        top: -947px;
+        height: 992px;
+    }
 }
 
 @media (max-width: 576px) {
