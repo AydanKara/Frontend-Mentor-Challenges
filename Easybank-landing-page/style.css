@@ -484,15 +484,26 @@ header {
 }
 
 @media (max-width: 768px) {
-    .next-generation-image {
-        position: relative;
-        top: -866px;
-        right: -32px;
+    .next-generation {
+        flex-direction: column;
     }
+
+    .next-generation-image {
+        position: absolute;
+        top: -126px;
+        right: -628px;
+    }
+
     .next-generation-image .bg-itro {
         right: 270px;
         top: -947px;
         height: 992px;
+    }
+
+    .next-generation-title {
+        margin: 520px 0 88px 0;
+        align-items: center;
+        text-align: center;
     }
 }
 
