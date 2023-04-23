@@ -455,6 +455,17 @@ header {
         width: 100%;
         height: unset;
     }
+    .footer-wrapper .center {
+        margin-left: 60px;
+        gap: 65px;
+    }
+    .footer-wrapper .right {
+        justify-content: space-between;
+        
+    }
+    .footer-wrapper .right p {
+        text-align: end;
+    }
 }
 
 @media (max-width: 768px) {
