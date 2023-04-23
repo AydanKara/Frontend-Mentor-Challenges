@@ -508,7 +508,16 @@ header {
 }
 
 @media (max-width: 576px) {
-    .container {}
+    .next-generation-image {
+        right: -758px;
+        top: -101px;
+    }
+    .next-generation-image img {
+        width: 512px;
+    }
+    .next-generation-title {
+        margin-top: 465px;
+    }
 }
 
 @media (max-width: 420px) {}
