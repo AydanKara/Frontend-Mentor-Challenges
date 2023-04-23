@@ -570,23 +570,28 @@ header {
         right: -394px;
         top: -40px;
     }
+
     .next-generation-image img {
         width: 340px;
     }
+
     .next-generation-image .bg-itro {
         right: 103px;
         top: -578px;
         height: 992px;
         width: 743px;
     }
+
     .next-generation-title {
         margin-top: 315px;
     }
+
     .next-generation-title h1 {
         font-size: 41px;
     }
+
     .latest-articles .box-content {
-        
+
         padding: 39px;
     }
 }
