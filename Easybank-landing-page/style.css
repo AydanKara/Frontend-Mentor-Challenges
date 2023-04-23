@@ -567,7 +567,7 @@ header {
 
 @media (max-width: 420px) {
     .next-generation-image {
-        right: -394px;
+        right: -27px;
         top: -40px;
     }
 
@@ -576,10 +576,11 @@ header {
     }
 
     .next-generation-image .bg-itro {
-        right: 103px;
-        top: -578px;
-        height: 992px;
-        width: 743px;
+        background-image: url(./images/bg-intro-mobile.svg);
+        right: 27px;
+        top: -364px;
+        height: 473px;
+        width: 375px;
     }
 
     .next-generation-title {
