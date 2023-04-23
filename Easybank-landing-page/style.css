@@ -427,6 +427,9 @@ header {
         padding-bottom: 50px;
         text-align: center;
     }
+    .easybank-extras .title {
+        width: 100%;
+    }
     .section-box {
         flex-wrap: wrap;
     }
@@ -443,6 +446,10 @@ header {
     }
     .latest-articles .box {
         width: 100%;
+    }
+    .latest-articles .box-content {
+        gap: 30px;
+        padding: 40px 60px;
     }
     .articles-img {
         width: 100%;
