@@ -373,9 +373,22 @@ header {
         margin: 0 7%;
     }
 
-    .header-wrapper .header-nav,
     .header-wrapper .btn {
         display: none;
+    }
+
+    .header-wrapper .header-nav {}
+
+    .header-wrapper .header-nav .navigation {
+        position: absolute;
+        background-color: var(--Very-Light-Gray);
+        top: 88px;
+        left: 5%;
+        width: 90%;
+    }
+
+    .header-wrapper .header-nav .menu-list {
+        flex-direction: column;
     }
 
     .hamburger {
