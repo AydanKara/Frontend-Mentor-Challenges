@@ -1,5 +1,7 @@
 # Frontend Mentor - Manage landing page
 
+Preview site: https://aydankara.github.io/Frontend-Mentor-Challenges/manage-landing-page-master/
+
 ![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
