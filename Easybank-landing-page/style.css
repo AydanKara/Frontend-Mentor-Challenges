@@ -131,6 +131,11 @@ header {
     display: none;
 }
 
+.close-btn {
+    display: none;
+    cursor: pointer;
+}
+
 /*! header end */
 
 /*! main start */
@@ -364,10 +369,6 @@ header {
 
 /*! responsive */
 
-@media (max-width: 1200px) {
-    .container {}
-}
-
 @media (max-width: 992px) {
     .container {
         margin: 0 7%;
@@ -378,6 +379,7 @@ header {
     }
 
     .header-wrapper .header-nav .navigation {
+        display: none;
         position: fixed;
         background-color: var(--Very-Light-Gray);
         top: 103px;
