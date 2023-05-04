@@ -2,3 +2,12 @@
 /* font-family: 'Fraunces', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 /* font-family: 'Manrope', sans-serif; */
+
+:root {
+    /*! Colors */
+    --Dark-Blue: #24053E;
+    --Dark-Gray: #584d62;
+    --Eva-Green: #44ffa1;
+    --Very-Light-Gray: #fcf8ff;
+    --White: #ffffff;
+}
