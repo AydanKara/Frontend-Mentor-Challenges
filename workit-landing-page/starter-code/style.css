@@ -32,8 +32,12 @@ h1, h2, h3 {
     --White: #ffffff;
 }
 
-.dark-purpel {
-    background-color: #24053E;
+.secondary-btn {
+    padding: 0;
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    border-bottom: #44ffa1 1px solid;
 }
 
 /* home section */
@@ -57,7 +61,10 @@ h1, h2, h3 {
     z-index: -1;
 }
 
-.header {
-    
+.header-wrapper {
+    padding: 3.2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 /* end of home section */
