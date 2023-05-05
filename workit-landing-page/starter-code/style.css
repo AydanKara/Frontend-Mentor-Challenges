@@ -100,8 +100,12 @@ h1, h2, h3 {
     z-index: 3;
 }
 
+.header {
+    background-color: #24053E;
+}
+
 .header-wrapper {
-    padding: 3.2rem 12%;
+    padding: 3.2rem 11.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,7 +166,7 @@ h1, h2, h3 {
 }
 
 .info-wrapper {
-    padding: 25.5rem 12% 0 12%;
+    padding: 25.5rem 11.5% 0 11.5%;
     display: flex;
     justify-content: space-between;
     text-align: center;
