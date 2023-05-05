@@ -1,5 +1,7 @@
 # Frontend Mentor - Workit landing page
 
+Live --> https://aydankara.github.io/Frontend-Mentor-Challenges/workit-landing-page/starter-code/
+
 ![Design preview for the Workit landing page coding challenge](./preview.jpg)
 
 ## Welcome! 👋
