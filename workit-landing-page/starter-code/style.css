@@ -14,13 +14,16 @@ html {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 1.8rem;
     overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Fraunces', serif;
 }
 
@@ -126,6 +129,7 @@ h1, h2, h3 {
     font-weight: 400;
     max-width: 70rem;
 }
+
 .heading h1 span {
     border-bottom: #44ffa1 1px solid;
 }
@@ -141,6 +145,7 @@ h1, h2, h3 {
     right: -5rem;
     bottom: 0;
 }
+
 /* end of home section */
 
 /* info section */
@@ -179,7 +184,7 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    
+
 }
 
 .article-number {
@@ -204,6 +209,7 @@ h1, h2, h3 {
     max-width: 30.5rem;
     line-height: 3.2rem;
 }
+
 /* end of info section */
 
 /* founder section */
@@ -261,3 +267,35 @@ h1, h2, h3 {
 }
 
 /* end of founder section */
+
+/* footer */
+
+.footer-wrapper {
+    margin: 23rem 0 11rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.8rem;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8rem;
+    list-style: none;
+    
+}
+
+.social-icon {
+    color: #584d62;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.social-icon:hover {
+    transform: rotateZ(360deg);
+}
+
+/* end of footer */
