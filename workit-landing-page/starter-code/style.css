@@ -217,7 +217,6 @@ h1, h2, h3 {
 }
 
 .founder-img {
-    position: absolute;
     display: flex;
     width: 47.7rem;
     height: 47.7rem;
@@ -232,7 +231,7 @@ h1, h2, h3 {
     position: absolute;
     background-color: #24053E;
     right: 0;
-    top: 20rem;
+    margin-top: -300px;
 }
 
 .founder-info-content {
