@@ -205,3 +205,60 @@ h1, h2, h3 {
     line-height: 3.2rem;
 }
 /* end of info section */
+
+/* founder section */
+
+.founder {
+    margin: 0 11.5%;
+}
+
+.founder-wrapper {
+    position: relative;
+}
+
+.founder-img {
+    position: absolute;
+    display: flex;
+    width: 47.7rem;
+    height: 47.7rem;
+    top: 2.7rem;
+}
+
+.founder-img img {
+    background-size: cover;
+}
+
+.founder-info-wrapper {
+    position: absolute;
+    background-color: #24053E;
+    right: 0;
+    top: 20rem;
+}
+
+.founder-info-content {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 3.2rem;
+    padding: 6.4rem;
+}
+
+.founder-title {
+    font-size: 5.6rem;
+    font-weight: 400;
+}
+
+.founder-desc {
+    max-width: 60.2rem;
+    line-height: 3.2rem;
+}
+
+.founder-info-wrapper .bg-pattern-3 {
+    position: absolute;
+    top: 26.4rem;
+    right: 7.3rem;
+}
+
+/* end of founder section */
