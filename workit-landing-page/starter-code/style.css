@@ -52,6 +52,13 @@ h1, h2, h3 {
     cursor: pointer;
     font-size: 1.8rem;
     font-weight: 600;
+    transition: all 0.5s;
+}
+
+.primary-btn:hover {
+    background: #24053E;
+    outline: #44ffa1 1px solid;
+    color: #44ffa1;
 }
 
 .secondary-btn:hover {
