@@ -237,7 +237,7 @@ h3 {
     position: absolute;
     background-color: #24053E;
     right: 0;
-    margin-top: -300px;
+    margin-top: -30rem;
 }
 
 .founder-info-content {
@@ -284,7 +284,7 @@ h3 {
     align-items: center;
     gap: 2.8rem;
     list-style: none;
-    
+
 }
 
 .social-icon {
@@ -322,13 +322,79 @@ h3 {
 }
 
 @media (max-width: 1200px) {
-    
+    .home:before {
+        height: 88%;
+    }
+
+    .home::after {
+        background-size: 69.7rem 37.1rem;
+    }
+
+    .info::before {
+        top: -14rem;
+    }
+
+    .info-wrapper {
+        padding: 21.5rem 6.5% 0 6.5%;
+    }
+
+    .founder-info-wrapper {
+        max-width: 66rem;
+    }
 }
 
 @media (max-width: 992px) {
-    
+    .home {
+        height: 66rem;
+    }
+    .home::after {
+        background-size: 57.7rem 33.1rem;
+    }
+
+    .bg-pattern-1 {
+        left: -21.8rem;
+        top: -3rem
+    }
+
+    .bg-pattern-2 {
+        right: -9rem;
+        bottom: -12rem;
+    }
+
+    .info-wrapper {
+        padding: 21.5rem 4% 0 4%;
+    }
+
+    .header-wrapper {
+        padding: 3.2rem 4%;
+    }
+
+    .info-wrapper {
+        padding: 25.5rem 4% 0 4%;
+    }
+
+    .founder {
+        margin: 0 4%;
+    }
+
+    .founder-info-wrapper {
+        max-width: 58.7rem;
+        margin-top: -23rem;
+    }
+
+    .founder-title {
+        font-size: 4.6rem;
+    }
+
+    .founder-info-wrapper .bg-pattern-3 {
+        top: 30.4rem;
+    }
+
+    .footer-wrapper {
+        margin: 28rem 0 11rem 0;
+    }
 }
 
 @media (max-width: 768px) {
-    
+
 }
