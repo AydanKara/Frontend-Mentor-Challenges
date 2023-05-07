@@ -449,4 +449,36 @@ h3 {
     .article-desc {
         max-width: unset;
     }
+
+    .founder {
+        margin-top: -10rem;
+    }
+
+    .founder-img {
+        width: 28.1rem;
+        height: 28.1rem;
+    }
+
+    .founder-info-wrapper {
+        max-width: 51.4rem;
+        margin-top: -13rem;
+    }
+
+    .founder-info-content {
+        padding: 5.4rem;
+    }
+
+    .founder-desc {
+        font-size: 1.6rem;
+        max-width: 40.2rem;
+        line-height: 2.8rem;
+    }
+
+    .founder-info-wrapper .bg-pattern-3 {
+        right: 2.3rem;
+    }
+
+    .footer-wrapper {
+        margin: 35rem 0 11rem 0;
+    }
 }
