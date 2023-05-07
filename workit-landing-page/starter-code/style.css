@@ -299,3 +299,36 @@ h3 {
 }
 
 /* end of footer */
+
+/*! responsive  */
+
+@media (max-width: 1280px) {
+    .home::after {
+        left: 22.5%;
+        background-size: 74.7rem 42.1rem;
+    }
+
+    .header-wrapper {
+        padding: 3.2rem 6.5%;
+    }
+
+    .info-wrapper {
+        padding: 25.5rem 6.5% 0 6.5%;
+    }
+
+    .founder {
+        margin: 0 6.5%;
+    }
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
