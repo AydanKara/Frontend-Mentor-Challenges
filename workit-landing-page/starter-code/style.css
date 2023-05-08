@@ -405,80 +405,30 @@ h3 {
     }
 }
 
-@media (max-width: 768px) {
-    .home:before {
-        height: 45rem;
-        transform: scaleX(4);
+@media (max-width: 375px) {
+    .header-wrapper {
+        padding: 3.2rem 4% 6.4rem 4%;
+    }
+    .heading h1 {
+        font-size: 4.5rem;
+    }
+    .bg-pattern-1, .bg-pattern-2 {
+        display: none;
     }
 
-    .heading h1 {
-        font-size: 6rem;
-        max-width: 58rem;
+    .home {
+        height: 36rem;
+    }
+
+    .home:before {
+        height: 100%;
+        transform: scaleX(3.8);
     }
 
     .home::after {
-        background-size: 48rem 28.6rem;
-        top: 31rem;
-        left: 20.5%;
+        background-size: 32rem 18.4rem;
+        left: 9.5%;
+        top: 26.4rem;
     }
 
-    .info::before {
-        top: -25rem;
-        height: 100%;
-        transform: scaleX(4);
-    }
-
-    .info-wrapper {
-        padding: 0 4% 0 4%;
-        flex-direction: column;
-        gap: 4.8rem;
-        justify-content: unset;
-        text-align: unset;
-        align-items: unset;
-    }
-
-    .info-article {
-        flex-direction: unset;
-    }
-
-    .article-info {
-        max-width: 47.6rem;
-        gap: 1.6rem;
-    }
-
-    .article-desc {
-        max-width: unset;
-    }
-
-    .founder {
-        margin-top: -10rem;
-    }
-
-    .founder-img {
-        width: 28.1rem;
-        height: 28.1rem;
-    }
-
-    .founder-info-wrapper {
-        max-width: 51.4rem;
-        margin-top: -13rem;
-    }
-
-    .founder-info-content {
-        padding: 5.4rem;
-    }
-
-    .founder-desc {
-        font-size: 1.6rem;
-        max-width: 40.2rem;
-        line-height: 2.8rem;
-    }
-
-    .founder-info-wrapper .bg-pattern-3 {
-        right: 2.3rem;
-    }
-
-    .footer-wrapper {
-        margin: 35rem 0 11rem 0;
-    }
 }
