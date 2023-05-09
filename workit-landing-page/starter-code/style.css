@@ -431,4 +431,19 @@ h3 {
         top: 26.4rem;
     }
 
+    .info-wrapper {
+        padding: 15.4rem 4% 0 4%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .info-article {
+        gap: 2.4rem;
+    }
+
+    .article-info {
+        gap: 1.6rem;
+    }
+
 }
