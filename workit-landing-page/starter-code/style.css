@@ -446,4 +446,54 @@ h3 {
         gap: 1.6rem;
     }
 
+    .info {
+        height: 112rem;
+    }
+
+    .info::before {
+        top: 0;
+        transform: scaleX(5.5);
+    }
+
+    .founder {
+        margin: 4.6rem 4% 39rem 4%;
+    }
+
+    .founder-img {
+        display: flex;
+        margin: auto;
+        width: 28.1rem;
+        height: 28.1rem;
+    }
+
+    .founder-info-wrapper {
+        max-width: unset;
+        margin-top: -5rem;
+    }
+
+    .founder-info-content {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: unset;
+        padding: 3.2rem;
+    }
+
+    .founder-title {
+        font-size: 3.2rem;
+    }
+
+    .founder-desc {
+        max-width: unset;
+        line-height: 2.8rem;
+        font-size: 1.6rem;
+        margin: 1.6rem 0 2.4rem 0;
+    }
+
+    .founder-info-wrapper .bg-pattern-3 {
+        display: none;
+    }
+
+    
+
 }
