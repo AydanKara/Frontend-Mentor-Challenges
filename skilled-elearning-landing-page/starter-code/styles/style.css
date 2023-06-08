@@ -135,7 +135,7 @@ p {
 
 .hero-desc {
     margin: 29px 0 40px 0;
-    max-width: 445px;
+    max-width: 430px;
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
@@ -158,7 +158,7 @@ p {
 }
 
 .box-container {
-    margin-top: 226px;
+    margin-top: 250px;
     padding-bottom: 140px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -179,6 +179,10 @@ p {
 
 .first-box {
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.white-box {
+    background-color: #fff;
 }
 
 .heading-m {
