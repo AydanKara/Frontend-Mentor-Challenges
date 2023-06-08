@@ -82,6 +82,7 @@ p {
     color: #F74780;
     transition: .2s ease all;
 }
+
 .box-btn:hover {
     color: #FFA7C3;
 }
@@ -101,7 +102,7 @@ p {
 
 .btn-footer:hover {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
-} 
+}
 
 /*! base end */
 
@@ -173,7 +174,7 @@ p {
     padding: 64px 32px 40px 32px;
     display: flex;
     flex-direction: column;
-    border-radius: 15px; 
+    border-radius: 15px;
     box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
 }
 
@@ -241,9 +242,67 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .container {
         max-width: 689px;
+    }
+
+    .section-hero {
+        margin-top: 100px;
+    }
+
+    .hero-content {
+        max-width: 398px;
+    }
+
+    .hero-heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero-desc {
+        margin: 25px 0;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .hero-image {
+        top: -92px;
+        left: 49%;
+        width: 640px;
+        height: 700px;
+        background-image: url(../assets/image-hero-tablet.png);
+    }
+
+    .box-container {
+        margin-top: 210px;
+        padding-bottom: 86px;
+        grid-template-columns: 1fr 1fr;
+        gap: 11px;
+        row-gap: 56px;
+    }
+
+    .box-container .box {
+        width: 339px;
+        height: 259px;
+        padding: 56px 32px 32px 32px;
+        border-radius: 15px;
+    }
+
+    .heading-m {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .box-heading {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .box-desc {
+        margin: 16px 0 auto 0;
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 
