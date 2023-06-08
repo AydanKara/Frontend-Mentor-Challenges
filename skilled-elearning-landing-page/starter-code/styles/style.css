@@ -200,6 +200,7 @@ p {
 }
 
 .box-desc {
+    max-width: 284px;
     margin: 24px 0 auto 0;
     font-weight: 500;
     font-size: 18px;
