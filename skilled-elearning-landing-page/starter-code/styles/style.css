@@ -77,6 +77,9 @@ p {
 
 /*! base end */
 
+.main {
+    position: relative;
+}
 .header-wrapper {
     width: 100%;
     height: 104px;
@@ -87,6 +90,37 @@ p {
 
 .section-hero {
     position: relative;
+    margin-top: 148px;
+}
+
+.hero-content {
+    max-width: 457px;
+}
+
+.hero-heading {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 71px;
+    color: #13183F;
+}
+
+.hero-desc {
+    margin: 29px 0 40px 0;
+    max-width: 445px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #83869A;
+}
+
+.hero-image {
+    position: absolute;
+    top: -146px;
+    left: 50.6%;
+    width: 992px;
+    height: 934px;
+    background-image: url(../assets/image-hero-desktop.png);
+    background-repeat: no-repeat;
 }
 
 /*! responsive */
