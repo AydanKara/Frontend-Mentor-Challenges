@@ -1,67 +1,144 @@
 /*! base start */
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap'); /* font-family: 'Bellefair', serif; */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap'); /* font-family: 'Barlow Condensed', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+/* font-family: 'Bellefair', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+/* font-family: 'Barlow', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+/* font-family: 'Barlow Condensed', sans-serif; */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    overflow-x: hidden;
-    font-family: 'Bellefair', serif;
-    color: #fff;
-  }
-  
-  ul,
-  ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
-  h1,
-  h2,
-  h3,
-  h6,
-  p {
-    margin: 0;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Bellefair', serif;
+  color: #fff;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h6,
+p {
+  margin: 0;
+}
+
+.heading-1 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 172px;
+  color: #FFFFFF;
+}
+
+.heading-2 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 115px;
+  color: #FFFFFF;
+}
+
+.heading-3 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.heading-4 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.heading-5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #D0D6F9;
+  text-transform: uppercase;
+}
+
+.subheading-1 {
+  font-family: 'Bellefair', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.subheading-2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2.3625px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+/*! base end */
+
+/*! responsive */
+
+@media (max-width: 1200px) {
   .container {
-    width: 100%;
-    margin: auto;
+    max-width: 992px;
   }
-  
-  /*! base end */
-  
-  /*! responsive */
-  
-  @media (max-width: 1200px) {
-    .container {
-      max-width: 992px;
-    }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
   }
-  @media (max-width: 992px) {
-    .container {
-      max-width: 768px;
-    }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
   }
-  @media (max-width: 768px) {
-    .container {
-      max-width: 576px;
-    }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 400px;
   }
-  @media (max-width: 576px) {
-    .container {
-      max-width: 400px;
-    }
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 350px;
   }
-  @media (max-width: 420px) {
-    .container {
-      max-width: 350px;
-    }
-  }
+}
