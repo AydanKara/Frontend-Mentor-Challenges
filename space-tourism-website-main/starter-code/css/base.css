@@ -44,6 +44,7 @@ p {
   font-size: 150px;
   line-height: 172px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .heading-2 {
@@ -52,6 +53,7 @@ p {
   font-size: 100px;
   line-height: 115px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .heading-3 {
@@ -89,7 +91,6 @@ p {
   font-size: 28px;
   line-height: 32px;
   text-transform: uppercase;
-
   color: #FFFFFF;
 }
 
@@ -101,7 +102,7 @@ p {
   line-height: 17px;
   letter-spacing: 2.3625px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #D0D6F9;
 }
 
 .container {
