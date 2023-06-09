@@ -1,0 +1,64 @@
+/*! base start */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap'); /* font-family: 'Bellefair', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap'); /* font-family: 'Barlow Condensed', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h6,
+  p {
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  
+  /*! base end */
+  
+  /*! responsive */
+  
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 992px;
+    }
+  }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 576px;
+    }
+  }
+  @media (max-width: 576px) {
+    .container {
+      max-width: 400px;
+    }
+  }
+  @media (max-width: 420px) {
+    .container {
+      max-width: 350px;
+    }
+  }
