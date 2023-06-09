@@ -6,3 +6,89 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+/*! header start  */
+.header-container {
+    position: relative;
+    padding: 40px 0 0 55px;
+}
+
+.header-wrapper {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-line .line {
+    position: absolute;
+    width: 473px;
+    height: 1px;
+    top: 88px;
+    left: 167px;
+    opacity: 0.25;
+    z-index: 1;
+}
+
+.header-navigation {
+    width: 830px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    padding-left: 123px;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.navigation-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 96px;
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    cursor: pointer;
+    transition: 0.2s ease width;
+}
+
+.item-link::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.2s ease width;
+}
+
+.navigation-item:hover .item-link::after {
+    width: 100%;
+    opacity: .25;
+}
+
+.item-link.active::after {
+    width: 100%;
+}
+
+.nav-number {
+    font-weight: 700;
+    margin-right: 12px;
+}
+
+/*! header end  */

@@ -10,6 +10,8 @@
   
   body {
     overflow-x: hidden;
+    font-family: 'Bellefair', serif;
+    color: #fff;
   }
   
   ul,
@@ -20,6 +22,7 @@
   }
   a {
     text-decoration: none;
+    color: #fff;
   }
   h1,
   h2,
