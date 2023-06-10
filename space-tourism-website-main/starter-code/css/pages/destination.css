@@ -11,8 +11,6 @@ body {
     padding: 76px 165px 0 165px;
 }
 
-.destination-wrapper {}
-
 .heading-5 {
     color: #fff;
 }
@@ -38,8 +36,6 @@ body {
     width: 445px;
     margin-top: 64px;
 }
-
-.destination-nav-wrapper {}
 
 .destination-navigation {
     height: 34px;
@@ -99,7 +95,7 @@ body {
     color: #D0D6F9;
 }
 
-.line {
+.destination-details .line {
     border: 1px solid #383B4B;
     margin: 54px 0 28px 0;
 }
