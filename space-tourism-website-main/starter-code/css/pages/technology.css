@@ -89,3 +89,107 @@ main {
     right: 0;
     top: 136px;
 }
+
+/* responsive */
+
+@media (max-width: 1024px) {
+    .technology-background {
+        height: 100%;
+        background: url(../../assets/technology/background-technology-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .section-technology {
+        padding: unset;
+    }
+
+    .technology-wrapper {
+        width: 100%;
+    }
+
+    .technology-wrapper .heading-5 {
+        padding: 40px 0 60px 38.5px;
+    }
+
+    .technology-info {
+        width: 100%;
+        margin-top: 47%;
+        flex-direction: column;
+        align-items: center;
+        gap: unset;
+        text-align: center;
+    }
+
+    .technology-slider {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .technology-slider .circle {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 1.5px;
+    }
+
+    .technology-details {
+        margin: 44px 0 97px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .technology-image-wrapper {
+        position: absolute;
+        top: 124px;
+        left: 0;
+    }
+
+    .technology-image.image-launch-vehicle {
+        content: url(../../assets/technology/image-launch-vehicle-landscape.jpg);
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .technology-image.image-space-capsule {
+        content: url(../../assets/technology/image-space-capsule-landscape.jpg);
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .technology-image.image-spaceport-landscape {
+        content: url(../../assets/technology/image-spaceport-landscape.jpg);
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .technology-details .heading-3 {
+        margin: 11px 0 17px 0;
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .technology-description {
+        max-width: 458px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .crew-background {
+        height: 100%;
+        background: url(../../assets/technology/background-technology-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
