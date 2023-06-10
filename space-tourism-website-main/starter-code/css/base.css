@@ -105,6 +105,12 @@ p {
   color: #D0D6F9;
 }
 
+.heading-number {
+  mix-blend-mode: normal;
+  opacity: .25;
+  font-weight: 700;
+}
+
 .container {
   width: 100%;
   margin: auto;

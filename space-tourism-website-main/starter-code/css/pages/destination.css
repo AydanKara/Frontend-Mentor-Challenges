@@ -1,4 +1,4 @@
-body {
+.destination-background {
     width: 100%;
     height: 100vh;
     background: url(../../assets/destination/background-destination-desktop.jpg);
@@ -16,9 +16,6 @@ body {
 }
 
 .heading-number {
-    mix-blend-mode: normal;
-    opacity: .25;
-    font-weight: 700;
     margin-right: 28px;
 }
 
@@ -74,6 +71,7 @@ body {
     transform: translate(-50%);
     transition: 0.2s ease width;
 }
+
 .nav-item:hover .nav-item-link::after {
     width: 100%;
     opacity: .25;
