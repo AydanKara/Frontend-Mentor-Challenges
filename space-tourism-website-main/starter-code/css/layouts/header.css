@@ -12,6 +12,12 @@
     justify-content: space-between;
 }
 
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-line .line {
     position: absolute;
     width: 473px;
