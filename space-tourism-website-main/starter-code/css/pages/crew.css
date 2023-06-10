@@ -20,7 +20,6 @@ main {
 .crew-wrapper {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
 }
 
 .crew-info {
@@ -83,6 +82,6 @@ main {
     bottom: -123px;
 }
 
-.crew-image {
-
+.pilot-image {
+    bottom: -91px;
 }
