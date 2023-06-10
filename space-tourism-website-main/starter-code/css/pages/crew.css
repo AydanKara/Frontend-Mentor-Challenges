@@ -23,7 +23,8 @@ main {
 }
 
 .crew-info {
-    margin: 154px 0 120px 0;
+    height: 423px;
+    margin: 154px 0 0 0;
 }
 
 .crew-info .heading-3 {
@@ -79,9 +80,5 @@ main {
 .crew-image-wrapper {
     position: absolute;
     right: 137px;
-    bottom: -123px;
-}
-
-.pilot-image {
     bottom: -91px;
 }
