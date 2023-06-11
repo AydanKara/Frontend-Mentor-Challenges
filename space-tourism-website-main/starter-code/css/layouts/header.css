@@ -100,7 +100,7 @@
 
 /*! responsive */
 
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
     .header-line .line {
         max-width: 30%;
         left: 167px;
