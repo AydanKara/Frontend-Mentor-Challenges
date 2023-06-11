@@ -88,10 +88,11 @@ main {
 @media (max-width: 1024px) {
     .crew-background {
         height: 100%;
-        background: url(../../assets/destination/background-destination-desktop.jpg);
+        background: url(../../assets/crew/background-crew-desktop.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .section-crew {
         padding: unset;
     }
@@ -99,6 +100,7 @@ main {
     .crew-wrapper {
         width: 100%;
     }
+
     .crew-wrapper .heading-5 {
         padding: 40px 0 60px 38.5px;
     }
@@ -173,11 +175,104 @@ main {
     }
 
 }
+
 @media (max-width: 768px) {
     .crew-background {
-        height: 100%;
-        background: url(../../assets/destination/background-destination-tablet.jpg);
+        height: 100vh;
+        background: url(../../assets/crew/background-crew-tablet.jpg);
+    }
+}
+
+@media (max-width: 576px) {
+    .crew-background {
+        background: url(../../assets/crew/background-crew-mobile.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    .section-crew {
+        text-align: center;
+    }
+
+    .crew-wrapper {
+        max-width: 327px;
+        margin: auto;
+    }
+
+    .crew-wrapper .heading-5 {
+        padding: unset;
+        margin: 24px 0 32px 0;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+
+    .crew-info {
+        margin: 292px 0 0 0;
+    }
+
+    .crew-role {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .crew-info .heading-3 {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 8px 0 16px 0;
+    }
+
+    .crew-bio {
+        max-width: 327px;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 40px;
+    }
+
+    .crew-slider {
+        margin-top: -282px;
+        border-top: 1px solid #383B4B;;
+        width: 327px;
+        padding-top: 30px;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .slider-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .crew-image-wrapper {
+        position: absolute;
+        width: 100%;
+        top: 32px;
+        left: 26%;
+    }
+
+    .image-douglas {
+        width: 177px;
+        height: 222px;
+    }
+
+    .image-mark {
+        width: 369px;
+        height: 539px;
+    }
+
+    .image-victor {
+        width: 433px;
+        height: 532px;
+    }
+
+    .image-anousheh {
+        width: 539px;
+        height: 532px;
+    }
+
+    .crew-image {
+        width: 100%;
+        height: 100%;
+    }
+
 }
