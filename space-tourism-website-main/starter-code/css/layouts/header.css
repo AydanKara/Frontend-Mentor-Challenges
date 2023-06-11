@@ -176,7 +176,9 @@
 
     .navigation {
         padding-left: unset;
-        margin: -700px 0 0 32px;
+        width: 100%;
+        height: 100%;
+        padding-top: 118px;
     }
 
     .navigation-list {
@@ -186,6 +188,7 @@
         flex-direction: column;
         height: 172px;
         position: absolute;
+        padding-left: 32px;
     }
 
     .navigation-item {
@@ -198,7 +201,7 @@
         position: absolute;
         bottom: 1px;
         left: unset;
-        right: 33px;
+        right: 0;
         transform: unset;
     }
     
