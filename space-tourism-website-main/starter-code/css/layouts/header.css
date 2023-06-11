@@ -167,7 +167,7 @@
 
     .header-navigation {
         position: absolute;
-        display: none;
+        
         width: 67%;
         height: 100vh;
         z-index: 1;
@@ -219,6 +219,11 @@
     .header-mobile-btn-open {
         display: flex;
         cursor: pointer;
+    }
+
+    .header-mobile-btn-close {
+        display: flex;
+        z-index: 1;
     }
 
   }
