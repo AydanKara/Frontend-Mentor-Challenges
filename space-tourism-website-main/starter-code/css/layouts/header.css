@@ -88,6 +88,14 @@
     margin-right: 12px;
 }
 
+.header-mobile-btn-open {
+    display: none;
+}
+
+.header-mobile-btn-close {
+    display: none;
+}
+
 /*! header end  */
 
 /*! responsive */
@@ -129,4 +137,88 @@
     .nav-number {
         display: none;
     }
+  }
+
+  @media (max-width: 576px) {
+
+    .header-container {
+        position: unset;
+        padding: 24px 24px 0 24px;
+    }
+
+    .header-wrapper {
+        height: 40px;
+    }
+
+    .header-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header-logo a {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-navigation {
+        position: absolute;
+        display: none;
+        width: 67%;
+        height: 100vh;
+        z-index: 1;
+        right: 0;
+    }
+
+    .navigation {
+        padding-left: unset;
+        margin: 60px 0 0 32px;
+    }
+
+    .navigation-list {
+        width: 100%;
+        gap: 0px;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 172px;
+        position: absolute;
+    }
+
+    .navigation-item {
+        height: 31px;
+    }
+
+    .item-link::after {
+        width: 0;
+        height: 31px;
+        position: absolute;
+        bottom: 1px;
+        left: unset;
+        right: 33px;
+        transform: unset;
+    }
+    
+    .navigation-item:hover .item-link::after {
+        width: 4px;
+        height: 100%;
+    }
+    
+    .item-link.active::after {
+        width: 5px;
+        height: 100%;
+    }
+
+    .nav-number {
+        display: inline-block;
+    }
+
+    .header-mobile-btn-open {
+        display: flex;
+        cursor: pointer;
+    }
+
   }

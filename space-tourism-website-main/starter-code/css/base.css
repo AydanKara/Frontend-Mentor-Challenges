@@ -164,14 +164,7 @@ p {
 
 @media (max-width: 576px) {
   .container {
-    max-width: 400px;
-    margin: auto;
-  }
-}
-
-@media (max-width: 420px) {
-  .container {
-    max-width: 350px;
+    max-width: 375px;
     margin: auto;
   }
 }

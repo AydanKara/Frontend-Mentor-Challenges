@@ -42,8 +42,9 @@ body {
     cursor: pointer;
     transition: .2s ease all;
 }
+
 .section-btn:hover {
-    box-shadow: 0px 0px 0px 88px rgba(255,255,255,0.1);
+    box-shadow: 0px 0px 0px 88px rgba(255, 255, 255, 0.1);
 }
 
 .btn-explore {
@@ -71,6 +72,7 @@ body {
         background-position: center;
         background-size: cover;
     }
+
     .home-section {
         margin: 0;
         padding-top: 159px;
@@ -78,9 +80,57 @@ body {
         align-items: center;
         text-align: center;
     }
+
     .section-btn {
         align-self: center;
         margin-top: 156px;
         margin-bottom: 90px;
     }
-  }
+}
+
+@media (max-width: 576px) {
+
+    .home-section {
+        padding-top: 48px;
+    }
+
+    .section-info {
+        max-width: 327px;
+        gap: 16px;
+    }
+
+    .section-info .heading-5 {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+    }
+
+    .section-info .heading-1 {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    .section-info .home-desc {
+        font-size: 15px;
+        line-height: 25px;
+        color: #D0D6F9;
+    }
+
+    .section-btn {
+        width: 150px;
+        height: 150px;
+        margin-top: 81px;
+        margin-bottom: 48px;
+    }
+
+    .btn-explore {
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 1.25px;
+    }
+
+    .section-btn:hover {
+        box-shadow: 0px 0px 0px 38px rgba(255, 255, 255, 0.1);
+    }
+}
