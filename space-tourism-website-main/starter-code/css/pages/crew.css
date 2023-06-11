@@ -178,13 +178,13 @@ main {
 
 @media (max-width: 768px) {
     .crew-background {
-        height: 100vh;
         background: url(../../assets/crew/background-crew-tablet.jpg);
     }
 }
 
 @media (max-width: 576px) {
     .crew-background {
+        height: 100vh;
         background: url(../../assets/crew/background-crew-mobile.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -209,6 +209,7 @@ main {
 
     .crew-info {
         margin: 292px 0 0 0;
+        height: 290px;
     }
 
     .crew-role {
@@ -230,7 +231,7 @@ main {
     }
 
     .crew-slider {
-        margin-top: -282px;
+        margin-top: -363px;
         border-top: 1px solid #383B4B;;
         width: 327px;
         padding-top: 30px;
@@ -256,18 +257,19 @@ main {
     }
 
     .image-mark {
-        width: 369px;
-        height: 539px;
+        width: 154px;
+        height: 222px;
     }
 
     .image-victor {
-        width: 433px;
-        height: 532px;
+        width: 180px;
+        height: 222px;
     }
 
     .image-anousheh {
-        width: 539px;
-        height: 532px;
+        width: 226px;
+        height: 222px;
+        left: 20%;
     }
 
     .crew-image {
