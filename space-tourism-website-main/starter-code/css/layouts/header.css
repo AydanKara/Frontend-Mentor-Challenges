@@ -171,7 +171,7 @@
     }
 
     .header-navigation {
-        position: absolute;
+        position: fixed;
         width: 67%;
         z-index: 1;
         right: -100%;
