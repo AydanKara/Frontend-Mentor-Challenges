@@ -192,3 +192,65 @@
         background-size: cover;
     }
 }
+
+@media (max-width: 576px) {
+    .destination-background {
+        background: url(../../assets/destination/background-destination-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .section-destination {
+        max-width: 327px;
+        margin: auto;
+        padding: 24px 0 0 0;
+        text-align: center;
+    }
+
+    .destination-wrapper .heading-5 {
+        margin-left: unset;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+
+    .heading-number {
+        margin-right: 18px;
+    }
+
+    .destination-image {
+        margin-top: 32px;
+        width: 170px;
+        height: 170px;
+    }
+
+    .destination-details {
+        max-width: 327px;
+        margin-top: 26px;
+    }
+
+    .nav-list {
+        max-width: 237.5px;
+    }
+
+    .destination-details .heading-2 {
+        margin: 20px 0 1px 0;
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .destination-desc {
+        max-width: 573px;
+        font-size: 15px;
+        line-height: 25px;
+        margin: 0 auto 32px;
+    }
+
+    .destination-extra-info {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 58px;
+    }
+
+}
