@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/layouts/header.css">
+    <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body class="destination-background container">
+    <!-- header start -->
+    <header>
+        <div class="header-container">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <a href="./index.html"><img src="./assets/shared/logo.svg" alt="logo"></a>
+                </div>
+                <div class="header-line">
+                    <hr class="line">
+                </div>
+                <div class="header-navigation" id="sidebar">
+                    <nav class="navigation">
+                        <ul class="navigation-list">
+                            <li class="navigation-item"><a href="./index.html" class="item-link"><span
+                                        class="nav-number">00</span>HOME</a> </li>
+                            <li class="navigation-item"><a href="./destination-moon.html"
+                                    class="item-link  active"><span class="nav-number">01</span>DESTINATION</a></li>
+                            <li class="navigation-item"><a href="./crew-commander.html" class="item-link"><span
+                                        class="nav-number">02</span>CREW</a></li>
+                            <li class="navigation-item"><a href="./technology-vehicle.html" class="item-link"><span
+                                        class="nav-number">03</span>TECHNOLOGY</a>
+                            </li>
+                        </ul>
+                        <div class="header-mobile-btn-close" id="btn-close">
+                            <img src="./assets/shared/icon-close.svg" alt="close-icon">
+                        </div>
+                    </nav>
+                </div>
+                <div class="header-mobile-btn-open" id="btn-menu">
+                    <img src="./assets/shared/icon-hamburger.svg" alt="hamburger">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <main>
+        <!-- section-destination start -->
+        <section class="section-destination">
+            <div class="destination-wrapper">
+                <h1 class="heading-5"><span class="heading-number">01</span>Pick your destination</h1>
+                <div class="destination-info">
+                    <div class="destination-image active" id="data-image" data-aos="fade-right">
+                        <!--! reading data from data.json -->
+                        <img class="image-dest" src="./assets/destination/image-moon.png" alt="image">
+                    </div>
+                    <div class="destination-image" id="data-image" data-aos="fade-right">
+                        <!--! reading data from data.json -->
+                        <img class="image-dest" src="./assets/destination/image-mars.png" alt="image">
+                    </div>
+                    <div class="destination-image" id="data-image" data-aos="fade-right">
+                        <!--! reading data from data.json -->
+                        <img class="image-dest" src="./assets/destination/image-europa.png" alt="image">
+                    </div>
+                    <div class="destination-image" id="data-image" data-aos="fade-right">
+                        <!--! reading data from data.json -->
+                        <img class="image-dest" src="./assets/destination/image-titan.png" alt="image">
+                    </div>
+                    <div class="destination-details">
+                        <div class="destination-nav-wrapper">
+                            <nav class="destination-navigation">
+                                <ul class="nav-list">
+                                    <li class="nav-item"><span class="nav-item-link active">Moon</span></li>
+                                    <li class="nav-item"><span class="nav-item-link">Mars</span></li>
+                                    <li class="nav-item"><span class="nav-item-link">Europa</span></li>
+                                    <li class="nav-item"><span class="nav-item-link">Titan</span></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="data-info" class="destination active">
+                            <!--! reading data from data.json -->
+                            <h2 class="heading-2">Moon</h2>
+                            <p class="destination-desc">See our planet as you’ve never seen it before. A perfect
+                                relaxing trip away to help regain perspective and come back refreshed. While you’re
+                                there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                            <hr class="line">
+                            <div class="destination-extra-info">
+                                <div class="distance">
+                                    <span class="subheading-2">Avg. distance</span>
+                                    <span class="subheading-1">384,400 km</span>
+                                </div>
+                                <div class="travel">
+                                    <span class="subheading-2">Est. travel time</span>
+                                    <span class="subheading-1">3 days</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="data-info" class="destination">
+                            <!--! reading data from data.json -->
+                            <h2 class="heading-2">Mars</h2>
+                            <p class="destination-desc">Don’t forget to pack your hiking boots. You’ll need them to
+                                tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a
+                                half times the size of Everest!</p>
+                            <hr class="line">
+                            <div class="destination-extra-info">
+                                <div class="distance">
+                                    <span class="subheading-2">Avg. distance</span>
+                                    <span class="subheading-1">225 mil. km</span>
+                                </div>
+                                <div class="travel">
+                                    <span class="subheading-2">Est. travel time</span>
+                                    <span class="subheading-1">9 months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="data-info" class="destination">
+                            <!--! reading data from data.json -->
+                            <h2 class="heading-2">Europa</h2>
+                            <p class="destination-desc">The smallest of the four Galilean moons orbiting Jupiter, Europa
+                                is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating,
+                                curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+                            <hr class="line">
+                            <div class="destination-extra-info">
+                                <div class="distance">
+                                    <span class="subheading-2">Avg. distance</span>
+                                    <span class="subheading-1">628 mil. km</span>
+                                </div>
+                                <div class="travel">
+                                    <span class="subheading-2">Est. travel time</span>
+                                    <span class="subheading-1">3 years</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="data-info" class="destination">
+                            <!--! reading data from data.json -->
+                            <h2 class="heading-2">Titan</h2>
+                            <p class="destination-desc">The only moon known to have a dense atmosphere other than Earth,
+                                Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get
+                                striking views of the Rings of Saturn.</p>
+                            <hr class="line">
+                            <div class="destination-extra-info">
+                                <div class="distance">
+                                    <span class="subheading-2">Avg. distance</span>
+                                    <span class="subheading-1">1.6 bil. km</span>
+                                </div>
+                                <div class="travel">
+                                    <span class="subheading-2">Est. travel time</span>
+                                    <span class="subheading-1">7 years</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-destination end -->
+    </main>
+
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

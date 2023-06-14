@@ -118,6 +118,41 @@ p {
 
 /*! base end */
 
+/* Animations */
+
+body[data-aos-duration='5000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='5000'] {
+  transition-duration: 5000ms;
+}
+
+[data-aos="example-anim1"] {
+  transform: skewX(45deg);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: skewX(0);
+    opacity: 1;
+  }
+}
+
+[data-aos="example-anim2"] {
+  background: red;
+  transition-property: background;
+  &.aos-animate {
+    background: green;
+  }
+}
+
+[data-aos="example-anim3"] {
+  transform: rotate(360deg);
+  opacity: 0;
+  transition-property: transform, opacity;
+  &.aos-animate {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
 /*! responsive */
 
 @media (max-width: 1920px) {

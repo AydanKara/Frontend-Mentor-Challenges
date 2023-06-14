@@ -7,6 +7,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
@@ -26,7 +27,7 @@
             <ul class="navigation-list">
               <li class="navigation-item"><a href="./index.html" class="item-link active"><span
                     class="nav-number">00</span>HOME</a> </li>
-              <li class="navigation-item"><a href="./destination-moon.html" class="item-link"><span
+              <li class="navigation-item"><a href="./destination.html" class="item-link"><span
                     class="nav-number">01</span>DESTINATION</a></li>
               <li class="navigation-item"><a href="./crew-commander.html" class="item-link"><span class="nav-number">02</span>CREW</a></li>
               <li class="navigation-item"><a href="./technology-vehicle.html" class="item-link"><span class="nav-number">03</span>TECHNOLOGY</a>
@@ -47,14 +48,14 @@
   <main>
     <!-- home-section start -->
     <section class="home-section">
-      <div class="section-info">
+      <div class="section-info" data-aos="fade-right">
         <span class="heading-5">So, you want to travel to</span>
         <h1 class="heading-1">SPACE</h1>
         <p class="home-desc">Let’s face it; if you want to go to space, you might as well genuinely go to
           outer space and not hover kind of on the edge of it. Well sit back, and relax
           because we’ll give you a truly out of this world experience!</p>
       </div>
-      <div class="section-btn">
+      <div class="section-btn" data-aos="fade-left">
         <a href="./destination-moon.html" class="btn-explore">Explore</a>
       </div>
     </section>
@@ -62,6 +63,10 @@
   </main>
 
   <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
