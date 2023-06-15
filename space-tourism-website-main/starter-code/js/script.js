@@ -32,7 +32,7 @@ sidebarFunc();
 
 /* Sidebar */
 
-/* Tabs functions */
+/* Tabs functions Destination*/
 
 let tabs = document.querySelectorAll(".nav-item-link");
 let contents = document.querySelectorAll(".destination");
@@ -56,5 +56,29 @@ tabs.forEach((tab, index) => {
 
 
 
+  });
+});
+
+/* Tabs functions Crew*/
+
+let tabsCrew = document.querySelectorAll(".slider-dot");
+let contentsCrew = document.querySelectorAll(".crew-info");
+let imageCrew = document.querySelectorAll(".crew-image-wrapper");
+
+tabsCrew.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    contentsCrew.forEach((content) => {
+      content.classList.remove("active");
+    });
+    imageCrew.forEach((contentImage) => {
+      contentImage.classList.remove("active");
+    })
+    tabsCrew.forEach((tab) => {
+      tab.classList.remove("dot-active");
+    });
+
+    tabsCrew[index].classList.add("dot-active");
+    contentsCrew[index].classList.add("active");
+    imageCrew[index].classList.add("active");
   });
 });

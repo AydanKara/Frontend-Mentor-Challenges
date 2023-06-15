@@ -129,6 +129,7 @@ body[data-aos-duration='5000'] [data-aos],
   transform: skewX(45deg);
   opacity: 0;
   transition-property: transform, opacity;
+
   &.aos-animate {
     transform: skewX(0);
     opacity: 1;
@@ -138,6 +139,7 @@ body[data-aos-duration='5000'] [data-aos],
 [data-aos="example-anim2"] {
   background: red;
   transition-property: background;
+
   &.aos-animate {
     background: green;
   }
@@ -147,6 +149,7 @@ body[data-aos-duration='5000'] [data-aos],
   transform: rotate(360deg);
   opacity: 0;
   transition-property: transform, opacity;
+
   &.aos-animate {
     transform: rotate(0);
     opacity: 1;
@@ -204,3 +207,28 @@ body[data-aos-duration='5000'] [data-aos],
     height: 100vh;
   }
 }
+
+@keyframes fade-left {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* animation: fade-right 1s ease;
+   animation: fade-left 1s ease; */

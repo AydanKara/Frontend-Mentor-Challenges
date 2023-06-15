@@ -23,8 +23,14 @@ main {
 }
 
 .crew-info {
+    display: none;
     height: 423px;
     margin: 154px 0 0 0;
+}
+
+.crew-info.active {
+    display: block;
+    animation: fade-left 1s ease;
 }
 
 .crew-info .heading-3 {
@@ -67,6 +73,7 @@ main {
     mix-blend-mode: normal;
     opacity: 0.17;
     transition: .2s opacity ease;
+    cursor: pointer;
 }
 
 .slider-dot:hover {
@@ -78,9 +85,15 @@ main {
 }
 
 .crew-image-wrapper {
+    display: none;
     position: absolute;
     right: 137px;
     bottom: -91px;
+}
+
+.crew-image-wrapper.active {
+    display: block;
+    animation: fade-right 1s ease;
 }
 
 /* responsive */

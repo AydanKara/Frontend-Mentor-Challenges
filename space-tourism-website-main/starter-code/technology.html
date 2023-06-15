@@ -11,7 +11,7 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body class="crew-background container">
+<body class="technology-background container">
   <!-- header start -->
   <header>
     <div class="header-container">
@@ -27,11 +27,11 @@
             <ul class="navigation-list">
               <li class="navigation-item"><a href="./index.html" class="item-link"><span
                     class="nav-number">00</span>HOME</a> </li>
-              <li class="navigation-item"><a href="./destination-moon.html" class="item-link"><span
+              <li class="navigation-item"><a href="./destination.html" class="item-link"><span
                     class="nav-number">01</span>DESTINATION</a></li>
-              <li class="navigation-item"><a href="./crew-commander.html" class="item-link active"><span
+              <li class="navigation-item"><a href="./crew.html" class="item-link"><span
                     class="nav-number">02</span>CREW</a></li>
-              <li class="navigation-item"><a href="./technology-vehicle.html" class="item-link"><span
+              <li class="navigation-item"><a href="./technology.html" class="item-link active"><span
                     class="nav-number">03</span>TECHNOLOGY</a>
               </li>
             </ul>
@@ -48,28 +48,33 @@
   </header>
   <!-- header end -->
   <main>
-    <section class="section-crew">
-      <div class="crew-wrapper">
-        <h1 class="heading-5"><span class="heading-number">02</span>Meet your crew</h1>
-        <div class="crew-info">
-          <h2 class="crew-role">Mission Specialist</h2>
-          <h3 class="heading-3">Mark Shuttleworth</h3>
-          <p class="crew-bio">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind
-            the Linux-based Ubuntu operating system. Shuttleworth became the first South
-            African to travel to space as a space tourist.</p>
-        </div>
-        <div class="crew-slider">
-          <a href="./crew-commander.html" class="slider-dot"></a>
-          <a href="./crew-specialist.html" class="slider-dot dot-active"></a>
-          <a href="./crew-pilot.html" class="slider-dot"></a>
-          <a href="./crew-engineer.html" class="slider-dot"></a>
+    <section class="section-technology">
+      <div class="technology-wrapper">
+        <h1 class="heading-5"><span class="heading-number">03</span>Space launch 101</h1>
+        <div class="technology-info">
+          <div class="technology-slider">
+            <a href="./technology-vehicle.html" class="circle">1</a>
+            <a href="./technology-spaceport.html" class="circle circle-active">2</a>
+            <a href="./technology-capsule.html" class="circle">3</a>
+          </div>
+          <div class="technology-details">
+            <p class="technology-heading">The terminology...</p>
+            <h1 class="heading-3">Spaceport</h1>
+            <p class="technology-description">A spaceport or cosmodrome is a site for launching (or receiving)
+              spacecraft,
+              by analogy to the seaport for ships or airport for aircraft. Based in the
+              famous Cape Canaveral, our spaceport is ideally situated to take advantage
+              of the Earth’s rotation for launch.</p>
+          </div>
         </div>
       </div>
     </section>
-    <div class="crew-image-wrapper image-mark">
-      <img class="crew-image" src="./assets/crew/image-mark-shuttleworth.png" alt="crew-image">
+    <div class="technology-image-wrapper">
+      <img class="technology-image image-spaceport-landscape" src="./assets/technology/image-spaceport-portrait.jpg"
+        alt="technology-image">
     </div>
   </main>
+
   <script src="./js/script.js"></script>
 </body>
 

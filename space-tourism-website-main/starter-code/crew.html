@@ -2,75 +2,109 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/layouts/header.css">
-  <title>Frontend Mentor | Space tourism website</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/layouts/header.css">
+    <title>Frontend Mentor | Space tourism website</title>
 </head>
 
 <body class="crew-background container">
-  <!-- header start -->
-  <header>
-    <div class="header-container">
-      <div class="header-wrapper">
-        <div class="header-logo">
-          <img src="./assets/shared/logo.svg" alt="logo">
-        </div>
-        <div class="header-line">
-          <hr class="line">
-        </div>
-        <div class="header-navigation" id="sidebar">
-          <nav class="navigation">
-            <ul class="navigation-list">
-              <li class="navigation-item"><a href="./index.html" class="item-link"><span
-                    class="nav-number">00</span>HOME</a> </li>
-              <li class="navigation-item"><a href="./destination-moon.html" class="item-link"><span
-                    class="nav-number">01</span>DESTINATION</a></li>
-              <li class="navigation-item"><a href="./crew-commander.html" class="item-link   active"><span
-                    class="nav-number">02</span>CREW</a></li>
-              <li class="navigation-item"><a href="./technology-vehicle.html" class="item-link"><span class="nav-number">03</span>TECHNOLOGY</a>
-              </li>
-            </ul>
-            <div class="header-mobile-btn-close" id="btn-close">
-              <img src="./assets/shared/icon-close.svg" alt="close-icon">
+    <!-- header start -->
+    <header>
+        <div class="header-container">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <img src="./assets/shared/logo.svg" alt="logo">
+                </div>
+                <div class="header-line">
+                    <hr class="line">
+                </div>
+                <div class="header-navigation" id="sidebar">
+                    <nav class="navigation">
+                        <ul class="navigation-list">
+                            <li class="navigation-item"><a href="./index.html" class="item-link"><span
+                                        class="nav-number">00</span>HOME</a> </li>
+                            <li class="navigation-item"><a href="./destination.html" class="item-link"><span
+                                        class="nav-number">01</span>DESTINATION</a></li>
+                            <li class="navigation-item"><a href="./crew.html" class="item-link   active"><span
+                                        class="nav-number">02</span>CREW</a></li>
+                            <li class="navigation-item"><a href="./technology.html" class="item-link"><span
+                                        class="nav-number">03</span>TECHNOLOGY</a>
+                            </li>
+                        </ul>
+                        <div class="header-mobile-btn-close" id="btn-close">
+                            <img src="./assets/shared/icon-close.svg" alt="close-icon">
+                        </div>
+                    </nav>
+                </div>
+                <div class="header-mobile-btn-open" id="btn-menu">
+                    <img src="./assets/shared/icon-hamburger.svg" alt="hamburger">
+                </div>
             </div>
-          </nav>
         </div>
-        <div class="header-mobile-btn-open" id="btn-menu">
-          <img src="./assets/shared/icon-hamburger.svg" alt="hamburger">
+    </header>
+    <!-- header end -->
+    <main>
+        <section class="section-crew">
+            <div class="crew-wrapper">
+                <h1 class="heading-5"><span class="heading-number">02</span>Meet your crew</h1>
+                <div class="crew-info active">
+                    <h2 class="crew-role">Commander</h2>
+                    <h3 class="heading-3">Douglas Hurley</h3>
+                    <p class="crew-bio">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+                        and former NASA astronaut. He launched into space for the third time as
+                        commander of Crew Dragon Demo-2.</p>
+                </div>
+                <div class="crew-info">
+                    <h2 class="crew-role">Mission Specialist</h2>
+                    <h3 class="heading-3">Mark Shuttleworth</h3>
+                    <p class="crew-bio">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company
+                        behind
+                        the Linux-based Ubuntu operating system. Shuttleworth became the first South
+                        African to travel to space as a space tourist.</p>
+                </div>
+                <div class="crew-info">
+                    <h2 class="crew-role">Pilot</h2>
+                    <h3 class="heading-3">Victor Glover</h3>
+                    <p class="crew-bio">Pilot on the first operational flight of the SpaceX Crew Dragon to the
+                        International Space Station. Glover is a commander in the U.S. Navy where
+                        he pilots an F/A-18.He was a crew member of Expedition 64, and served as a
+                        station systems flight engineer.</p>
+                </div>
+                <div class="crew-info">
+                    <h2 class="crew-role">Flight Engineer</h2>
+                    <h3 class="heading-3">Anousheh Ansari</h3>
+                    <p class="crew-bio">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea
+                        Systems.
+                        Ansari was the fourth self-funded space tourist, the first self-funded woman to
+                        fly to the ISS, and the first Iranian in space. </p>
+                </div>
+                <ul class="crew-slider">
+                    <li class="slider-dot dot-active"></li>
+                    <li class="slider-dot"></li>
+                    <li class="slider-dot"></li>
+                    <li class="slider-dot"></li>
+                </ul>
+            </div>
+        </section>
+        <div class="crew-image-wrapper image-douglas active" id="crew-img">
+            <img class="crew-image" src="./assets/crew/image-douglas-hurley.png" alt="crew-image">
         </div>
-      </div>
-    </div>
-  </header>
-  <!-- header end -->
-  <main>
-    <section class="section-crew">
-      <div class="crew-wrapper">
-        <h1 class="heading-5"><span class="heading-number">02</span>Meet your crew</h1>
-        <div class="crew-info">
-          <h2 class="crew-role">Commander</h2>
-          <h3 class="heading-3">Douglas Hurley</h3>
-          <p class="crew-bio">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
-            and former NASA astronaut. He launched into space for the third time as
-            commander of Crew Dragon Demo-2.</p>
+        <div class="crew-image-wrapper image-mark">
+            <img class="crew-image" src="./assets/crew/image-mark-shuttleworth.png" alt="crew-image">
         </div>
-        <div class="crew-slider">
-          <a href="./crew-commander.html" class="slider-dot dot-active"></a>
-          <a href="./crew-specialist.html" class="slider-dot"></a>
-          <a href="./crew-pilot.html" class="slider-dot"></a>
-          <a href="./crew-engineer.html" class="slider-dot"></a>
+        <div class="crew-image-wrapper image-victor">
+            <img class="crew-image" src="./assets/crew/image-victor-glover.png" alt="crew-image">
         </div>
-      </div>
-    </section>
-    <div class="crew-image-wrapper image-douglas">
-      <img class="crew-image" src="./assets/crew/image-douglas-hurley.png" alt="crew-image">
-    </div>
-  </main>
+        <div class="crew-image-wrapper image-anousheh">
+            <img class="crew-image" src="./assets/crew/image-anousheh-ansari.png" alt="crew-image">
+        </div>
+    </main>
 
-  <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
