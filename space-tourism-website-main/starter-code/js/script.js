@@ -62,7 +62,7 @@ tabs.forEach((tab, index) => {
 /* Tabs functions Crew*/
 
 let tabsCrew = document.querySelectorAll(".slider-dot");
-let contentsCrew = document.querySelectorAll(".crew-info");
+let contentsCrew = document.querySelectorAll(".crew-info-wrapper");
 let imageCrew = document.querySelectorAll(".crew-image-wrapper");
 
 tabsCrew.forEach((tab, index) => {
@@ -80,5 +80,29 @@ tabsCrew.forEach((tab, index) => {
     tabsCrew[index].classList.add("dot-active");
     contentsCrew[index].classList.add("active");
     imageCrew[index].classList.add("active");
+  });
+});
+
+/* Tabs functions Technology */
+
+let tabsTechnology = document.querySelectorAll(".circle");
+let contentsTechnology = document.querySelectorAll(".technology-details-wrapper");
+let imageTechnology = document.querySelectorAll(".technology-image-wrapper");
+
+tabsTechnology.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    contentsTechnology.forEach((content) => {
+      content.classList.remove("active");
+    });
+    imageTechnology.forEach((contentImage) => {
+      contentImage.classList.remove("active");
+    })
+    tabsTechnology.forEach((tab) => {
+      tab.classList.remove("circle-active");
+    });
+
+    tabsTechnology[index].classList.add("circle-active");
+    contentsTechnology[index].classList.add("active");
+    imageTechnology[index].classList.add("active");
   });
 });

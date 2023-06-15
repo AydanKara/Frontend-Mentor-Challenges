@@ -22,16 +22,21 @@ main {
     flex-direction: column;
 }
 
-.crew-info {
+.crew-info-wrapper {
     display: none;
+}
+
+.crew-info-wrapper.active {
+    display: block;
+    animation: fade-left 1s ease;
+}
+
+.crew-info {
     height: 423px;
     margin: 154px 0 0 0;
 }
 
-.crew-info.active {
-    display: block;
-    animation: fade-left 1s ease;
-}
+
 
 .crew-info .heading-3 {
     margin: 15px 0 27px 0;

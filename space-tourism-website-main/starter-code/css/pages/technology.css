@@ -71,6 +71,15 @@ main {
     color: #D0D6F9;
 }
 
+.technology-details-wrapper {
+    display: none;
+}
+
+.technology-details-wrapper.active {
+    display: block;
+    animation: fade-left 1s ease;
+}
+
 .technology-details .heading-3 {
     margin: 11px 0 17px 0;
 }
@@ -85,9 +94,15 @@ main {
 }
 
 .technology-image-wrapper {
+    display: none;
     position: absolute;
     right: 0;
     top: 136px;
+}
+
+.technology-image-wrapper.active {
+    display: block;
+    animation: fade-right 1s ease;
 }
 
 /* responsive */
