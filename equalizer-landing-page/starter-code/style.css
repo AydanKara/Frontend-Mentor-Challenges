@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+/*! base start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: url(./assets/bg-main-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bg-pattern {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 312px;
+    height: 468px;
+    background-image: url(./assets/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+  }
+  
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  h1,
+  h2,
+  h3,
+  h6,
+  p {
+    margin: 0;
+  }
+  .container {
+    max-width: 1110px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  /*! base end */
+  
+  /*! responsive */
+  
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 992px;
+    }
+  }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 696px;
+    }
+  }
+  @media (max-width: 576px) {
+    .container {
+      max-width: 400px;
+    }
+  }
+  @media (max-width: 420px) {
+    .container {
+      max-width: 327px;
+    }
+  }
