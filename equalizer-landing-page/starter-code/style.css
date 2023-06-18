@@ -420,7 +420,100 @@ p {
 }
 
 @media (max-width: 420px) {
+
+    body {
+        background: url(./assets/bg-main-mobile.png);
+        background-position: center;
+    }
+
     .container {
         max-width: 327px;
+    }
+
+    .bg-pattern {
+        visibility: hidden;
+    }
+
+    .header-logo {
+        margin-top: 40px;
+    }
+
+    .home {
+        margin-top: 64px;
+    }
+
+    .home-wrapper {
+        gap: 20px;
+    }
+
+    .home-heading {
+        max-width: 327px;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -0.454545px;
+    }
+
+    .home-desc {
+        max-width: 327px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .illustration {
+        margin: 166px 0 420px 0;
+    }
+
+    .illustration-container {
+        max-width: 100%;
+    }
+
+    .illustration-app {
+        width: 209px;
+        height: 430px;
+        margin-left: 81px;
+        bottom: 268px;
+        z-index: 1;
+    }
+    
+    .bg-pattern-2 {
+        width: 280px;
+        height: 420px;
+        margin-left: 48px;
+        bottom: 180px;
+    }
+    
+    .illustration-info {
+        max-width: 100%;
+        margin-top: 380px;
+        margin-left: 0;
+        z-index: 1;
+    }
+    .info-header {
+        gap: 12px;
+        margin: 48px 37px 36px 36px;
+    }
+    
+    .price-download {
+        margin: 0 37px 48px 42px;
+    }
+    
+    .info-price {
+        margin-bottom: 32px;
+    }
+    
+    .footer-wrapper {
+        margin-bottom: 164px;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .footer-desc {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-icons {
+        align-self: flex-start;
+        margin-bottom: unset;
     }
 }
