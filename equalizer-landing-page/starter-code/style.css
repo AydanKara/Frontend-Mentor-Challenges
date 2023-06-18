@@ -171,7 +171,6 @@ p {
 
 .info-price {
     display: flex;
-    align-items: center;
     gap: 16px;
     margin-bottom: 46px;
 }
@@ -184,6 +183,7 @@ p {
 }
 
 .month {
+    margin-top: 10px;
     font-weight: 400;
     font-size: 19px;
     line-height: 32px;
@@ -206,6 +206,12 @@ p {
     color: #FCFAF9;
     margin-bottom: 16px;
     border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.download-apple:hover {
+    background: #66E2DC;
 }
 
 .download-apple img {
@@ -227,6 +233,13 @@ p {
     letter-spacing: -0.18px;
     color: #191826;
     border: none;
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.download-android:hover {
+    background: #FFB964;
 }
 
 .download-android img {
@@ -265,6 +278,15 @@ p {
 .footer-icons {
     display: flex;
     gap: 20px;
+}
+
+.footer-icons img {
+    transition: .2s ease all;
+    cursor: pointer;
+}
+
+.footer-icons img:hover { 
+    filter: invert(51%) sepia(77%) saturate(756%) hue-rotate(326deg) brightness(101%) contrast(96%);
 }
 
 /*! responsive */
