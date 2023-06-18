@@ -13,13 +13,13 @@ body {
     overflow-x: hidden;
     font-family: 'IBM Plex Sans', sans-serif;
     background: url(./assets/bg-main-desktop.png);
-    background-size: cover;
+    background-position: left -290px top -262px;
     background-repeat: no-repeat;
 }
 
 .bg-pattern {
     position: absolute;
-    top: -40px;
+    top: -102px;
     right: 0;
     width: 312px;
     height: 468px;
@@ -74,7 +74,6 @@ p {
 .home-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     gap: 40px;
 }
 
@@ -92,7 +91,6 @@ p {
     font-weight: 400;
     font-size: 20px;
     line-height: 34px;
-    color: #191826;
 }
 
 /* section illustration */
@@ -128,7 +126,7 @@ p {
 .bg-pattern-2 {
     position: absolute;
     margin-left: 336px;
-    bottom: 172px;
+    bottom: 170px;
 }
 
 .illustration-info {
@@ -146,7 +144,7 @@ p {
     flex-direction: column;
     align-items: flex-start;
     gap: 22px;
-    margin: 58px 59px 39px 54px;
+    margin: 58px 57px 39px 54px;
 }
 
 .info-heading {
@@ -186,7 +184,7 @@ p {
 
 .month {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
     letter-spacing: -0.2px;
     color: #FCFAF9;
