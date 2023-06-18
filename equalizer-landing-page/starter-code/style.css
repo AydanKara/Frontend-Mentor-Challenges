@@ -470,15 +470,15 @@ p {
     .illustration-app {
         width: 209px;
         height: 430px;
-        margin-left: 81px;
-        bottom: 268px;
+        inset: 0;
+        margin: auto;
+        bottom: 368px;
         z-index: 1;
     }
     
     .bg-pattern-2 {
-        width: 280px;
-        height: 420px;
-        margin-left: 48px;
+        inset: 0;
+        margin: auto;
         bottom: 180px;
     }
     
