@@ -355,7 +355,7 @@ p {
         bottom: 182px;
         z-index: 1;
     }
-    
+
     .bg-pattern-2 {
         width: 280px;
         height: 420px;
@@ -364,39 +364,40 @@ p {
     }
 
     .bg-pattern-2 img {
-       width: 100%;
-       height: 100%;
+        width: 100%;
+        height: 100%;
     }
-    
+
     .illustration-info {
         max-width: 399px;
         margin-top: 150px;
         margin-left: 239px;
         z-index: 1;
     }
+
     .info-header {
         gap: 12px;
         margin: 48px 48px 36px 48px;
     }
-    
+
     .info-heading {
         font-size: 32px;
         line-height: 40px;
     }
-    
+
     .info-desc {
         font-size: 18px;
         line-height: 28px;
     }
-    
+
     .price-download {
         margin: 0 48px 48px 54px;
     }
-    
+
     .info-price {
         margin-bottom: 32px;
     }
-    
+
     .footer-wrapper {
         margin-bottom: 85px;
     }
@@ -475,32 +476,33 @@ p {
         bottom: 368px;
         z-index: 1;
     }
-    
+
     .bg-pattern-2 {
         inset: 0;
         margin: auto;
         bottom: 180px;
     }
-    
+
     .illustration-info {
         max-width: 100%;
         margin-top: 380px;
         margin-left: 0;
         z-index: 1;
     }
+
     .info-header {
         gap: 12px;
         margin: 48px 37px 36px 36px;
     }
-    
+
     .price-download {
         margin: 0 37px 48px 42px;
     }
-    
+
     .info-price {
         margin-bottom: 32px;
     }
-    
+
     .footer-wrapper {
         margin-bottom: 164px;
         flex-direction: column;
