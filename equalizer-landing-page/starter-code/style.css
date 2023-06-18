@@ -183,7 +183,7 @@ p {
 }
 
 .month {
-    margin-top: 10px;
+    margin-top: 7px;
     font-weight: 400;
     font-size: 19px;
     line-height: 32px;
@@ -195,7 +195,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 333px;
     height: 61px;
     background: #191826;
     border-radius: 12px;
@@ -223,7 +222,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 333px;
     height: 61px;
     background: #FCFAF9;
     border-radius: 12px;
@@ -285,7 +283,7 @@ p {
     cursor: pointer;
 }
 
-.footer-icons img:hover { 
+.footer-icons img:hover {
     filter: invert(51%) sepia(77%) saturate(756%) hue-rotate(326deg) brightness(101%) contrast(96%);
 }
 
@@ -304,9 +302,115 @@ p {
 }
 
 @media (max-width: 768px) {
+    body {
+        background: url(./assets/bg-main-tablet.png);
+        background-position: left -376px top -262px;
+    }
+
     .container {
         max-width: 696px;
     }
+
+    .bg-pattern {
+        top: -102px;
+        right: -36px;
+        width: 267px;
+        height: 400px;
+        background-size: contain;
+    }
+
+    .home {
+        margin-top: 95px;
+    }
+
+    .home-wrapper {
+        gap: 28px;
+    }
+
+    .home-heading {
+        max-width: 520px;
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -0.727273px;
+    }
+
+    .home-desc {
+        max-width: 515px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .illustration {
+        margin: 249px 0 183px 0;
+    }
+
+    .illustration-container {
+        max-width: 696px;
+    }
+
+    .illustration-app {
+        width: 270px;
+        height: 556px;
+        margin-left: 64px;
+        bottom: 182px;
+        z-index: 1;
+    }
+    
+    .bg-pattern-2 {
+        width: 280px;
+        height: 420px;
+        margin-left: 229px;
+        bottom: 211px;
+    }
+
+    .bg-pattern-2 img {
+       width: 100%;
+       height: 100%;
+    }
+    
+    .illustration-info {
+        max-width: 399px;
+        margin-top: 150px;
+        margin-left: 239px;
+        z-index: 1;
+    }
+    .info-header {
+        gap: 12px;
+        margin: 48px 48px 36px 48px;
+    }
+    
+    .info-heading {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .info-desc {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .price-download {
+        margin: 0 48px 48px 54px;
+    }
+    
+    .info-price {
+        margin-bottom: 32px;
+    }
+    
+    .footer-wrapper {
+        margin-bottom: 85px;
+    }
+
+    .footer-desc {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-icons {
+        align-self: flex-end;
+        margin-bottom: 29px;
+    }
+
 }
 
 @media (max-width: 576px) {
