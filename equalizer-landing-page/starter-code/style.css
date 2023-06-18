@@ -432,7 +432,7 @@ p {
     }
 
     .bg-pattern {
-        visibility: hidden;
+        display: none;
     }
 
     .header-logo {
