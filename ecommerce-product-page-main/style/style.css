@@ -80,6 +80,13 @@
   .horizontal-line {
     border: 1px solid #E4E9F2;
   }
+
+  /* main start */
+
+  .product-wrapper {
+    max-width: 1050px;
+    margin: 90px auto;
+  }
   
   /*! responsive */
   
