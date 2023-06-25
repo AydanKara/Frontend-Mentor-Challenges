@@ -51,7 +51,29 @@
 
   <main class="container">
     <section class="product-wrapper">
-      <div class="product-gallery"></div>
+      <div class="product-gallery">
+        <div class="single-image-wrapper">
+          <img src="./images/image-product-1.jpg" class="single-image" id="single-image" alt="image of product-1">
+        </div>
+        <div class="product-thumb">
+          <div class="glide__track">
+            <ul class="gallery-thumbs">
+              <li class="glide__slide">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="product-1-thumbnail" class="img-fluid">
+              </li>
+              <li class="glide__slide">
+                <img src="./images/image-product-2-thumbnail.jpg" alt="product-2-thumbnail" class="img-fluid">
+              </li>
+              <li class="glide__slide">
+                <img src="./images/image-product-3-thumbnail.jpg" alt="product-3-thumbnail" class="img-fluid">
+              </li>
+              <li class="glide__slide">
+                <img src="./images/image-product-4-thumbnail.jpg" alt="product-4-thumbnail" class="img-fluid">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="product-info">
         <div class="product-details">
           <strong class="product-title">Sneaker Company</strong>
@@ -68,9 +90,9 @@
         </div>
         <div class="cart-button">
           <div class="btn-quantity">
-            <button class="btn-minus"><img src="./images/icon-minus.svg" alt="minus"></button>
+            <i class="btn-minus"><img src="./images/icon-minus.svg" alt="minus"></i>
             <strong class="quantity">0</strong>
-            <button class="btn-plus"><img src="./images/icon-plus.svg" alt=""></button>
+            <i class="btn-plus"><img src="./images/icon-plus.svg" alt="plus"></i>
           </div>
           <div class="btn-add">
             <img src="./images/icon-cart.svg" alt="icon cart">

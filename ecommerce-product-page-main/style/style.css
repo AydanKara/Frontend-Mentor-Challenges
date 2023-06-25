@@ -84,8 +84,48 @@
   /* main start */
 
   .product-wrapper {
-    max-width: 1050px;
+    max-width: 1015px;
     margin: 90px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 125px;
+  }
+
+  .product-gallery {
+    width: 50%;
+  }
+
+  .product-info {
+    width: 50%;
+  }
+
+  .single-image-wrapper {
+    overflow: hidden;
+    display: flex;
+  }
+
+  .single-image-wrapper .single-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transform-origin: center;
+  }
+
+  .glide__track {
+    overflow: hidden;
+  }
+
+  .gallery-thumbs {
+    display: flex;
+    gap: 31px;
+    margin-top: 32px;
+  }
+
+  .gallery-thumbs .img-fluid {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
   }
   
   /*! responsive */
