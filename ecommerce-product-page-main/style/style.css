@@ -138,7 +138,7 @@
   }
 
   .product-heading {
-    margin: 24px 0 32px 0;
+    margin: 20px 0 30px 0;
     font-weight: 700;
     font-size: 44px;
     line-height: 48px;
@@ -154,8 +154,8 @@
   .product-price {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin: 24px 0 32px 0;
+    gap: 5px;
+    margin: 24px 0 30px 0;
   }
 
   .price-discount {
