@@ -95,10 +95,6 @@
     width: 50%;
   }
 
-  .product-info {
-    width: 50%;
-  }
-
   .single-image-wrapper {
     overflow: hidden;
     display: flex;
@@ -124,10 +120,128 @@
 
   .gallery-thumbs .img-fluid {
     width: 100%;
-    height: 100%;
     border-radius: 10px;
   }
+
+  .product-info {
+    width: 50%;
+    margin-top: 62px;
+  }
+
+  .product-title {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FF7E1B;
+  }
+
+  .product-heading {
+    margin: 24px 0 32px 0;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 48px;
+    color: #1D2026;
+  }
+
+  .product-desc {
+    font-size: 16px;
+    line-height: 26px;
+    color: #69707D;
+  }
+
+  .product-price {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 24px 0 32px 0;
+  }
+
+  .price-discount {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .price-discount .new-price {
+    color: #1D2026;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .price-discount em {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    justify-content: center;
+    border-radius: 6px;
+    background: #FFEEE2;
+    width: 51px;
+    height: 27px;
+    flex-shrink: 0;
+    color: #FF7E1B;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .old-price {
+    color: #B6BCC8;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .cart-button {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    height: 56px;
+  }
   
+  .btn-quantity {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background: #F6F8FD;
+  }
+
+  .btn-quantity .quantity {
+    color: #1D2026;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 45.5px;
+  }
+
+  .btn-quantity i {
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-quantity .btn-minus {
+    margin-left: 16px;
+  }
+
+  .btn-quantity .btn-plus {
+    margin-right: 16px;
+  }
+
+  .cart-button .btn-add {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 10px;
+    background: #FF7E1B;
+    box-shadow: 0px 20px 50px -20px #FF7E1B;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
   /*! responsive */
   
   @media (max-width: 1200px) {
