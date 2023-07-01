@@ -41,6 +41,9 @@ p {
   margin: auto;
 }
 
+.hidden {
+  display: none;
+}
 /*! base end */
 
 /* header start */
@@ -214,7 +217,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
 }
 
 .profile-cart:hover,
