@@ -8,7 +8,6 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style/style.css">
-
   <title>Frontend Mentor | E-commerce product page</title>
 </head>
 
@@ -18,14 +17,15 @@
     <div class="header-row">
       <div class="container">
         <div class="header-wrapper">
-          <div class="menu-btn">
+          <div class="menu-btn" id="btn-menu">
             <img src="./images/icon-menu.svg" alt="menu button">
           </div>
           <div class="header-logo">
             <img src="./images/logo.svg" alt="logo">
           </div>
-          <div class="header-navigation">
+          <div class="header-navigation" id="sidebar">
             <nav class="navigation">
+              <img class="nav-close" id="close-sidebar" src="./images/nav-close.svg" alt="navigation close">
               <ul class="nav-list">
                 <li class="nav-item"><a href="#" class="menu-link">Collections</a></li>
                 <li class="nav-item"><a href="#" class="menu-link">Men</a></li>
@@ -34,12 +34,11 @@
                 <li class="nav-item"><a href="#" class="menu-link">Contact</a></li>
               </ul>
             </nav>
-            <img class="nav-close" src="./images/nav-close.svg" alt="navigation close">
           </div>
           <div class="header-profile">
             <div class="cart-wrapper">
               <img class="profile-cart" src="./images/icon-cart.svg" alt="cart icon">
-              <div class="cart-container" hidden>
+              <div class="cart-container" id="cart-btn">
                 <p class="cart-title">Cart</p>
                 <div class="cart-content">
                   <p class="cart-empty" hidden>Your cart is empty.</p>
@@ -152,6 +151,8 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
