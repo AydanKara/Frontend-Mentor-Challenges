@@ -48,9 +48,11 @@
                     <img src="./images/image-product-1-thumbnail.jpg" alt="product image">
                     <div class="product-desc">
                       <p class="product-name">Fall Limited Edition Sneakers</p>
-                      <p class="price">$125.00 x <span class="quantity">$3</span> <strong class="total">$300.00</strong></p>
+                      <p class="price">$125.00 x <span class="quantity">$3</span> <strong class="total">$300.00</strong>
+                      </p>
                     </div>
-                    <button class="delete-btn"><img class="delete-img" src="./images/delete-product.svg" alt="delete product"></button>
+                    <button class="delete-btn"><img class="delete-img" src="./images/delete-product.svg"
+                        alt="delete product"></button>
                   </div>
                   <button class="checkout-btn">Checkout</button>
                 </div>
@@ -76,16 +78,17 @@
     <section class="product-wrapper">
       <div class="product-gallery">
         <div class="single-image-wrapper">
-          <img src="./images/image-product-1.jpg" class="single-image" id="single-image" alt="image of product-1">
+          <img src="./images/image-product-1.jpg" class="single-image" id="single-image" alt="image of product-1" onclick="currentSlide(1)">
           <div class="slider-nav">
-            <button class="next"><img src="./images/mobile-slider-next.svg" alt="next icon"></button>
-            <button class="previous"><img src="./images/mobile-slider-previous.svg" alt="previous icon"></button>
+            <button class="next" id="next"><img src="./images/mobile-slider-next.svg" alt="next icon"></button>
+            <button class="previous" id="previous"><img src="./images/mobile-slider-previous.svg"
+                alt="previous icon"></button>
           </div>
         </div>
         <div class="product-thumb">
           <ul class="gallery-thumbs">
             <li class="glide__slide">
-              <div class="thumb-img active-border"><img src="./images/image-product-1-thumbnail.jpg"
+              <div class="thumb-img" id="thumb-img"><img src="./images/image-product-1-thumbnail.jpg"
                   alt="product-1-thumbnail" class="img-fluid active-opacity"></div>
             </li>
             <li class="glide__slide">
@@ -140,14 +143,21 @@
       <button class="close-lightbox"><img src="./images/lightbox-close.svg" alt="lightbox close button"></button>
       <div class="lightbox-nav">
         <img class="lightbox-product-img" src="./images/image-product-1.jpg" alt="product image">
-        <button class="next"><img src="./images/icon-next.svg" alt="next icon"></button>
-        <button class="previous"><img src="./images/icon-previous.svg" alt="previous icon"></button>
+        <img class="lightbox-product-img" src="./images/image-product-2.jpg" alt="product image">
+        <img class="lightbox-product-img" src="./images/image-product-3.jpg" alt="product image">
+        <img class="lightbox-product-img" src="./images/image-product-4.jpg" alt="product image">
+        <button class="next" id="next-lightbox" onclick="plusSlides(1)"><img src="./images/icon-next.svg" alt="next icon"></button>
+        <button class="previous" id="prev-lightbox" onclick="plusSlides(-1)"><img src="./images/icon-previous.svg" alt="previous icon"></button>
       </div>
       <div class="lightbox-thumbnail-wrapper">
-        <img src="./images/image-product-1-thumbnail.jpg" alt="product-1-thumbnail">
-        <img src="./images/image-product-2-thumbnail.jpg" alt="product-2-thumbnail">
-        <img src="./images/image-product-3-thumbnail.jpg" alt="product-3-thumbnail">
-        <img src="./images/image-product-4-thumbnail.jpg" alt="product-4-thumbnail">
+        <img class="img-fluid-lightbox" id="img-fluid-lightbox" src="./images/image-product-1-thumbnail.jpg" onclick="currentSlide(1)"
+          alt="product-1-thumbnail">
+        <img class="img-fluid-lightbox" id="img-fluid-lightbox" src="./images/image-product-2-thumbnail.jpg" onclick="currentSlide(2)"
+          alt="product-2-thumbnail">
+        <img class="img-fluid-lightbox" id="img-fluid-lightbox" src="./images/image-product-3-thumbnail.jpg" onclick="currentSlide(3)"
+          alt="product-3-thumbnail">
+        <img class="img-fluid-lightbox" id="img-fluid-lightbox" src="./images/image-product-4-thumbnail.jpg" onclick="currentSlide(4)"
+          alt="product-4-thumbnail">
       </div>
     </div>
   </div>
