@@ -393,7 +393,9 @@ p {
 }
 
 .btn-quantity {
+  width: 262px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   background: #F6F8FD;
@@ -404,7 +406,6 @@ p {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  margin: 0 45.5px;
 }
 
 .btn-quantity i {
@@ -791,8 +792,8 @@ p {
   }
 
   .btn-quantity {
+    width: 100%;
     height: 56px;
-    justify-content: space-between;
   }
 
   .btn-quantity .btn-minus {

@@ -184,7 +184,6 @@ function showSlides(n) {
   let i;
   const slides = document.getElementsByClassName("lightbox-product-img");
   const dots = document.querySelectorAll("#img-fluid-lightbox");
-  
 
   if (n > slides.length) {
     slideIndex = 1;
@@ -200,6 +199,24 @@ function showSlides(n) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  console.log(dots[1].className);
- 
 }
+
+//! increment and decrement buttons
+
+const plusBtn = document.querySelector(".btn-plus");
+const minusBtn = document.querySelector(".btn-minus");
+const quantity = document.querySelector("#quantity");
+
+let num = 0;
+
+plusBtn.addEventListener("click", () => {
+  num++;
+  quantity.innerText = num;
+});
+
+minusBtn.addEventListener("click", () => {
+  if (num > 0) {
+    num--;
+    quantity.innerText = num;
+  }
+});
