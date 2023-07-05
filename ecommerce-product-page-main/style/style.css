@@ -42,7 +42,7 @@ p {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .active {
@@ -704,6 +704,11 @@ p {
     right: 2%;
     max-width: 96%;
   }
+
+  .cart-wrapper .cart-count {
+    top: 18px;
+    right: 38px;
+}
 
   .profile-avatar {
     width: 24px;
