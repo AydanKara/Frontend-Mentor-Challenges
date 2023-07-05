@@ -110,7 +110,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   const slides = document.getElementsByClassName("lightbox-product-img");
-  const dots = document.querySelectorAll("#img-fluid-lightbox");
+  const dots = document.getElementsByClassName("img-fluid-lightbox");
 
   if (n > slides.length) {
     slideIndex = 1;
