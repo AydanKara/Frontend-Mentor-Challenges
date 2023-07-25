@@ -34,21 +34,21 @@ p {
 }
 
 .container {
-    max-width: 1110px;
+    max-width: 69.375rem;
     width: 100%;
     margin: auto;
 }
 
 .btn-header {
-    width: 167px;
-    height: 56px;
+    width: 10.4375rem;
+    height: 3.5rem;
     border: none;
     border-radius: 28px;
     background-color: #13183f;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 1.75rem;
     cursor: pointer;
     transition: background-color .2s;
 }
@@ -58,15 +58,15 @@ p {
 }
 
 .btn-hero {
-    width: 167px;
-    height: 63px;
+    width: 10.4375rem;
+    height: 3.9375rem;
     border: none;
     border-radius: 31.5px;
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     color: #fff;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 1.75rem;
     cursor: pointer;
     transition: .2s ease all;
 }
@@ -77,8 +77,8 @@ p {
 
 .box-btn {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     color: #F74780;
     transition: .2s ease all;
 }
@@ -88,15 +88,15 @@ p {
 }
 
 .btn-footer {
-    width: 167px;
-    height: 56px;
+    width: 10.4375rem;
+    height: 3.5rem;
     border: none;
     border-radius: 28px;
     background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
     color: #fff;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 1.75rem;
     cursor: pointer;
 }
 
@@ -112,7 +112,7 @@ p {
 
 .header-wrapper {
     width: 100%;
-    height: 104px;
+    height: 6.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,35 +120,35 @@ p {
 
 .section-hero {
     position: relative;
-    margin-top: 148px;
+    margin-top: 9.25rem;
 }
 
 .hero-content {
-    max-width: 480px;
+    max-width: 30rem;
 }
 
 .hero-heading {
     font-weight: 800;
-    font-size: 56px;
-    line-height: 71px;
+    font-size: 3.5rem;
+    line-height: 4.4375rem;
     color: #13183F;
 }
 
 .hero-desc {
-    margin: 29px 0 40px 0;
-    max-width: 430px;
+    margin: 1.8125rem 0 2.5rem 0;
+    max-width: 26.875rem;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     color: #83869A;
 }
 
 .hero-image {
     position: absolute;
-    top: -146px;
+    top: -9.125rem;
     left: 50.6%;
-    width: 992px;
-    height: 934px;
+    width: 62rem;
+    height: 58.375rem;
     background-image: url(../assets/image-hero-desktop.png);
     background-repeat: no-repeat;
     z-index: -1;
@@ -159,19 +159,19 @@ p {
 }
 
 .box-container {
-    margin-top: 250px;
-    padding-bottom: 140px;
+    margin-top: 15.625rem;
+    padding-bottom: 8.75rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    row-gap: 80px;
+    gap: 1.875rem;
+    row-gap: 5rem;
 }
 
 .box-container .box {
     position: relative;
-    width: 350px;
-    height: 322px;
-    padding: 64px 32px 40px 32px;
+    width: 21.875rem;
+    height: 20.125rem;
+    padding: 4rem 2rem 2.5rem 2rem;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -188,41 +188,41 @@ p {
 
 .heading-m {
     font-weight: 800;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2.5rem;
     color: #fff;
 }
 
 .box-heading {
     font-weight: 800;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
     color: #13183F;
 }
 
 .box-desc {
-    margin: 24px 0 auto 0;
-    padding-right: 3px;
+    margin: 1.5rem 0 auto 0;
+    padding-right: .1875rem;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     color: #83869A;
 }
 
 .box-icon {
     position: absolute;
-    top: -24px;
-    left: 32px;
+    top: -1.5rem;
+    left: 2rem;
 }
 
 footer {
     width: 100%;
-    height: 120px;
+    height: 7.5rem;
     background-color: #13183F;
 }
 
 .footer-wrapper {
-    height: 120px;
+    height: 7.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -232,143 +232,145 @@ footer {
 
 @media (max-width: 1110px) {
     .container {
-        max-width: 992px;
+        max-width: 62rem;
     }
 }
 
 @media (max-width: 992px) {
     .container {
-        max-width: 768px;
+        max-width: 48rem;
     }
 }
 
 @media (max-width: 769px) {
     .container {
-        max-width: 689px;
+        max-width: 43.0625rem;
     }
 
     .section-hero {
-        margin-top: 100px;
+        margin-top: 6.25rem;
     }
 
     .hero-content {
-        max-width: 398px;
+        max-width: 24.875rem;
     }
 
     .hero-heading {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 2.5rem;
+        line-height: 3.125rem;
     }
 
     .hero-desc {
-        margin: 25px 0;
-        font-size: 16px;
-        line-height: 26px;
+        margin: 1.5625rem 0;
+        font-size: 1rem;
+        line-height: 1.625rem;
     }
 
     .hero-image {
-        top: -92px;
+        top: -5.75rem;
         left: 49%;
-        width: 640px;
-        height: 700px;
+        width: 40rem;
+        height: 43.75rem;
         background-image: url(../assets/image-hero-tablet.png);
     }
 
     .box-container {
-        margin-top: 210px;
-        padding-bottom: 86px;
+        margin-top: 13.125rem;
+        padding-bottom: 5.375rem;
         grid-template-columns: 1fr 1fr;
-        gap: 11px;
-        row-gap: 56px;
+        gap: .6875rem;
+        row-gap: 3.5rem;
     }
 
     .box-container .box {
-        width: 339px;
+        width: 21.1875rem;
         height: 259px;
-        padding: 56px 32px 32px 32px;
+        padding: 3.5rem 2rem 2rem 2rem;
         border-radius: 15px;
     }
 
     .heading-m {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 
     .box-heading {
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 1.25rem;
+        line-height: 1.5625rem;
     }
 
     .box-desc {
-        margin: 16px 0 auto 0;
-        font-size: 16px;
-        line-height: 22px;
+        margin: 1rem 0 auto 0;
+        font-size: 1rem;
+        line-height: 1.375rem;
     }
 }
 
 @media (max-width: 576px) {
     .container {
-        max-width: 400px;
+        max-width: 25rem;
     }
 
     .btn-header {
-        width: 140px;
-        height: 48px;
-        font-size: 16px;
+        width: 8.75rem;
+        height: 3rem;
+        font-size: 1rem;
     }
 
     .header-wrapper {
-        height: 80px;
+        height: 5rem;
     }
 
     .section-hero {
-        margin-top: 22px;
+        margin-top: 1.375rem;
     }
 
     .hero-content {
-        max-width: 400px;
+        max-width: 25rem;
     }
 
     .hero-desc {
-        margin: 26px 0 24px 0;
-        max-width: 400px;
+        margin: 1.625rem 0 1.5rem 0;
+        max-width: 25rem;
     }
 
     .hero-image {
         position: unset;
-        margin-top: 42px;
+        margin-top: 2.625rem;
         width: 100%;
-        height: 375px;
+        height: 23.4375rem;
         background-image: url(../assets/image-hero-mobile.png);
         background-position: center;
     }
 
     .btn-hero {
-        width: 167px;
-        height: 56px;
+        width: 10.4375rem;
+        height: 3.5rem;
     }
 
     .box-container {
         margin-top: 0px;
-        padding-bottom: 86px;
+        padding-bottom: 5.375rem;
         grid-template-columns: 1fr;
         gap: unset;
-        row-gap: 40px;
+        row-gap: 2.5rem;
     }
+
     .mobile-first-box {
-        height: 120px !important;
-        padding: 24px 32px !important;
+        height: 7.5rem !important;
+        padding: 1.5rem 2rem !important;
     }
+
     .btn-footer {
-        width: 140px;
-        height: 48px;
-        font-size: 16px;
+        width: 8.75rem;
+        height: 3rem;
+        font-size: 1rem;
 
     }
 }
 
 @media (max-width: 420px) {
     .container {
-        max-width: 343px;
+        max-width: 21.4375rem;
     }
 }
