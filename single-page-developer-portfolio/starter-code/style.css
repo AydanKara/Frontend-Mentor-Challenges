@@ -72,8 +72,22 @@ p {
 }
 
 button {
-    width: 12rem;
+    border: none;
     border-bottom: 2px solid var(--green);
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    letter-spacing: 2.286px;
+    padding-bottom: 1rem;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--green);
 }
 
 svg {
@@ -137,6 +151,32 @@ header {
 }
 
 /* header end */
+
+/* main start */
+
+/*! section introduction start */
+
+#introduction {
+    margin: 8.8rem 0 21.9rem 0;
+}
+
+#introduction-heading {
+    max-width: 71rem;
+}
+
+#introduction-heading #programer {
+    font-style: normal;
+    border-bottom: 6px solid var(--green);
+}
+
+#introduction-desc {
+    max-width: 44.5rem;
+    margin: 4.3rem 0 6.6rem 0;
+}
+
+/*! section introduction end */
+
+/* main end */
 
 /*! responsive */
 
