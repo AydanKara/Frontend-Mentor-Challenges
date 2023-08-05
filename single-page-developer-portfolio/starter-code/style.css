@@ -210,6 +210,39 @@ header {
 
 /*! section introduction end */
 
+/*! section experience start */
+
+#experience {
+    padding: 7.2rem 0 4rem 0;
+    margin-bottom: 10rem;
+    border-top: 1px solid var(--white);
+}
+
+#experience::after {
+    position: absolute;
+    content: "";
+    background: url(./assets/images/pattern-rings.svg) no-repeat;
+    width: 53rem;
+    height: 13rem;
+    top: 107.7rem;
+    right: calc(((100% - 111rem) / 2) - 40rem);
+}
+
+#experience-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5.8rem;
+}
+
+#experience-wrapper .skills {
+    display: flex;
+    flex-direction: column;
+    flex: 33.3%;
+    row-gap: 1.4rem;
+}
+
+/*! section experience end */
+
 /* main end */
 
 /*! responsive */
