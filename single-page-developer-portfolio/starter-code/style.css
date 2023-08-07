@@ -243,6 +243,78 @@ header {
 
 /*! section experience end */
 
+/*! section projects start */
+
+#projects {
+    margin-bottom: 13.9rem;
+}
+
+#projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8.8rem;
+    margin-bottom: 8rem;
+}
+
+#projects-header #projects-heading {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+}
+
+#projects #projects-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+#projects #projects-wrapper .project-list {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 6.9rem;
+    flex-wrap: wrap;
+}
+
+#projects #projects-wrapper .project-list .project-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.project-item .project-img {
+    width: 54rem;
+    height: 40rem;
+}
+
+.project-item .project-img img {
+    width: 100%;
+}
+
+.project-item .project-description {
+    display: flex;
+    flex-direction: column;
+    row-gap: .7rem;
+}
+
+.project-description .project-title {
+    text-transform: uppercase;
+}
+
+.project-item .project-description .tools {
+    display: flex;
+    gap: 2rem;
+}
+
+.project-description .tools .technology {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    color: var(--grey);
+}
+
+/*! section projects end */
+
 /* main end */
 
 /*! responsive */
