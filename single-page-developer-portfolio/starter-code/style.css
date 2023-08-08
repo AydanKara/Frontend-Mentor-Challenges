@@ -71,6 +71,13 @@ p {
     color: var(--grey);
 }
 
+.logo {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    letter-spacing: -0.444px;
+}
+
 button {
     border: none;
     border-bottom: 2px solid var(--green);
@@ -96,19 +103,19 @@ svg {
     background-repeat: no-repeat;
 }
 
-#github {
+.github {
     background-image: url(./assets/images/icon-github.svg);
 }
 
-#front-end-mentor {
+.front-end-mentor {
     background-image: url(./assets/images/icon-frontend-mentor.svg);
 }
 
-#linkedin {
+.linkedin {
     background-image: url(./assets/images/icon-linkedin.svg);
 }
 
-#twitter {
+.twitter {
     background-image: url(./assets/images/icon-twitter.svg);
 }
 
@@ -136,13 +143,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#header-wrapper #logo {
-    font-size: 3.2rem;
-    font-weight: 700;
-    line-height: 3.2rem;
-    letter-spacing: -0.444px;
 }
 
 #header-wrapper .icons {
@@ -311,11 +311,14 @@ header {
     font-weight: 500;
     line-height: 2.8rem;
     color: var(--grey);
+    text-transform: uppercase;
 }
 
 /*! section projects end */
 
 /* main end */
+
+
 
 /*! responsive */
 
