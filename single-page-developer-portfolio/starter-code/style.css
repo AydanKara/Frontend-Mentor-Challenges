@@ -367,12 +367,42 @@ form {
     gap: 3.2rem;
 }
 
+form .input-control {
+    position: relative;
+    border-bottom: 1px solid #FFF;
+}
+
+.input-control.success {
+    border-bottom: 1px solid #4EE1A0;
+}
+
+.input-control.error {
+    border-bottom: 1px solid #FF6F5B !important;
+}
+
+.input-control .error {
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+    color: #FF6F5B;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.167px;
+}
+
+.input-control .svg-error {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 #name,
 #email,
 textarea {
     background: transparent;
     border: none;
-    border-bottom: 1px solid #FFF;
     padding-left: 2.4rem;
     color: #FFF;
 }
@@ -388,11 +418,13 @@ textarea:focus-visible {
 
 #name,
 #email {
+    width: 100%;
     height: 4.3rem;
 }
 
 form textarea {
     resize: none;
+    border-bottom: 1px solid #FFF;
 }
 
 form>:last-child {

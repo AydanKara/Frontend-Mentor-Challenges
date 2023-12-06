@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/92c33abdb7.js" crossorigin="anonymous"></script>
+  <script defer src="./script.js"></script>
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 
@@ -197,9 +198,17 @@
             fill in the form, and I’ll get back to you as soon as possible.</p>
         </li>
         <li id="contact-form">
-          <form>
-            <input type="text" id="name" autocomplete="name" placeholder="NAME" required>
-            <input type="email" id="email" autocomplete="email" placeholder="EMAIL" required>
+          <form id="form">
+            <div class="input-control">
+              <input type="text" id="name" placeholder="NAME">
+              <div class="svg-error"></div>
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <input type="email" id="email" placeholder="EMAIL">
+              <div class="svg-error"></div>
+              <div class="error"></div>
+            </div>
             <textarea id="message" rows="6" placeholder="MESSAGE"></textarea>
             <button type="submit">SEND MESSAGE</button>
           </form>
