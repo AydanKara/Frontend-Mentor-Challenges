@@ -329,7 +329,7 @@ header {
     align-items: center;
     gap: 4.8rem;
     visibility: hidden;
-    
+
 }
 
 .project-img:hover .hovered-img {
@@ -445,6 +445,13 @@ textarea:focus-visible {
     height: 4.3rem;
 }
 
+input::placeholder,
+textarea::placeholder {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.222px;
+}
+
 form textarea {
     resize: none;
     border-bottom: 1px solid #FFF;
@@ -485,6 +492,12 @@ form>:last-child {
     .container {
         max-width: 99.2rem;
     }
+
+    .project-item .project-img {
+        width: 44.5rem;
+        height: 35.3rem;
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -495,7 +508,68 @@ form>:last-child {
 
 @media (max-width: 768px) {
     .container {
-        max-width: 576px;
+        max-width: 708px;
+    }
+
+    #introduction {
+        margin: 8.8rem 0 6rem 0;
+    }
+
+    header {
+        height: 6.2rem;
+    }
+
+    #introduction-heading {
+        max-width: 44.3rem;
+    }
+
+    #introduction::before {
+        top: 8.3rem;
+        left: -28rem;
+    }
+
+    h1 {
+        font-size: 7.2rem;
+        line-height: 7.2rem;
+        letter-spacing: -0.25rem;
+    }
+
+    #introduction::after {
+        background: url(./assets/images/image-profile-tablet.webp) no-repeat;
+        background-size: cover;
+        width: 32.2rem;
+        height: 60rem;
+        right: calc((100% - 75rem) / 2);
+    }
+
+    #introduction-heading::after {
+        top: 47.1rem;
+        right: calc((100% - 163rem) / 2 + 38rem);
+    }
+
+    #experience-wrapper {
+        gap: 5.2rem;
+    }
+
+    #experience::after {
+        right: calc(((100% - 68rem) / 2) - 40rem);
+    }
+
+    #projects {
+        margin-bottom: 10rem;
+    }
+
+    .project-item .project-img {
+        width: 34.6rem;
+        height: 25.3rem;
+    }
+
+    #footer-contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 4.8rem;
     }
 }
 
