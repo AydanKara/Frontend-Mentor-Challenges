@@ -583,4 +583,53 @@ form>:last-child {
     .container {
         max-width: 350px;
     }
+
+    header {
+        height: 11rem;
+    }
+
+    #header-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #header-wrapper .icons {
+        margin-right: 0;
+    }
+
+    #introduction-wrapper {
+        text-align: center;
+    }
+
+    #introduction {
+        margin: 35.8rem 0 6rem 0;
+    }
+
+    #introduction-heading {
+        font-size: 4rem;
+        line-height: 4rem;
+        letter-spacing: -1.136px;
+    }
+
+    #introduction-desc {
+        margin: 4.4rem 0 2.4rem 0;
+    }
+
+    #introduction::after {
+        background: url(./assets/images/image-profile-mobile.webp) no-repeat;
+        background-size: cover;
+        width: 21.4rem;
+        height: 47.2rem;
+        inset: 0;
+        margin: auto;
+        top: -50rem;
+    }
+
+    #introduction::before {
+        top: 11.3rem;
+        left: -34rem;
+        z-index: -1;
+    }
 }
