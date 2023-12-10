@@ -604,7 +604,7 @@ form>:last-child {
     }
 
     #introduction {
-        margin: 35.8rem 0 6rem 0;
+        margin: 35.8rem 0 8rem 0;
     }
 
     #introduction-heading {
@@ -632,4 +632,89 @@ form>:last-child {
         left: -34rem;
         z-index: -1;
     }
+
+    #experience {
+        padding: 4rem 0 4rem 0;
+        margin-bottom: 8rem;
+        border-bottom: 1px solid var(--white);
+    }
+
+    #experience-wrapper {
+        gap: unset;
+        text-align: center;
+    }
+
+    #experience-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: unset;
+        row-gap: 2.4rem;
+    }
+
+    #experience-wrapper .skills {
+        row-gap: unset;
+    }
+
+    #experience::after {
+        right: calc(((100% - 26rem) / 2) - 40rem);
+        top: 146rem;
+    }
+
+    #projects {
+       margin-bottom: 6rem;
+    }
+
+    #projects-header #projects-heading {
+        font-size: 4rem;
+        line-height: 4rem;
+        letter-spacing: -1.136px;
+    }
+
+    #projects #projects-wrapper .project-list {
+        justify-content: center;
+    }
+
+    .project-item .project-img {
+        width: 32.6rem;
+        height: 24.3rem;
+    }
+
+    #footer-wrapper {
+        padding: 6rem 0 6rem 0;
+    }
+
+    #contact-info {
+        max-width: 34.5rem;
+        gap: 2rem;
+    }
+
+    #contact-heading {
+        font-size: 4rem;
+        line-height: 4rem;
+        letter-spacing: -1.136px;
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
+    #contact-form {
+        min-width: 33.5rem;
+    }
+
+    #footer-bottom {
+        margin-top: 8.7rem;
+    }
+
+    #footer-wrapper::after {
+        top: 43.5rem;
+        left: calc(((100% - 24rem) / 2) - 40rem);
+    }
+
+    #footer-bottom-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
 }
