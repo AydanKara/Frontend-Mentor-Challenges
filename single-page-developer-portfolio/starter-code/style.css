@@ -580,6 +580,7 @@ form>:last-child {
 }
 
 @media (max-width: 420px) {
+
     .container {
         max-width: 350px;
     }
@@ -613,6 +614,12 @@ form>:last-child {
         letter-spacing: -1.136px;
     }
 
+    #introduction-heading::after {
+        top: 31.5rem;
+        right: 0;
+        width: 5rem;
+    }
+
     #introduction-desc {
         margin: 4.4rem 0 2.4rem 0;
     }
@@ -624,7 +631,7 @@ form>:last-child {
         height: 47.2rem;
         inset: 0;
         margin: auto;
-        top: -50rem;
+        top: -33rem;
     }
 
     #introduction::before {
@@ -656,8 +663,9 @@ form>:last-child {
     }
 
     #experience::after {
-        right: calc(((100% - 26rem) / 2) - 40rem);
-        top: 146rem;
+        right: 0;
+        top: 144rem;
+        width: 18rem;
     }
 
     #projects {
