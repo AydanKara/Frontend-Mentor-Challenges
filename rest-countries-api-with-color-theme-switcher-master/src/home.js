@@ -27,24 +27,26 @@ const homeTemplate = (items) => html`
         </ul>
       </div>
     </section>
-    ${items.map(countriesTemplate)}
+    <section id="countries">
+      <ul class="countries-wrapper">
+        ${items.map(countriesTemplate)}
+      </ul>
+    </section>
   </div>
 `;
 
 const countriesTemplate = (items) => html`
-  <ul class="countries-wrapper">
-    <li class="country">
-      <div class="country-img">
-        <img src="${items.flags.svg}" alt="" />
-      </div>
-      <div class="country-info">
-        <h2>${items.name.common}</h2>
-        <p><strong>Population: </strong>${items.population}</p>
-        <p><strong>Region: </strong>${items.region}</p>
-        <p><strong>Capital: </strong>${items.capital}</p>
-      </div>
-    </li>
-  </ul>
+  <li class="country">
+    <div class="country-img">
+      <img src="${items.flags.svg}" alt="" />
+    </div>
+    <div class="country-info">
+      <h2>${items.name.common}</h2>
+      <p><strong>Population: </strong>${items.population}</p>
+      <p><strong>Region: </strong>${items.region}</p>
+      <p><strong>Capital: </strong>${items.capital}</p>
+    </div>
+  </li>
 `;
 
 export async function homePage(ctx) {
