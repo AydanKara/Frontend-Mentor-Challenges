@@ -1,6 +1,5 @@
-import { html } from "../node_modules/lit-html/lit-html.js";
+import { html } from "https://unpkg.com/lit-html/lit-html.js";
 
-// TODO: Replace with actual view
 const homeTemplate = (items) => html`
   <div id="home-wrapper">
     <section id="controls">
