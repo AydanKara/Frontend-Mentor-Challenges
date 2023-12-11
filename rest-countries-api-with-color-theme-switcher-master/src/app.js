@@ -1,5 +1,5 @@
-import page from "../node_modules/page/page.mjs";
-import { render } from 'https://unpkg.com/lit-html/lit-html.js';
+import page from "//unpkg.com/page/page.mjs";
+import { render } from "https://unpkg.com/lit-html/lit-html.js";
 import { layoutTemplate } from "./layout.js";
 import { homePage } from "./home.js";
 
@@ -18,7 +18,3 @@ function decorateContext(ctx, next) {
 function renderView(content) {
   render(layoutTemplate(content), root);
 }
-
-
-
-
