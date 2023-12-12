@@ -16,7 +16,7 @@ const homeTemplate = (items) => html`
       </div>
       <div id="filter-control">
         <div id="dropdown">
-          <p>Filter by Region</p>
+          <p id="filter-region">Filter by Region</p>
           <i class="bx bx-chevron-down"></i>
         </div>
         <ul class="options">
@@ -58,8 +58,8 @@ export async function homePage(ctx) {
 
   const searchBar = document.getElementById("search-bar");
   const countryName = document.getElementsByClassName("country-name");
+  
   searchBar.addEventListener("input", (e) => {
-    console.log(Array.from(countryName));
     Array.from(countryName).forEach((country) => {
       if (
         country.innerText.toLowerCase().includes(searchBar.value.toLowerCase())
@@ -80,9 +80,11 @@ export async function homePage(ctx) {
 
   const regions = document.querySelectorAll(".regions");
   const regionName = document.getElementsByClassName("region-name");
+  const filterRegion = document.getElementById("filter-region");
   regions.forEach((region) => {
     region.addEventListener("click", () => {
       dropOptions.classList.toggle("show-options");
+      filterRegion.innerText = region.innerText
       Array.from(regionName).forEach((el) => {
         if (el.innerText.includes(region.innerText)) {
           el.parentElement.parentElement.style.display = "grid";
