@@ -23,7 +23,7 @@ const homeTemplate = (items) => html`
           <li class="regions">Africa</li>
           <li class="regions">America</li>
           <li class="regions">Asia</li>
-          <li class="regions">Europa</li>
+          <li class="regions">Europe</li>
           <li class="regions">Oceania</li>
         </ul>
       </div>
@@ -44,7 +44,7 @@ const countriesTemplate = (items) => html`
     <div class="country-info">
       <h2 class="country-name">${items.name.common}</h2>
       <p><strong>Population: </strong>${items.population}</p>
-      <p><strong>Region: </strong>${items.region}</p>
+      <p class="region-name"><strong>Region: </strong>${items.region}</p>
       <p><strong>Capital: </strong>${items.capital}</p>
     </div>
   </li>
@@ -60,14 +60,16 @@ export async function homePage(ctx) {
   const countryName = document.getElementsByClassName("country-name");
   searchBar.addEventListener("input", (e) => {
     console.log(Array.from(countryName));
-    Array.from(countryName).forEach(country => {
-      if (country.innerText.toLowerCase().includes(searchBar.value.toLowerCase())) {
+    Array.from(countryName).forEach((country) => {
+      if (
+        country.innerText.toLowerCase().includes(searchBar.value.toLowerCase())
+      ) {
         country.parentElement.parentElement.style.display = "grid";
       } else {
         country.parentElement.parentElement.style.display = "none";
       }
-    })
-  })
+    });
+  });
 
   const dropDown = document.getElementById("dropdown");
   const dropOptions = document.querySelector(".options");
@@ -76,4 +78,18 @@ export async function homePage(ctx) {
     dropOptions.classList.toggle("show-options");
   });
 
+  const regions = document.querySelectorAll(".regions");
+  const regionName = document.getElementsByClassName("region-name");
+  regions.forEach((region) => {
+    region.addEventListener("click", () => {
+      dropOptions.classList.toggle("show-options");
+      Array.from(regionName).forEach((el) => {
+        if (el.innerText.includes(region.innerText)) {
+          el.parentElement.parentElement.style.display = "grid";
+        } else {
+          el.parentElement.parentElement.style.display = "none";
+        }
+      });
+    });
+  });
 }
