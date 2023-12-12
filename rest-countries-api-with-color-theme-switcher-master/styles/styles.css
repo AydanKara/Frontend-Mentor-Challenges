@@ -66,6 +66,10 @@ header {
     font-weight: 600;
 }
 
+#color-switcher i {
+    font-size: 1.6rem;
+}
+
 /*! header style */
 
 /*! main style */
@@ -93,15 +97,18 @@ main {
     position: relative;
 }
 
-#search-control>i {
+#search-control i {
     position: absolute;
     content: "";
     top: 50%;
     left: 3.1rem;
     transform: translate(-50%, -50%);
+    font-size: 1.6rem;
 }
 
-#searchBar {
+#search-bar {
+    background-color: var(--White);
+    border: none;
     width: 48rem;
     height: 5.6rem;
     padding-left: 7.4rem;
@@ -109,6 +116,8 @@ main {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
 }
 
 #filter-control {
@@ -117,6 +126,7 @@ main {
 }
 
 #filter-control #dropdown {
+    background-color: var(--White);
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
@@ -164,8 +174,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(25.4rem, 1fr));
     justify-items: center;
     column-gap: 7.5rem;
-    row-gap: 6.7rem;
-    
+    row-gap: 7.2rem;
 }
 
 .country {
@@ -178,7 +187,7 @@ main {
 .country-img {
     width: 100%;
     height: 16rem;
-    
+
 }
 
 .country-img img {

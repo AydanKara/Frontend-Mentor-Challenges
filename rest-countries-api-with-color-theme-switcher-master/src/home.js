@@ -4,13 +4,15 @@ const homeTemplate = (items) => html`
   <div id="home-wrapper">
     <section id="controls">
       <div id="search-control">
-        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-        <input
-          type="text"
-          id="searchBar"
-          name="searchBar"
-          placeholder="Search for a country..."
-        />
+        <form id="search-form">
+          <i class="bx bx-search"></i>
+          <input
+            type="text"
+            id="search-bar"
+            name="search-bar"
+            placeholder="Search for a country..."
+          />
+        </form>
       </div>
       <div id="filter-control">
         <div id="dropdown">
@@ -40,7 +42,7 @@ const countriesTemplate = (items) => html`
       <img src="${items.flags.svg}" alt="" />
     </div>
     <div class="country-info">
-      <h2>${items.name.common}</h2>
+      <h2 class="country-name">${items.name.common}</h2>
       <p><strong>Population: </strong>${items.population}</p>
       <p><strong>Region: </strong>${items.region}</p>
       <p><strong>Capital: </strong>${items.capital}</p>
@@ -51,9 +53,21 @@ const countriesTemplate = (items) => html`
 export async function homePage(ctx) {
   const data = await fetch("https://restcountries.com/v3.1/all");
   const items = await data.json();
-  console.log(items);
 
   ctx.render(homeTemplate(items));
+
+  const searchBar = document.getElementById("search-bar");
+  const countryName = document.getElementsByClassName("country-name");
+  searchBar.addEventListener("input", (e) => {
+    console.log(Array.from(countryName));
+    Array.from(countryName).forEach(country => {
+      if (country.innerText.toLowerCase().includes(searchBar.value.toLowerCase())) {
+        country.parentElement.parentElement.style.display = "grid";
+      } else {
+        country.parentElement.parentElement.style.display = "none";
+      }
+    })
+  })
 
   const dropDown = document.getElementById("dropdown");
   const dropOptions = document.querySelector(".options");
@@ -61,4 +75,5 @@ export async function homePage(ctx) {
   dropDown.addEventListener("click", (e) => {
     dropOptions.classList.toggle("show-options");
   });
+
 }

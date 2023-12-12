@@ -5,7 +5,7 @@ export const layoutTemplate = (content) => html`
     <div id="header-wrapper">
       <h1 id="header-title">Where in the world?</h1>
       <div id="color-switcher">
-        <i class="fa-regular fa-moon fa-lg"></i>
+        <i class="bx bx-moon"></i>
         <span id="mode">Dark Mode</span>
       </div>
     </div>
