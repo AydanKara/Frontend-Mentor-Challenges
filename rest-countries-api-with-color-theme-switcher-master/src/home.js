@@ -39,7 +39,7 @@ const homeTemplate = (items) => html`
 const countriesTemplate = (items) => html`
   <li class="country">
     <div class="country-img">
-      <img src="${items.flags.svg}" alt="" />
+      <a href="/details"><img src="${items.flags.svg}" alt="" /></a>
     </div>
     <div class="country-info">
       <h2 class="country-name">${items.name.common}</h2>
@@ -53,12 +53,12 @@ const countriesTemplate = (items) => html`
 export async function homePage(ctx) {
   const data = await fetch("https://restcountries.com/v3.1/all");
   const items = await data.json();
-
+console.log(items[0]);
   ctx.render(homeTemplate(items));
 
   const searchBar = document.getElementById("search-bar");
   const countryName = document.getElementsByClassName("country-name");
-  
+
   searchBar.addEventListener("input", (e) => {
     Array.from(countryName).forEach((country) => {
       if (
@@ -84,7 +84,7 @@ export async function homePage(ctx) {
   regions.forEach((region) => {
     region.addEventListener("click", () => {
       dropOptions.classList.toggle("show-options");
-      filterRegion.innerText = region.innerText
+      filterRegion.innerText = region.innerText;
       Array.from(regionName).forEach((el) => {
         if (el.innerText.includes(region.innerText)) {
           el.parentElement.parentElement.style.display = "grid";
