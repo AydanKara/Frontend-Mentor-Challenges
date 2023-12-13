@@ -9,7 +9,7 @@ const detailsTemplate = (item) => html`
     </div>
     <div id="details-wrapper">
       <div id="country-img">
-        <img src="" alt="" />
+        <img src="./design/74046944b34810368fbd71247f8201b0.png" alt="" />
       </div>
       <div id="country-info">
         <h1 id="country-name">Belgie</h1>
@@ -28,9 +28,11 @@ const detailsTemplate = (item) => html`
           </li>
         </ul>
         <div id="border-countries">
-          <strong>Border Countries</strong>
-          <button class="borders">France</button>
-          <button class="borders">Germany</button>
+          <strong>Border Countries: </strong>
+          <div id="country-borders">
+            <button class="borders">France</button>
+            <button class="borders">Germany</button>
+          </div>
         </div>
       </div>
     </div>
@@ -38,7 +40,7 @@ const detailsTemplate = (item) => html`
 `;
 
 export async function detailsPage(ctx) {
-/*   const countryName = ctx.params.name;
+  /*   const countryName = ctx.params.name;
   console.log(countryName);
   const data = await fetch("https://restcountries.com/v3.1/all");
   const items = await data.json();

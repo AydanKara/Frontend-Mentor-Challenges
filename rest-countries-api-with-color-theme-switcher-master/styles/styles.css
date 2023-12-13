@@ -30,6 +30,7 @@ html {
     font-family: 'Nunito Sans', sans-serif;
     color: var(--Light-Mode-Text);
     list-style: none;
+    background-color: var(--Light-Mode-Background);
 }
 
 /*! base style */
@@ -48,6 +49,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--White);
 }
 
 #header-title {
@@ -73,9 +75,7 @@ header {
 /*! header style */
 
 /*! main style */
-main {
-    background-color: var(--Light-Mode-Background);
-}
+main {}
 
 /*! main style */
 
@@ -225,5 +225,113 @@ main {
 
 /* countries-wrapper */
 
-
 /*! home style */
+
+/*! details style */
+
+#details-container {
+    max-width: 128rem;
+    margin: auto;
+}
+
+#back-btn-wrapper {
+    border-radius: 6px;
+    background: var(--White);
+    width: 13.6rem;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.29);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem 0;
+}
+
+#back-btn-wrapper a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+#back-btn-wrapper a button {
+    color: var(--Light-Mode-Text);
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#back-btn-wrapper a i {
+    color: var(--Light-Mode-Text);
+    font-size: 1.6rem;
+}
+
+#details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#country-img {
+    width: 56rem;
+    height: 40.1rem;
+}
+
+#country-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10.006px;
+    box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.03);
+}
+
+#country-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#country-name {
+    color: var(--Light-Mode-Text);
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+
+#country-details {
+    display: flex;
+    gap: 14.1rem;
+    margin: 2.3rem 0 7rem 0;
+}
+
+.column {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+}
+
+#border-countries {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+#border-countries strong {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+#country-borders {
+    display: flex;
+    gap: 1rem;
+}
+
+#border-countries .borders {
+    border-radius: 2px;
+    border: 0px solid #979797;
+    background: var(--White);
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
+    padding: .5rem 2.7rem;
+}
+
+/*! details style */
