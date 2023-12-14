@@ -339,6 +339,13 @@ main {}
     background: var(--White);
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
     padding: .5rem 2.7rem;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+#border-countries .borders:hover {
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.50);
+
 }
 
 /*! details style */

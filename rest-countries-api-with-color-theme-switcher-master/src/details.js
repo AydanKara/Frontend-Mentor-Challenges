@@ -4,7 +4,8 @@ const detailsTemplate = (
   item,
   countryCurrencies,
   countryLanguages,
-  countryBorders
+  countryBorders,
+  clickCountry
 ) => html`
   <div id="details-container">
     <div id="back-btn-wrapper">
@@ -36,7 +37,9 @@ const detailsTemplate = (
           <strong>Border Countries: </strong>
           <div id="country-borders">
             ${countryBorders
-              ? countryBorders.map((border) => bordersTemplate(border))
+              ? countryBorders.map((border) =>
+                  bordersTemplate(border, clickCountry)
+                )
               : null}
           </div>
         </div>
@@ -45,8 +48,8 @@ const detailsTemplate = (
   </div>
 `;
 
-const bordersTemplate = (border) => html`
-  <button class="borders">${border}</button>
+const bordersTemplate = (border, clickCountry) => html`
+  <button @click=${clickCountry} class="borders">${border}</button>
 `;
 
 export async function detailsPage(ctx) {
@@ -60,10 +63,25 @@ export async function detailsPage(ctx) {
   const countryCurrencies = Object.values(item[0].currencies);
   const countryLanguages = Object.values(item[0].languages);
   const countryBorders = item[0].borders;
-  console.log(countryLanguages);
-  console.log(countryBorders);
-  console.log(item[0].borders);
+
+  async function clickCountry(e) {
+    const cca3 = e.target.textContent;
+    console.log(cca3);
+    const data = await fetch("https://restcountries.com/v3.1/all");
+    const items = await data.json();
+    const redirected = items.filter((item) => item.cca3 === cca3);
+    console.log(redirected);
+    const redirectedName = redirected[0].name.common;
+    ctx.page.redirect(`/details/${redirectedName}`);
+  }
+  11;
   ctx.render(
-    detailsTemplate(item, countryCurrencies, countryLanguages, countryBorders)
+    detailsTemplate(
+      item,
+      countryCurrencies,
+      countryLanguages,
+      countryBorders,
+      clickCountry
+    )
   );
 }

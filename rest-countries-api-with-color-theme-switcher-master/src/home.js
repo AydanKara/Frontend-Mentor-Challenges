@@ -55,7 +55,6 @@ const countriesTemplate = (items) => html`
 export async function homePage(ctx) {
   const data = await fetch("https://restcountries.com/v3.1/all");
   const items = await data.json();
-
   ctx.render(homeTemplate(items));
 
   const searchBar = document.getElementById("search-bar");
