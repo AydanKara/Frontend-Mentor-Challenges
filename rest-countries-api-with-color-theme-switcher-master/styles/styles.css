@@ -40,6 +40,7 @@ html {
 header {
     position: relative;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    background-color: var(--White);
 }
 
 #header-wrapper {
@@ -91,6 +92,8 @@ main {}
     justify-content: space-between;
     align-items: center;
     padding: 4.8rem 0 4.8rem 0;
+    flex-wrap: wrap;
+    gap: 4rem;
 }
 
 #search-control {
@@ -153,6 +156,7 @@ main {}
 .options .regions {
     margin: 0.5rem 0;
     cursor: pointer;
+    background-color: var(--White);
 }
 
 #filter-control p,
@@ -209,6 +213,7 @@ main {}
     font-weight: 800;
     line-height: 2.6rem;
     margin-bottom: 1.6rem;
+    background-color: var(--White);
 }
 
 .country-info p {
@@ -217,6 +222,7 @@ main {}
     font-weight: 300;
     line-height: 16px;
     padding-bottom: .8rem;
+    background-color: var(--White);
 }
 
 .country-info p strong {
@@ -273,6 +279,7 @@ main {}
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 6rem;
 }
 
 #country-img {
@@ -335,3 +342,70 @@ main {}
 }
 
 /*! details style */
+
+/* responsive */
+
+@media (max-width: 576px) {
+    #header-wrapper {
+        max-width: 34.3rem;
+    }
+
+    #header-title {
+        font-size: 1.4rem;
+    }
+
+    #color-switcher #mode {
+        font-size: 1.2rem;
+    }
+
+    #home-wrapper {
+        max-width: 34.3rem;
+    }
+
+    #details-container {
+        max-width: 34.3rem;
+    }
+
+    #search-bar {
+        width: 34.3rem;
+    }
+
+    /* details */
+
+    #back-btn-wrapper {
+        margin: 4rem 0 6.4rem 0;
+    }
+
+    #details-wrapper {
+        flex-direction: column;
+        gap: 4.4rem;
+        max-width: 32rem;
+        margin: 0 auto 6rem auto;
+    }
+
+    #country-img {
+        width: 32rem;
+        height: 22.9rem;
+    }
+
+    #country-name {
+        font-size: 2.2rem;
+    }
+
+    #country-details {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        margin: 1.6rem 0 3.4rem 0;
+    }
+
+    #border-countries {
+        gap: 1.6rem;
+        align-items: self-start;
+        flex-direction: column;
+    }
+
+    #country-borders {
+        flex-wrap: wrap;
+    }
+}

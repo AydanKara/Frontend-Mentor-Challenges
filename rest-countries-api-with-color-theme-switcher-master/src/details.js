@@ -1,6 +1,11 @@
 import { html } from "https://unpkg.com/lit-html/lit-html.js";
 
-const detailsTemplate = (item) => html`
+const detailsTemplate = (
+  item,
+  countryCurrencies,
+  countryLanguages,
+  countryBorders
+) => html`
   <div id="details-container">
     <div id="back-btn-wrapper">
       <a href="/"
@@ -9,29 +14,30 @@ const detailsTemplate = (item) => html`
     </div>
     <div id="details-wrapper">
       <div id="country-img">
-        <img src="./design/74046944b34810368fbd71247f8201b0.png" alt="" />
+        <img src=${item[0].flags.png} alt="" />
       </div>
       <div id="country-info">
-        <h1 id="country-name">Belgie</h1>
+        <h1 id="country-name">${item[0].name.common}</h1>
         <ul id="country-details">
           <li class="column">
-            <p><strong>Native Name: </strong>Belgie</p>
-            <p><strong>Population: </strong>00000</p>
-            <p><strong>Region: </strong>000000</p>
-            <p><strong>Sub Region: </strong>000000</p>
-            <p><strong>Capital: </strong>00000</p>
+            <p><strong>Native Name: </strong>${item[0].name.official}</p>
+            <p><strong>Population: </strong>${item[0].population}</p>
+            <p><strong>Region: </strong>${item[0].region}</p>
+            <p><strong>Sub Region: </strong>${item[0].subregion}</p>
+            <p><strong>Capital: </strong>${item[0].capital}</p>
           </li>
           <li class="column">
-            <p><strong>Top Level Domain: </strong>.be</p>
-            <p><strong>Currencies: </strong>Euro</p>
-            <p><strong>Languages: </strong>Dutch, French, German</p>
+            <p><strong>Top Level Domain: </strong>${item[0].tld}</p>
+            <p><strong>Currencies: </strong>${countryCurrencies[0].name}</p>
+            <p><strong>Languages: </strong>${countryLanguages.join(", ")}</p>
           </li>
         </ul>
         <div id="border-countries">
           <strong>Border Countries: </strong>
           <div id="country-borders">
-            <button class="borders">France</button>
-            <button class="borders">Germany</button>
+            ${countryBorders
+              ? countryBorders.map((border) => bordersTemplate(border))
+              : null}
           </div>
         </div>
       </div>
@@ -39,17 +45,25 @@ const detailsTemplate = (item) => html`
   </div>
 `;
 
+const bordersTemplate = (border) => html`
+  <button class="borders">${border}</button>
+`;
+
 export async function detailsPage(ctx) {
-  /*   const countryName = ctx.params.name;
+  const countryName = ctx.params.name;
   console.log(countryName);
-  const data = await fetch("https://restcountries.com/v3.1/all");
-  const items = await data.json();
-  const item = [];
-  items.filter((element) => {
-    if (element.name.common == countryName) {
-      item.push(element);
-    }
-  });
-  console.log(item); */
-  ctx.render(detailsTemplate());
+  const data = await fetch(
+    `https://restcountries.com/v3.1/name/${countryName}`
+  );
+  const item = await data.json();
+  console.log(item);
+  const countryCurrencies = Object.values(item[0].currencies);
+  const countryLanguages = Object.values(item[0].languages);
+  const countryBorders = item[0].borders;
+  console.log(countryLanguages);
+  console.log(countryBorders);
+  console.log(item[0].borders);
+  ctx.render(
+    detailsTemplate(item, countryCurrencies, countryLanguages, countryBorders)
+  );
 }
