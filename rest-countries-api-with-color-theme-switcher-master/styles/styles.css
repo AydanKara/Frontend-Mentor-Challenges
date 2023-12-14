@@ -30,6 +30,9 @@ html {
     font-family: 'Nunito Sans', sans-serif;
     color: var(--Light-Mode-Text);
     list-style: none;
+}
+
+body {
     background-color: var(--Light-Mode-Background);
 }
 
@@ -156,7 +159,6 @@ main {}
 .options .regions {
     margin: 0.5rem 0;
     cursor: pointer;
-    background-color: var(--White);
 }
 
 #filter-control p,
@@ -213,7 +215,6 @@ main {}
     font-weight: 800;
     line-height: 2.6rem;
     margin-bottom: 1.6rem;
-    background-color: var(--White);
 }
 
 .country-info p {
@@ -222,7 +223,6 @@ main {}
     font-weight: 300;
     line-height: 16px;
     padding-bottom: .8rem;
-    background-color: var(--White);
 }
 
 .country-info p strong {
