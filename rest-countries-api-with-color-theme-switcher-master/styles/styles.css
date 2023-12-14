@@ -187,7 +187,12 @@ main {}
     min-height: 33.6rem;
     width: 26.7rem;
     border-radius: 5px;
+    transition: .3s ease all;
     box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+}
+
+.country:hover {
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.5);
 }
 
 .country-img {
@@ -207,6 +212,9 @@ main {}
 .country-info {
     background-color: var(--White);
     padding: 2.4rem 0 3.8rem 2.4rem;
+    max-width: 57.4rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .country-info h2 {
