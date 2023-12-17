@@ -54,10 +54,10 @@ const bordersTemplate = (border, clickCountry) => html`
 `;
 
 export async function detailsPage(ctx) {
-  const countryName = ctx.params.name;
-  console.log(countryName);
+  const countryCode = ctx.params.code;
+  console.log(countryCode);
   const data = await fetch(
-    `https://restcountries.com/v3.1/name/${countryName}`
+    `https://restcountries.com/v3.1/alpha/${countryCode}`
   );
   const item = await data.json();
   const countryCurrencies = Object.values(item[0].currencies);
@@ -69,8 +69,8 @@ export async function detailsPage(ctx) {
     const data = await fetch("https://restcountries.com/v3.1/all");
     const items = await data.json();
     const redirected = items.filter((item) => item.cca3 === cca3);
-    const redirectedName = redirected[0].name.common;
-    ctx.page.redirect(`/details/${redirectedName}`);
+    console.log(redirected);
+    ctx.page.redirect(`/details/${redirected[0].cca3}`);
   }
 
   ctx.render(

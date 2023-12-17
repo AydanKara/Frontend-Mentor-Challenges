@@ -40,9 +40,7 @@ const homeTemplate = (items) => html`
 const countriesTemplate = (items) => html`
   <li class="country">
     <div class="country-img">
-      <a
-        href="/details/${items.name.common.trim()}"
-        aria-label="Read more about this country"
+      <a href="/details/${items.cca3}" aria-label="Read more about this country"
         ><img src="${items.flags.svg}" alt="${items.flags.alt}"
       /></a>
     </div>
@@ -58,7 +56,7 @@ const countriesTemplate = (items) => html`
 export async function homePage(ctx) {
   const data = await fetch("https://restcountries.com/v3.1/all");
   const items = await data.json();
-
+  console.log(items.forEach((item) => console.log(item.cca3)));
   ctx.render(homeTemplate(items));
   const searchBar = document.getElementById("search-bar");
   const countryName = document.getElementsByClassName("country-name");

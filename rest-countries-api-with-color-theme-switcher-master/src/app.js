@@ -8,7 +8,7 @@ const root = document.body;
 page(decorateContext);
 page("index.html", "/");
 page("/", homePage);
-page("/details/:name", detailsPage);
+page("/details/:code", detailsPage);
 
 page.start();
 
