@@ -40,8 +40,10 @@ const homeTemplate = (items) => html`
 const countriesTemplate = (items) => html`
   <li class="country">
     <div class="country-img">
-      <a href="/details/${items.name.common}"
-        ><img src="${items.flags.svg}" alt=""
+      <a
+        href="/details/${items.name.common.trim()}"
+        aria-label="Read more about this country"
+        ><img src="${items.flags.svg}" alt="${items.flags.alt}"
       /></a>
     </div>
     <div class="country-info">
@@ -103,6 +105,5 @@ export async function homePage(ctx) {
     );
 
     items.forEach((item) => item.classList.toggle("active"));
-    console.log(darkMode);
   }
 }

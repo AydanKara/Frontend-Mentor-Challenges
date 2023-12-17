@@ -10,13 +10,13 @@ const detailsTemplate = (
 ) => html`
   <div id="details-container">
     <div id="back-btn-wrapper">
-      <a href="/"
+      <a href="/" aria-label="Back to the Home page"
         ><i class="bx bx-arrow-back"></i> <button id="back-btn">Back</button></a
       >
     </div>
     <div id="details-wrapper">
       <div id="country-img">
-        <img src=${item[0].flags.png} alt="" />
+        <img src=${item[0].flags.png} alt="${item[0].flags.alt}" />
       </div>
       <div id="country-info">
         <h1 id="country-name">${item[0].name.common}</h1>
@@ -60,18 +60,15 @@ export async function detailsPage(ctx) {
     `https://restcountries.com/v3.1/name/${countryName}`
   );
   const item = await data.json();
-  console.log(item);
   const countryCurrencies = Object.values(item[0].currencies);
   const countryLanguages = Object.values(item[0].languages);
   const countryBorders = item[0].borders;
 
   async function clickCountry(e) {
     const cca3 = e.target.textContent;
-    console.log(cca3);
     const data = await fetch("https://restcountries.com/v3.1/all");
     const items = await data.json();
     const redirected = items.filter((item) => item.cca3 === cca3);
-    console.log(redirected);
     const redirectedName = redirected[0].name.common;
     ctx.page.redirect(`/details/${redirectedName}`);
   }
