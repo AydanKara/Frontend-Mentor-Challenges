@@ -1,4 +1,5 @@
 import { html } from "https://unpkg.com/lit-html/lit-html.js";
+import { darkMode } from "./layout.js";
 
 const homeTemplate = (items) => html`
   <div id="home-wrapper">
@@ -55,8 +56,8 @@ const countriesTemplate = (items) => html`
 export async function homePage(ctx) {
   const data = await fetch("https://restcountries.com/v3.1/all");
   const items = await data.json();
-  ctx.render(homeTemplate(items));
 
+  ctx.render(homeTemplate(items));
   const searchBar = document.getElementById("search-bar");
   const countryName = document.getElementsByClassName("country-name");
 
@@ -95,4 +96,13 @@ export async function homePage(ctx) {
       });
     });
   });
+
+  if (darkMode) {
+    const items = document.querySelectorAll(
+      "#search-control i, #filter-control p, #dropdown i, #search-bar, #filter-control #dropdown, #filter-control .options, li.regions, .country-info, .country-info h2, .country-info p, .country-info p strong"
+    );
+
+    items.forEach((item) => item.classList.toggle("active"));
+    console.log(darkMode);
+  }
 }

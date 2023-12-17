@@ -79,11 +79,6 @@ header {
 
 /*! header style */
 
-/*! main style */
-main {}
-
-/*! main style */
-
 /*! home style */
 
 #home-wrapper {
@@ -259,6 +254,12 @@ main {}
     align-items: center;
     justify-content: center;
     margin: 8rem 0;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+#back-btn-wrapper:hover {
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.7);
 }
 
 #back-btn-wrapper a {
@@ -345,7 +346,7 @@ main {}
 #border-countries .borders {
     border-radius: 2px;
     border: 0px solid #979797;
-    background: var(--White);
+    background-color: var(--White);
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
     padding: .5rem 2.7rem;
     cursor: pointer;
@@ -358,6 +359,44 @@ main {}
 }
 
 /*! details style */
+
+/*! dark mode */
+
+body.active {
+    background-color: var(--Dark-Mode-Background);
+}
+
+#header-title.active,
+#color-switcher i.active,
+#color-switcher #mode.active,
+#search-control i.active,
+#search-bar.active,
+#filter-control p.active,
+li.regions.active,
+#dropdown i.active,
+#back-btn-wrapper i.active,
+#back-btn-wrapper a button.active,
+#country-name.active,
+#border-countries strong.active,
+.country-info h2.active,
+.country-info p.active,
+.country-info p strong.active,
+#country-info li p.active,
+#country-info li p strong.active,
+#border-countries .borders.active {
+    color: var(--White);
+}
+
+header.active,
+#header-wrapper.active,
+#search-bar.active,
+#filter-control #dropdown.active,
+#filter-control .options.active,
+.country-info.active,
+#back-btn-wrapper.active,
+#border-countries .borders.active {
+    background-color: var(--Dark-Blue);
+}
 
 /* responsive */
 

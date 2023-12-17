@@ -1,4 +1,5 @@
 import { html } from "https://unpkg.com/lit-html/lit-html.js";
+import { darkMode } from "./layout.js";
 
 const detailsTemplate = (
   item,
@@ -74,7 +75,7 @@ export async function detailsPage(ctx) {
     const redirectedName = redirected[0].name.common;
     ctx.page.redirect(`/details/${redirectedName}`);
   }
-  11;
+
   ctx.render(
     detailsTemplate(
       item,
@@ -84,4 +85,15 @@ export async function detailsPage(ctx) {
       clickCountry
     )
   );
+
+  if (darkMode) {
+    const items = document.querySelectorAll(
+      "#back-btn-wrapper, #back-btn-wrapper i, #back-btn-wrapper a button, #country-name, #border-countries strong, #country-info li p, #country-info li p strong, #border-countries .borders"
+    );
+    items.forEach((item) => {
+      if (!item.classList.contains("active")) {
+        item.classList.toggle("active");
+      }
+    });
+  }
 }
