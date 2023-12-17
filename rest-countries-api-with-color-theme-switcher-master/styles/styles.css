@@ -308,6 +308,7 @@ header {
 #country-info {
     display: flex;
     flex-direction: column;
+    max-width: 59.8rem;
 }
 
 #country-name {
@@ -325,6 +326,7 @@ header {
 .column {
     font-size: 1.6rem;
     line-height: 3.2rem;
+    max-width: 25rem;
 }
 
 #border-countries {
@@ -341,6 +343,8 @@ header {
 #country-borders {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 38rem;
 }
 
 #border-countries .borders {
