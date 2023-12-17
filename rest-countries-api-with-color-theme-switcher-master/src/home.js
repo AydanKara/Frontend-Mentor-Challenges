@@ -3,7 +3,7 @@ import { darkMode } from "./layout.js";
 
 const homeTemplate = (items) => html`
   <div id="home-wrapper">
-    <section id="controls">
+    <div id="controls">
       <div id="search-control">
         <form id="search-form">
           <i class="bx bx-search"></i>
@@ -28,7 +28,7 @@ const homeTemplate = (items) => html`
           <li class="regions">Oceania</li>
         </ul>
       </div>
-    </section>
+    </div>
     <section id="countries">
       <ul class="countries-wrapper">
         ${items.map(countriesTemplate)}
