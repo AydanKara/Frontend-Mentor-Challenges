@@ -4,12 +4,12 @@ const path = require("path");
 const express = require("express");
 const authRoutes = require("./routes/auth.routes");
 
-const app = express();
+const api = express();
 
-app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
-app.use(authRoutes);
+api.set("view engine", "ejs");
+api.set("views", path.join(__dirname, "views"));
+api.use(authRoutes);
 
-app.listen(3000);
+api.listen(3000);
 
-const handler = serverless(app);
+const handler = serverless(api);
