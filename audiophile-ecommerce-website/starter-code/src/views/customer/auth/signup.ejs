@@ -1,0 +1,34 @@
+<%- include("../includes/head", { pageTitle: "Signup" }) %>
+    </head>
+
+    <body>
+        <%- include("../includes/header") %>
+            <main>
+                <h1>Create new Account</h1>
+                <form action="" method="">
+                    <label for="email">E-Mail</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="confirm-email">Confirm E-Mail</label>
+                    <input type="email" name="confirm-email" id="confirm-email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" minlength="6" required>
+                    <hr>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" name="fullname" id="fullname" required>
+
+                    <label for="street">Street</label>
+                    <input type="text" name="street" id="street" required>
+
+                    <label for="postal">Postal Code</label>
+                    <input type="text" name="postal" id="postal" required>
+
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" required>
+
+                    <button class="btn">Create Account</button>
+                    <p id="switch-form"><a href="/login">Login instead</a></p>
+                </form>
+            </main>
+            <%- include("../includes/footer") %>

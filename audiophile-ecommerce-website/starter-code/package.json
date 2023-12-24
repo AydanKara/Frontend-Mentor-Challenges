@@ -2,10 +2,10 @@
   "name": "starter-code",
   "version": "1.0.0",
   "description": "",
-  "main": "api.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon serve ./netlify/functions/api.js",
-    "build": "nodemon build ./netlify/functions/api.js"
+    "start": "nodemon serve ./src/api.js",
+    "build": "nodemon build ./src/api.js"
   },
   "keywords": [],
   "author": "",
