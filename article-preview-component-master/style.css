@@ -53,9 +53,9 @@ img {
 }
 
 .site-section .media {
-    width: 100%;
+    width: 110%;
     height: auto;
-    background: url(/article-preview-component-master/images/drawers.jpg);
+    background: url(./images/drawers.jpg);
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
