@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+html {
+    font: 13px/1.6 "Manrope", sans-serif;
+    color: var(--desaturated-dark-blue);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.site-article {
+    max-width: 56.15em;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.site-section {
+    display: flex;
+}
+
+.site-section .media {
+    width: 100%;
+    height: auto;
+    background: url(/article-preview-component-master/images/drawers.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.site-section .content {
+    padding: 2.46em 3.2em;
+}
+
+.content .content-header {
+    font-size: 1.54em;
+    line-height: 28px;
+    color: var(--very-dark-grayish-blue);
+}
+
+.content .content-paragraph {
+    margin: 1em 0 1.54em 0;
+    
+}
+
+.content .content-author {
+    display: flex;
+    align-items: center;
+}
+
+.content .content-author .author-name {
+    margin-left: 1.1em;
+}
+
+.content .content-author .author-name .name {
+    font-weight: bold;
+    color: var(--very-dark-grayish-blue);
+}
+
+.content .content-author .share-button {
+    margin-left: auto;
+    width: 2.46em;
+    height: 2.46em;
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: all ease-in .3s;
+}
+
+.content .content-author .share-button:hover {
+    background-color: var(--grayish-blue);
+    cursor: pointer;
+}
+
+.content .content-author .share-button:hover .fa-solid.fa-share {
+    color: #fff;
+}
+
+.content-media {
+    width: 40px;
+    border-radius: 100%;
+}
+
+.content-media img {
+    border-radius: 100%;
+}
+
+.share-tooltip {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    background-color: var(--very-dark-grayish-blue);
+    margin-top: -188px;
+    padding: 18px 37px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease-in .3s;
+}
+
+.active {
+    margin-top: -148px;
+    opacity: 1 !important;
+    pointer-events: all;
+}
+
+.share-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-top-color: var(--very-dark-grayish-blue);
+    border-bottom: 0;
+    margin-left: -12px;
+    margin-bottom: -12px;
+}
+
+.share-tooltip .share {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.share-tooltip .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.share-tooltip .icons i{
+    font-size: 20px;
+    color: #fff;
+}
