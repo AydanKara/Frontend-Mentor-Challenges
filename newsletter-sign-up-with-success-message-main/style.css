@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%)
+}
+
+html {
+    font: 16px/1.2 "Roboto", sans-serif;
+    color: var(--dark-slate-grey);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--charcoal-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.icon-list {
+    width: 21px;
+    height: 21px;
+}
+
+.container {
+    background-color: var(--white);
+    border-radius: 36px;
+    padding: 24px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+}
+
+.col-content {
+    max-width: 376px;
+    margin-left: 40px;
+}
+
+.col-content .content-title{
+    font-size: 56px;
+}
+
+.col-content .content-paragraph {
+    line-height: 150%;
+    padding-block: 24px;
+}
+
+.col-content .content-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.col-content .content-list .content-item {
+    display: flex;
+    gap: 16px;
+    line-height: 150%;
+}
+
+.col-content form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.col-content form label {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.col-content form #email {
+    padding: 16px 24px;
+    margin: 8px 0 24px 0;
+    border: 1px solid var(--grey);
+    border-radius: 7px;
+}
+
+.col-content form #btn-subscribe {
+    padding-block: 18px;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--white);
+    background-color: var(--dark-slate-grey);
+    border: 0;
+    border-radius: 7px;
+    cursor: pointer;
+}
