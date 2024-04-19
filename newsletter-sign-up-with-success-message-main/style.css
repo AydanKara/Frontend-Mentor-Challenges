@@ -114,6 +114,7 @@ img {
 .col-content form #btn-subscribe,
 .success-container #dismiss-button {
     padding-block: 1.125em;
+    font-size: 1em;
     font-weight: 700;
     line-height: 150%;
     color: var(--white);
@@ -159,7 +160,7 @@ img {
 .success-container .success-heading {
     font-size: 3.5em;
     line-height: 100%;
-    padding: 2.5em 0 1.5em 0;
+    padding: 0.8em 0 0.5em 0;
 }
 
 .success-container .success-paragraph {
@@ -189,7 +190,6 @@ img {
         border-radius: 0;
         padding: 0;
         max-width: 100%;
-        height: 100vh;
     }
 
     .wrapper {
@@ -209,7 +209,6 @@ img {
 
     .success-container {
         max-width: 100%;
-        height: 100vh;
         border-radius: 0;
         padding: 9.375em 1.5em 4em 1.5em;
     }
