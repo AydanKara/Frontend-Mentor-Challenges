@@ -43,73 +43,179 @@ img {
 }
 
 .icon-list {
-    width: 21px;
-    height: 21px;
+    width: 1.3125em;
+    height: 1.3125em;
 }
 
 .container {
     background-color: var(--white);
     border-radius: 36px;
-    padding: 24px;
+    padding: 1.5em;
 }
 
 .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 64px;
+    gap: 4em;
 }
 
 .col-content {
-    max-width: 376px;
-    margin-left: 40px;
+    max-width: 23.5em;
+    margin-left: 2.5em;
 }
 
-.col-content .content-title{
-    font-size: 56px;
+.col-content .content-title {
+    font-size: 3.5em;
 }
 
 .col-content .content-paragraph {
     line-height: 150%;
-    padding-block: 24px;
+    padding-block: 1.5em;
 }
 
 .col-content .content-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625em;
 }
+
 .col-content .content-list .content-item {
     display: flex;
-    gap: 16px;
+    gap: 1em;
     line-height: 150%;
 }
 
 .col-content form {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 2.5em;
 }
 
 .col-content form label {
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 700;
 }
 
 .col-content form #email {
-    padding: 16px 24px;
-    margin: 8px 0 24px 0;
-    border: 1px solid var(--grey);
+    appearance: none;
+    padding: 1em 1.5em;
+    margin: 0.5em 0 1.5em 0;
+    color: var(--dark-slate-grey);
+    border: 1px solid hsl(0, 0%, 85%);
     border-radius: 7px;
 }
 
-.col-content form #btn-subscribe {
-    padding-block: 18px;
-    font-size: 16px;
+.col-content form #email::placeholder {
+    color: var(--dark-slate-grey);
+    opacity: .5;
+}
+
+.col-content form #btn-subscribe,
+.success-container #dismiss-button {
+    padding-block: 1.125em;
+    font-weight: 700;
     line-height: 150%;
     color: var(--white);
     background-color: var(--dark-slate-grey);
     border: 0;
     border-radius: 7px;
     cursor: pointer;
+}
+
+.col-content form #btn-subscribe:hover,
+.success-container #dismiss-button:hover {
+    background-image: linear-gradient(#FF6A3A 0%, #FF527B 100%);
+    box-shadow: 0px 10px 21px 2px rgba(255, 97, 85, 0.35);
+}
+
+.col-content form .error {
+    margin-bottom: -0.9375em;
+    order: -1;
+    align-self: end;
+    font-size: 0.75em;
+    font-weight: 700;
+    color: hsl(4, 100%, 67%);
+}
+
+.invalid {
+    background-color: hsl(4, 100%, 67%, .15);
+    border-color: hsl(4, 100%, 67%) !important;
+}
+
+.success-container {
+    max-width: 31.5em;
+    display: none;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 36px;
+    padding: 3em 4em 4em 4em;
+}
+
+.success-container .success-media {
+    width: 4em;
+}
+
+.success-container .success-heading {
+    font-size: 3.5em;
+    line-height: 100%;
+    padding: 2.5em 0 1.5em 0;
+}
+
+.success-container .success-paragraph {
+    line-height: 150%;
+    padding-bottom: 2.5em;
+}
+
+.success-container .success-paragraph #confirmation-email {
+    font-weight: 700;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .col-content .content-title {
+        font-size: 2.5em;
+    }
+
+}
+
+@media (max-width: 650px) {
+    body {
+        align-items: start;
+    }
+
+    .container {
+        border-radius: 0;
+        padding: 0;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    .wrapper {
+        gap: 2.5em;
+        flex-direction: column-reverse;
+    }
+
+    .col-media {
+        width: 100%;
+    }
+
+    .col-content {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 1.5em 2.5em;
+    }
+
+    .success-container {
+        max-width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        padding: 9.375em 1.5em 4em 1.5em;
+    }
+
+    .success-container .success-paragraph {
+        padding-bottom: 16.4375em;
+    }
+
 }

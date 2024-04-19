@@ -20,71 +20,88 @@
   </head>
   <body>
     <!-- Sign-up form start -->
-    <div class="container">
-      <div class="wrapper">
-        <div class="col-content">
-          <h1 class="content-title">Stay updated!</h1>
-          <p class="content-paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
-          <ul class="content-list">
-            <li class="content-item">
-              <img
-                class="icon-list"
-                src="./assets/images/icon-list.svg"
-                alt="icon list"
-              />Product discovery and building what matters
-            </li>
-            <li class="content-item">
-              <img
-                class="icon-list"
-                src="./assets/images/icon-list.svg"
-                alt="icon list"
-              />Measuring to ensure updates are a success
-            </li>
-            <li class="content-item">
-              <img
-                class="icon-list"
-                src="./assets/images/icon-list.svg"
-                alt="icon list"
-              />And much more!
-            </li>
-          </ul>
+    <main>
+      <div class="container">
+        <div class="wrapper">
+          <div class="col-content">
+            <h1 class="content-title">Stay updated!</h1>
+            <p class="content-paragraph">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <ul class="content-list">
+              <li class="content-item">
+                <img
+                  class="icon-list"
+                  src="./assets/images/icon-list.svg"
+                  alt="icon list"
+                />Product discovery and building what matters
+              </li>
+              <li class="content-item">
+                <img
+                  class="icon-list"
+                  src="./assets/images/icon-list.svg"
+                  alt="icon list"
+                />Measuring to ensure updates are a success
+              </li>
+              <li class="content-item">
+                <img
+                  class="icon-list"
+                  src="./assets/images/icon-list.svg"
+                  alt="icon list"
+                />And much more!
+              </li>
+            </ul>
 
-          <form action="#">
-            <label for="email">Email address</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="email@company.com"
-            />
-            <button type="submit" id="btn-subscribe">Subscribe to monthly newsletter</button>
-          </form>
-        </div>
-        <div class="col-media">
-          <picture>
-            <source
-              media="(min-width:650px)"
-              srcset="./assets/images/illustration-sign-up-desktop.svg"
-            />
-            <img
-              src="./assets/images/illustration-sign-up-mobile.svg"
-              alt="illustration"
-            />
-          </picture>
+            <form action="#">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email@company.com"
+              />
+              <span class="error" aria-live="polite"></span>
+              <button id="btn-subscribe">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+          <div class="col-media">
+            <picture>
+              <source
+                media="(min-width:650px)"
+                srcset="./assets/images/illustration-sign-up-desktop.svg"
+              />
+              <img
+                src="./assets/images/illustration-sign-up-mobile.svg"
+                alt="illustration"
+              />
+            </picture>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Sign-up form end -->
+      <!-- Sign-up form end -->
 
-    <!-- Success message start -->
+      <!-- Success message start -->
 
-    <div class="success-msg" hidden>
-      Thanks for subscribing! A confirmation email has been sent to
-      ash@loremcompany.com. Please open it and click the button inside to
-      confirm your subscription. Dismiss message
-    </div>
+      <div class="success-container">
+        <div class="success-media">
+          <picture>
+            <img src="./assets/images/icon-success.svg" alt="illustration" />
+          </picture>
+        </div>
+        <h2 class="success-heading">Thanks for subscribing!</h2>
+        <p class="success-paragraph">
+          A confirmation email has been sent to
+          <span id="confirmation-email" aria-live="polite">email@com</span>.
+          Please open it and click the button inside to confirm your
+          subscription.
+        </p>
+        <button type="submit" id="dismiss-button">Dismiss message</button>
+      </div>
 
-    <!-- Success message end -->
+      <!-- Success message end -->
+    </main>
   </body>
 </html>
