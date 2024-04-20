@@ -16,7 +16,7 @@
 }
 
 html {
-    font: 16px/1.2 "Roboto", sans-serif;
+    font: 16px/1.5 "Roboto", sans-serif;
     color: var(--dark-slate-grey);
 }
 
@@ -71,7 +71,6 @@ img {
 }
 
 .col-content .content-paragraph {
-    line-height: 150%;
     padding-block: 1.5em;
 }
 
@@ -84,10 +83,10 @@ img {
 .col-content .content-list .content-item {
     display: flex;
     gap: 1em;
-    line-height: 150%;
 }
 
 .col-content form {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 2.5em;
@@ -104,7 +103,7 @@ img {
     margin: 0.5em 0 1.5em 0;
     color: var(--dark-slate-grey);
     font-size: inherit;
-    line-height: 1.5;
+    line-height: inherit;
     border: 1px solid hsl(0, 0%, 85%);
     border-radius: 7px;
 }
@@ -119,7 +118,7 @@ img {
     padding: 1.125em 0 0.875em 0;
     font-size: 1em;
     font-weight: 700;
-    line-height: 150%;
+    line-height: inherit;
     color: var(--white);
     background-color: var(--dark-slate-grey);
     border: 0;
@@ -134,7 +133,7 @@ img {
 }
 
 .col-content form .error {
-    margin-bottom: -0.9375em;
+    position: absolute;
     order: -1;
     align-self: end;
     font-size: 0.75em;
@@ -162,12 +161,11 @@ img {
 
 .success-container .success-heading {
     font-size: 3.5em;
-    line-height: 100%;
+    line-height: 1;
     padding: 0.8em 0 0.5em 0;
 }
 
 .success-container .success-paragraph {
-    line-height: 150%;
     padding-bottom: 2.5em;
 }
 
