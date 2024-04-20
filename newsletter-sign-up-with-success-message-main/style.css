@@ -67,6 +67,7 @@ img {
 
 .col-content .content-title {
     font-size: 3.5em;
+    line-height: 1;
 }
 
 .col-content .content-paragraph {
@@ -102,6 +103,8 @@ img {
     padding: 1em 1.5em;
     margin: 0.5em 0 1.5em 0;
     color: var(--dark-slate-grey);
+    font-size: inherit;
+    line-height: 1.5;
     border: 1px solid hsl(0, 0%, 85%);
     border-radius: 7px;
 }
@@ -113,7 +116,7 @@ img {
 
 .col-content form #btn-subscribe,
 .success-container #dismiss-button {
-    padding-block: 1.125em;
+    padding: 1.125em 0 0.875em 0;
     font-size: 1em;
     font-weight: 700;
     line-height: 150%;
