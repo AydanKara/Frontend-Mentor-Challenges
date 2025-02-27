@@ -1,22 +1,28 @@
-# Frontend Mentor - REST Countries API with color theme switcher
+# Frontend Mentor - REST Countries API with color theme switcher solution
 
-![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of Contents
 
-Thanks for checking out this front-end coding challenge.
+| Section | Subsection | Description |
+|---------|------------|-------------|
+| [Overview](#overview) |  | General project information |
+|  | [The Challenge](#-the-challenge) | Problems solved in this project |
+|  | [Screenshots](#-screenshots) | Preview of the application |
+|  | [Links](#-links) | Useful links related to the project |
+| [My Process](#my-process) |  | Development approach |
+|  | [Built With](#%EF%B8%8F-built-with) | Technologies and tools used |
+|  | [What I learned](#-what-i-learned) | Some of major learnings while working through this project |
+|  | [Continued development](#-continued-development) | Outlining areas to continue to focus on in future projects |
+|  | [Useful Resources](#-useful-resources) | References that helped in development |
+| [Author](#-author) |  | About the creator of the project |
+| [Acknowledgments](#-acknowledgments) | | Giving advice to someone who helped bei developing the project |
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a good understanding of HTML, CSS, and JavaScript.**
+### 🚀 The Challenge 
 
-## The challenge
-
-Your challenge is to integrate with the [REST Countries API](https://restcountries.com) to pull country data and display it like in the designs.
-
-You can use any JavaScript framework/library on the front-end such as [React](https://reactjs.org) or [Vue](https://vuejs.org). You also have complete control over which packages you use to do things like make HTTP requests or style your project.
-
-Your users should be able to:
+👤 Users should be able to:  
 
 - See all countries from the API on the homepage
 - Search for a country using an `input` field
@@ -25,76 +31,134 @@ Your users should be able to:
 - Click through to the border countries on the detail page
 - Toggle the color scheme between light and dark mode *(optional)*
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### 📸 Screenshots
 
-**⚠️ NOTE ⚠️: Sometimes the REST Countries API can go down. We've added a `data.json` file with all the country data if you prefer to use that instead. However, please be aware that the data in the JSON file might not be up-to-date.**
+#### 🖥️ Desktop View 
 
-## Where to find everything
+![](./design/desktop-preview.jpg)
 
-Your task is to build out the project to the designs inside the `/design` folder. 
+#### 📱 Mobile View
 
-In this challenge, you will find mobile and desktop designs in light and dark mode color schemes for both pages.
+![](./design/mobile-design-home-light.jpg)
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+#### 🇧🇪 Detail Page
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+![](./design/desktop-design-detail-light.jpg)
 
-There are no assets for this challenge, as the country flags will be pulled from the [REST Countries API](https://restcountries.com) and you can use an icon font library for the icons.
+### 🌐 Links
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/rest-countries-api-c3arCQFTon)
+- Live Site URL: [REST Countries](https://frontend-mentor-challenges-cxu6.vercel.app/)
 
-## Building your project
+## My process
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### 🛠️ Built With  
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+#### 🌐 Frontend
+  - HTML5 & CSS3 – For semantic markup and responsive styling
+  - Flexbox & CSS Grid – For layout structuring
+  - Lit-HTML – Lightweight templating library for fast rendering
+  - Page.js – Client-side routing for a seamless single-page application
+  - REST Countries API – Fetching real-time country data
+#### 🎨 UI Components
+  - Boxicons – Icon library for UI elements
+  - Dark Mode Toggle – Custom implementation using JavaScript
 
-## Deploying your project
+💡 Note: This project does not have a backend. Instead, all data is fetched from the **[REST Countries API](https://restcountries.com/#rest-countries)**.
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+### 📚 What I Learned
+During the development of this project, I deepened my understanding of various frontend concepts, including JavaScript functions, efficient API fetching, and UI improvements. Here are some key takeaways:
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+#### ⚡ JavaScript Improvements
+One of the biggest challenges was handling client-side routing using page.js. Instead of reloading the page on navigation, I learned how to update the content dynamically.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+Here's an example of how I used middleware functions to decorate the context before rendering:
+```js
+const root = document.body;
 
-## Create a custom `README.md`
+function decorateContext(ctx, next) {
+  ctx.render = renderView;
+  next();
+}
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+function renderView(content) {
+  render(layoutTemplate(content), root);
+}
+```
+*This ensures that each route automatically updates the page without a full reload.*
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+#### 🌍 API Handling
+Fetching data from the REST Countries API required handling asynchronous requests properly. I learned to use `async/await` with `fetch()`, and how to efficiently process large datasets.
+```js
+export async function homePage(ctx) {
+  const response = await fetch("https://restcountries.com/v3.1/all");
+  const countries = await response.json();
+  ctx.render(homeTemplate(countries));
+}
+```
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+Additionally, I implemented search and filter functionalities to improve the user experience when navigating through countries.
 
-## Submitting your solution
+#### 🎨 UI Implementation
+I worked on improving user experience (UX) by adding:
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+  - A search bar with live filtering:
+  ```js
+  const searchBar = document.getElementById("search-bar");
+  const countryName = document.getElementsByClassName("country-name");
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+  searchBar.addEventListener("input", () => {
+    Array.from(countryName).forEach((country) => {
+    if (country.innerText.toLowerCase().includes(searchBar.value.toLowerCase())) {
+      country.parentElement.parentElement.style.display = "grid";
+    } else {
+      country.parentElement.parentElement.style.display = "none";
+      }
+    });
+  });
+  ```
+  - A dark mode toggle that applies theme changes dynamically using JavaScript and CSS classes.
 
-## Sharing your solution
+By implementing these features, I strengthened my skills in frontend performance optimization, event handling, and client-side routing. 🚀
 
-There are multiple places you can share your solution:
+### 🔄 Continued Development
+There are several areas I want to improve and expand upon in future projects:
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+#### 🏗️ Enhancing Client-Side Routing
+  - Right now, I'm using page.js for client-side navigation. In future projects, I want to explore using React Router or other modern frameworks to manage routes more efficiently.
+#### ⚡ Performance Optimization
+  - Fetching data from the REST Countries API works well, but I want to implement pagination or lazy loading to improve performance when handling large datasets.
+  - Implementing localStorage caching so users don't have to re-fetch data on page reload.
+#### 🎨 UI/UX Improvements
+  - Adding animations and transitions to enhance user experience when filtering/searching for countries.
+  - Improving accessibility (a11y) by ensuring keyboard navigation and screen reader compatibility.
+#### 🌐 Expanding API Integrations
+  - Right now, the project is purely frontend-based, but in the future, I want to integrate additional APIs to display real-time weather information for each country or historical population data.
+#### 🚀 Deployment & Hosting
+  - I had some challenges with hosting and deploying projects in the past. I plan to practice using Netlify, Vercel, and GitHub Pages to ensure smooth deployments.
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+By continuing to refine these areas, I hope to build more advanced and interactive projects in the future! 🚀
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+### 📚 Useful Resources
+Here are some valuable resources that helped me during the development of this project:
 
-## Got feedback for us?
+  - 🌍 [REST Countries API](https://restcountries.com/#rest-countries) - The official API used in this project to fetch country data.
+  - 📖 [Page.js Documentation](https://www.npmjs.com/package/page.js/v/4.13.3) - Helped me understand and implement client-side routing in a simple and lightweight way.
+  - ✨ [LitHTML Guide](https://lit.dev/) - A powerful templating library that made it easier to create dynamic UI components.
+  - 🎓 [SoftUni](https://softuni.bg/) - The project was prepared during my studies at SoftUni, Bulgaria’s leading IT education institution.
+These resources were crucial in solving challenges throughout the project. I highly recommend them for anyone working on similar projects! 🚀
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+## 👨‍🎨 Author
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+- Website - [Aydan Karamehmed](https://github.com/AydanKara)
+- Frontend Mentor - [@AydanKara](https://www.frontendmentor.io/profile/AydanKara)
 
-**Have fun building!** 🚀
+## 🙏 Acknowledgments
+I would like to express my gratitude to everyone who contributed to my learning and helped me complete this project:
+
+  - Frontend Mentor - For providing such a great challenge that helped improve my frontend development skills.
+  - SoftUni - For equipping me with the necessary knowledge and skills to tackle real-world projects.
+  - The creators of Page.js and LitHTML - For developing such amazing libraries that made routing and templating much easier.
+  - The Developer Community - Special thanks to the open-source community and forums like Stack Overflow, which were incredibly helpful when debugging issues.
+
+This project would not have been possible without the support and knowledge shared by these amazing resources and individuals! 🚀🎉
