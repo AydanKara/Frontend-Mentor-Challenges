@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /*! ## Colors */
+    /* ### Primary */
+
+    --blue: hsl(246, 80%, 60%);
+    --light-orange: hsl(15, 100%, 70%);
+    /* (work) */
+    --soft-blue: hsl(195, 74%, 62%);
+    /* (play) */
+    --light-red: hsl(348, 100%, 68%);
+    /* (study) */
+    --lime-green: hsl(145, 58%, 55%);
+    /* (exercise) */
+    --violet: hsl(264, 64%, 52%);
+    /* (social) */
+    --soft-orange: hsl(43, 84%, 65%);
+    /* (self care) */
+
+    /* ### Neutral */
+
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+}
+
+html {
+    font: 62.5%/1.2 "Rubik", sans-serif;
+    color: white;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--very-dark-blue);
+    display: grid;
+    place-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.active {
+    color: white !important;
+}
+
+.main {
+    max-width: 111rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    gap: 3rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-profile {
+    grid-column: 1 / 2;
+    grid-row: -1 / 1;
+    background-color: var(--dark-blue);
+}
+
+.user {
+    background-color: var(--blue);
+    padding: 3.7rem 0 8rem 3.2rem;
+    border-radius: 15px;
+}
+
+.user .report {
+    font-size: 1.5rem;
+    color: var(--pale-blue);
+}
+
+.user .user-heading {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.user-media {
+    width: 7.8rem;
+    border: 2px solid white;
+    border-radius: 100%;
+    margin-bottom: 4.3rem;
+}
+
+.timeframes-tabs {
+    padding: 2.6rem 0 3.2rem 3.2rem;
+}
+
+.timeframes-tabs .tabs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+}
+
+.tabs-list .tabs-list-item {
+    font-size: 1.8rem;
+    color: var(--desaturated-blue);
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+.tabs-list .tabs-list-item:hover {
+    color: white;
+}
+
+.card-work {
+    background-image: linear-gradient(180deg,
+            hsl(15deg 100% 70%) 1%,
+            hsl(3deg 95% 66%) 39%,
+            hsl(352deg 91% 62%) 47%,
+            hsl(340deg 86% 57%) 50%,
+            hsl(329deg 82% 53%) 51%,
+            hsl(317deg 77% 49%) 51%,
+            hsl(305deg 73% 45%) 50%,
+            hsl(294deg 68% 41%) 49%,
+            hsl(282deg 64% 37%) 49%,
+            hsl(271deg 59% 33%) 50%,
+            hsl(259deg 54% 28%) 53%,
+            hsl(248deg 50% 24%) 61%,
+            hsl(236deg 45% 20%) 99%);
+}
+
+.card-play {
+    background-color: var(--soft-blue);
+    background-image: linear-gradient(180deg,
+            hsl(195deg 74% 62%) 1%,
+            hsl(199deg 72% 58%) 39%,
+            hsl(202deg 69% 55%) 47%,
+            hsl(205deg 67% 51%) 50%,
+            hsl(208deg 65% 48%) 51%,
+            hsl(212deg 62% 45%) 51%,
+            hsl(216deg 60% 41%) 50%,
+            hsl(219deg 57% 37%) 49%,
+            hsl(222deg 55% 34%) 49%,
+            hsl(226deg 52% 30%) 50%,
+            hsl(229deg 50% 27%) 53%,
+            hsl(233deg 48% 23%) 61%,
+            hsl(236deg 45% 20%) 99%);
+}
+
+.card-study {
+    background-color: var(--light-red);
+    background-image: linear-gradient(180deg,
+            hsl(348deg 100% 68%) 1%,
+            hsl(339deg 96% 64%) 39%,
+            hsl(329deg 91% 60%) 47%,
+            hsl(320deg 87% 56%) 50%,
+            hsl(311deg 82% 52%) 51%,
+            hsl(302deg 77% 48%) 51%,
+            hsl(292deg 72% 44%) 50%,
+            hsl(283deg 68% 40%) 49%,
+            hsl(274deg 63% 36%) 49%,
+            hsl(264deg 59% 32%) 50%,
+            hsl(255deg 54% 28%) 53%,
+            hsl(245deg 50% 24%) 61%,
+            hsl(236deg 45% 20%) 99%);
+}
+
+.card-exercise {
+    background-color: var(--lime-green);
+    background-image: linear-gradient(180deg,
+            hsl(145deg 58% 55%) 1%,
+            hsl(152deg 57% 52%) 39%,
+            hsl(160deg 56% 49%) 47%,
+            hsl(168deg 55% 46%) 50%,
+            hsl(175deg 54% 43%) 51%,
+            hsl(183deg 53% 41%) 51%,
+            hsl(190deg 52% 37%) 50%,
+            hsl(198deg 50% 35%) 49%,
+            hsl(206deg 49% 32%) 49%,
+            hsl(213deg 48% 29%) 50%,
+            hsl(221deg 47% 26%) 53%,
+            hsl(228deg 47% 23%) 61%,
+            hsl(236deg 45% 20%) 99%);
+}
+
+.card-social {
+    background-color: var(--violet);
+    background-image: linear-gradient(180deg,
+            hsl(264deg 64% 52%) 1%,
+            hsl(262deg 63% 49%) 39%,
+            hsl(259deg 61% 46%) 47%,
+            hsl(257deg 59% 44%) 50%,
+            hsl(255deg 58% 41%) 51%,
+            hsl(252deg 56% 39%) 51%,
+            hsl(250deg 54% 36%) 50%,
+            hsl(248deg 53% 33%) 49%,
+            hsl(245deg 51% 31%) 49%,
+            hsl(243deg 50% 28%) 50%,
+            hsl(241deg 49% 25%) 53%,
+            hsl(239deg 47% 23%) 61%,
+            hsl(236deg 45% 20%) 99%);
+}
+
+.card-self-care {
+    background-color: var(--soft-orange);
+    background-image: linear-gradient(180deg,
+            hsl(43deg 84% 65%) 1%,
+            hsl(29deg 81% 61%) 39%,
+            hsl(15deg 78% 58%) 47%,
+            hsl(1deg 74% 54%) 50%,
+            hsl(347deg 71% 50%) 51%,
+            hsl(333deg 68% 46%) 51%,
+            hsl(320deg 65% 43%) 50%,
+            hsl(306deg 62% 39%) 49%,
+            hsl(292deg 58% 35%) 49%,
+            hsl(278deg 55% 31%) 50%,
+            hsl(264deg 51% 27%) 53%,
+            hsl(250deg 49% 24%) 61%,
+            hsl(236deg 45% 20%) 99%);
+}
+
+.card-media {
+    position: absolute;
+    width: 7.8rem;
+    top: -0.8rem;
+    left: 16rem;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: calc(7.4rem - 2.8rem);
+    padding: 3rem;
+    border-radius: 15px;
+    background-color: var(--dark-blue);
+    z-index: 1;
+    transition: background-color .2s ease-in-out;
+}
+
+.card-info:hover {
+    background-color: hsl(235 46% 35%);
+    cursor: pointer;
+}
+
+.card-info .tracking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info .timeframes-title {
+    font-size: 1.8rem;
+}
+
+.card-info .timeframes-info h3 {
+    font-size: 5.6rem;
+    font-weight: 200;
+}
+
+.card-info .timeframes-info .timeframes-previous {
+    display: flex;
+    padding-top: .8rem;
+    font-size: 1.5rem;
+}
+
+.dots:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: 100%;
+    }
+
+    .main {
+        margin-block: 5rem;
+        padding-inline: 1.5rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
+    .user {
+        display: flex;
+        padding: 3.2rem;
+        gap: 2rem;
+    }
+
+    .user-media {
+        margin-bottom: 0;
+    }
+
+    .user-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .user .user-heading {
+        font-size: 2rem;
+    }
+
+    .card-profile {
+        text-align: center;
+    }
+
+    .timeframes-tabs .tabs-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .timeframes-tabs {
+        padding: 2.6rem;
+    }
+
+    .timeframes-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-media {
+        left: 21rem;
+    }
+
+    .card-info {
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .card-info .timeframes-info h3 {
+        font-size: 3.6rem;
+        font-weight: 200;
+    }
+}
