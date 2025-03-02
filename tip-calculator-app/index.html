@@ -18,11 +18,13 @@
   </head>
   <body>
     <header>
+      <h1 class="sr-only">Tip Calculator App</h1>
       <img src="images/logo.svg" alt="Site Logo" />
     </header>
     <main class="container">
       <div class="calculate-section">
         <section class="bill-section">
+          <h2 class="sr-only">Bill Amount</h2>
           <label for="bill">Bill</label>
           <div class="input-wrapper">
             <img src="images/icon-dollar.svg" alt="Dollar Icon" />
@@ -36,6 +38,7 @@
           </div>
         </section>
         <section class="tip-section">
+          <h2 class="sr-only">Select Tip Percentage</h2>
           <label>Select Tip %</label>
           <div class="tip-buttons" role="group" aria-label="Tip Percentage">
             <button class="tip" data-value="5" aria-label="5% Tip">5%</button>
@@ -61,6 +64,7 @@
           </div>
         </section>
         <section class="people-section">
+          <h2 class="sr-only">Number of People</h2>
           <label for="people">Number of People</label>
           <div class="input-wrapper">
             <img src="images/icon-person.svg" alt="Person Icon" />
@@ -76,6 +80,7 @@
         </section>
       </div>
       <section class="result-section">
+        <h2 class="sr-only">Calculation Results</h2>
         <div class="result">
           <p>
             Tip Amount <span><br />/ person</span>
