@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: hsl(172, 61%, 77%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 50px 0 0 0;
+}
+
+/* Hide default arrows in number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]:hover {
+  cursor: pointer;
+  caret-color: hsl(172, 67%, 45%);
+  /* Change the text cursor (caret) color */
+}
+
+.container {
+  background: white;
+  padding: 24px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.calculate-section {
+  flex: 0 0 46.145%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bill-section,
+.tip-section,
+.people-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.input-wrapper img {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+label {
+  font-size: 16px;
+  color: hsl(186, 14%, 43%);
+  display: block;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 6px 15px;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  background: hsl(189, 41%, 97%);
+  text-align: right;
+  outline: none;
+  transition: outline .1s ease;
+}
+
+input:focus,
+input:hover {
+  outline: 3px solid hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+
+
+
+.tip-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.tip {
+  width: 100%;
+  background: hsl(183, 100%, 15%);
+  color: white;
+  border: none;
+  padding: 6px;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tip:hover,
+.tip:focus,
+.tip.active {
+  background: hsl(172, 61%, 77%);
+  color: hsl(183, 100%, 15%);
+}
+
+.result-section {
+  background: hsl(183, 100%, 15%);
+  padding: 24px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result p {
+  font-size: 16px;
+}
+
+.result span {
+  color: hsl(186, 14%, 43%);
+  font-size: 13px;
+}
+
+.result h2 {
+  font-size: 32px;
+  margin: 5px 0;
+  color: hsl(172, 67%, 45%);
+}
+
+#reset {
+  width: 100%;
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 32px;
+  transition: background 0.3s;
+}
+
+#reset:hover {
+  background: hsl(172, 61%, 77%);
+}
+
+#reset:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.error-message {
+  position: absolute;
+  top: -30px;
+  right: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(13, 70%, 61%);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Show error when input is invalid */
+.input-error,
+.input-error:focus,
+.input-error:hover {
+  outline: 3px solid hsl(13, 70%, 61%);
+}
+
+/* Make error message visible */
+.show-error {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+    gap: 87px;
+    margin: 0;
+  }
+
+  .container {
+    max-width: 920px;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 32px;
+  }
+
+  .calculate-section {
+    padding: 13px 0 16px 16px;
+  }
+
+  .tip-buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .result-section {
+    padding: 40px;
+  }
+
+  .result h2 {
+    font-size: 48px;
+  }
+
+  #reset {
+    margin-top: 98px;
+  }
+}

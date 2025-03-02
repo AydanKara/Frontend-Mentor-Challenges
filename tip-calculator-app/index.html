@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="Site Logo" />
+    </header>
+    <main class="container">
+      <div class="calculate-section">
+        <section class="bill-section">
+          <label for="bill">Bill</label>
+          <div class="input-wrapper">
+            <img src="images/icon-dollar.svg" alt="Dollar Icon" />
+            <input
+              type="number"
+              id="bill"
+              min="0"
+              placeholder="0"
+              aria-label="Bill Amount"
+            />
+          </div>
+        </section>
+        <section class="tip-section">
+          <label>Select Tip %</label>
+          <div class="tip-buttons" role="group" aria-label="Tip Percentage">
+            <button class="tip" data-value="5" aria-label="5% Tip">5%</button>
+            <button class="tip" data-value="10" aria-label="10% Tip">
+              10%
+            </button>
+            <button class="tip" data-value="15" aria-label="15% Tip">
+              15%
+            </button>
+            <button class="tip" data-value="25" aria-label="25% Tip">
+              25%
+            </button>
+            <button class="tip" data-value="50" aria-label="50% Tip">
+              50%
+            </button>
+            <input
+              type="number"
+              id="custom-tip"
+              min="1"
+              placeholder="Custom"
+              aria-label="Custom Tip"
+            />
+          </div>
+        </section>
+        <section class="people-section">
+          <label for="people">Number of People</label>
+          <div class="input-wrapper">
+            <img src="images/icon-person.svg" alt="Person Icon" />
+            <span class="error-message" id="error-message">Can't be zero</span>
+            <input
+              type="number"
+              id="people"
+              min="0"
+              placeholder="0"
+              aria-label="Number of People"
+            />
+          </div>
+        </section>
+      </div>
+      <section class="result-section">
+        <div class="result">
+          <p>
+            Tip Amount <span><br />/ person</span>
+          </p>
+          <h2 id="tip-amount" aria-live="polite">$0.00</h2>
+        </div>
+        <div class="result">
+          <p>
+            Total <span><br />/ person</span>
+          </p>
+          <h2 id="total-amount" aria-live="polite">$0.00</h2>
+        </div>
+        <button id="reset" aria-label="Reset Calculator">RESET</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
