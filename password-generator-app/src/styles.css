@@ -36,8 +36,13 @@ h1 {
   color: var(--grey);
 }
 
+input,
+button {
+  font-family: inherit;
+}
+
 .container {
-  margin-top: 133px;
+  margin-top: 136px;
   text-align: center;
   width: 540px;
 }
@@ -52,7 +57,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   background-color: var(--bg-section);
-  margin-block: 31px 24px;
+  margin-block: 30px 24px;
 }
 
 #password {
@@ -203,7 +208,6 @@ input[type="checkbox"]:focus-visible {
 #generate-btn {
   background: var(--primary-green);
   border: none;
-  font-family: inherit;
   font-size: var(--body-m);
   cursor: pointer;
   width: 100%;
