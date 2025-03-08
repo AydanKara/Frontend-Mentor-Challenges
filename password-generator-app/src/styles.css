@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 92vh;
+  height: 93vh;
   margin: 0;
 }
 
@@ -52,7 +52,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   background-color: var(--bg-section);
-  margin-block: 30px 24px;
+  margin-block: 31px 24px;
 }
 
 #password {
@@ -61,7 +61,7 @@ h1 {
   color: var(--text-color);
   font-size: var(--heading-l);
   font-weight: 600;
-  padding: 20px 0px 20px 32px;
+  padding: 21px 0px 21px 32px;
   width: 100%;
 }
 
@@ -95,6 +95,7 @@ label {
 }
 
 .char-length {
+  margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,7 +112,7 @@ input[type="range"] {
   appearance: none;
   width: 100%;
   height: 8px;
-  margin-block: 12px 22px;
+  margin-block: 10px 22px;
   background: var(--primary-green);
   outline: none;
   transition: background 0.15s ease-in-out;
@@ -121,8 +122,8 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   background: var(--text-color);
   border-radius: 50%;
   cursor: pointer;
@@ -176,7 +177,7 @@ input[type="checkbox"]:focus-visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-block: 32px;
+  margin-block: 22px 32px;
   font-size: var(--body-m);
   color: var(--grey);
   background-color: var(--bg-body);
@@ -225,6 +226,7 @@ input[type="checkbox"]:focus-visible {
 }
 
 #generate-btn img {
+  margin-left: 14px;
   transition: filter 0.3s ease;
 }
 
