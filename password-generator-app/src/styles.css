@@ -28,7 +28,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 93vh;
   margin: 0;
 }
 
@@ -38,6 +37,7 @@ h1 {
 }
 
 .container {
+  margin-top: 133px;
   text-align: center;
   width: 540px;
 }
@@ -226,7 +226,7 @@ input[type="checkbox"]:focus-visible {
 }
 
 #generate-btn img {
-  margin-left: 14px;
+  margin-left: 22px;
   transition: filter 0.3s ease;
 }
 
