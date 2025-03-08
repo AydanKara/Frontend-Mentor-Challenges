@@ -12,7 +12,13 @@
 
       <!-- Generated password display -->
       <div class="password-display">
-        <input type="text" id="password" readonly />
+        <input
+          type="text"
+          id="password"
+          readonly
+          placeholder="P4$5W0rD!"
+          aria-label="Password"
+        />
         <span class="copy-msg">COPIED</span>
         <button id="copy-btn" aria-label="Copy password">
           <img src="assets/images/icon-copy.svg" alt="Copy Icon" />
@@ -21,19 +27,20 @@
 
       <!-- Options section -->
       <section class="options">
+        <h2 class="sr-only">OPTIONS</h2>
         <div class="char-length">
           <label for="length">Character Length</label>
-          <span id="length-value">10</span>
+          <span id="length-value">0</span>
         </div>
 
-        <input type="range" id="length" min="6" max="14" value="10" />
+        <input type="range" id="length" min="0" max="20" value="0" />
 
         <label
           ><input type="checkbox" id="uppercase" /> Include Uppercase
           Letters</label
         >
         <label
-          ><input type="checkbox" id="lowercase" checked /> Include Lowercase
+          ><input type="checkbox" id="lowercase" /> Include Lowercase
           Letters</label
         >
         <label><input type="checkbox" id="numbers" /> Include Numbers</label>
@@ -44,10 +51,10 @@
           <span>STRENGTH</span>
           <div class="strength-states">
             <span id="strength-state">MEDIUM</span>
-            <span id="strength-meter"></span>
-            <span id="strength-meter"></span>
-            <span id="strength-meter"></span>
-            <span id="strength-meter"></span>
+            <span class="strength-meter"></span>
+            <span class="strength-meter"></span>
+            <span class="strength-meter"></span>
+            <span class="strength-meter"></span>
           </div>
         </div>
 

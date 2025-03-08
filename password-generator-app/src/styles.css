@@ -28,14 +28,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 97vh;
   margin: 0;
 }
 
-h1,
-h2,
-p {
+h1 {
   margin: 0;
+  color: var(--grey);
 }
 
 .container {
@@ -67,7 +66,7 @@ h1 {
 }
 
 .copy-msg {
-    visibility: hidden;
+  visibility: hidden;
   font-size: var(--body-m);
   color: var(--primary-green);
   margin-right: 16px;
@@ -193,7 +192,7 @@ input[type="checkbox"]:focus-visible {
   margin-right: 6px;
 }
 
-#strength-meter {
+.strength-meter {
   width: 10px;
   height: 28px;
   margin-left: 9px;
@@ -222,8 +221,7 @@ input[type="checkbox"]:focus-visible {
 }
 
 #copy-btn:hover img {
-  filter: brightness(0) saturate(100%) invert(91%) sepia(5%) saturate(200%)
-    hue-rotate(180deg);
+  filter: brightness(0) saturate(100%) invert(91%) sepia(5%) saturate(200%) hue-rotate(180deg);
 }
 
 #generate-btn img {
@@ -231,6 +229,16 @@ input[type="checkbox"]:focus-visible {
 }
 
 #generate-btn:hover img {
-  filter: brightness(0) saturate(100%) invert(77%) sepia(39%) saturate(589%)
-    hue-rotate(85deg);
+  filter: brightness(0) saturate(100%) invert(77%) sepia(39%) saturate(589%) hue-rotate(85deg);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

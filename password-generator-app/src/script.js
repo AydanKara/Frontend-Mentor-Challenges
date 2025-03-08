@@ -5,7 +5,7 @@ const copyBtn = document.getElementById("copy-btn");
 const lengthSlider = document.getElementById("length");
 const lengthValue = document.getElementById("length-value");
 const checkboxes = document.querySelectorAll(".options input[type='checkbox']");
-const strengthMeters = document.querySelectorAll("#strength-meter");
+const strengthMeters = document.querySelectorAll(".strength-meter");
 const strengthState = document.getElementById("strength-state");
 const generateBtn = document.getElementById("generate-btn");
 
@@ -19,6 +19,7 @@ const charSets = new Map([
 
 // Strength levels using Map
 const strengthLevels = new Map([
+  [0, { text: "", color: "" }],
   [1, { text: "TOO WEAK!", color: "var(--weak-red)" }],
   [2, { text: "WEAK", color: "var(--weak-orange)" }],
   [3, { text: "MEDIUM", color: "var(--medium-yellow)" }],
@@ -44,7 +45,7 @@ function generatePassword(length, options) {
 
 // Function: Get password strength based on length
 const getStrength = (length) =>
-  length > 12 ? 4 : length > 8 ? 3 : length > 6 ? 2 : 1;
+  length > 15 ? 4 : length > 10 ? 3 : length > 5 ? 2 : length > 0 ? 1 : 0;
 
 // Function: Update strength meter UI
 function updateStrength(length) {
@@ -77,7 +78,7 @@ function updateUI() {
 // Event Listener for Generate Button
 generateBtn.addEventListener("click", () => {
   const options = new Map();
-  copyMsg.style.visibility = "hidden"
+  copyMsg.style.visibility = "hidden";
   checkboxes.forEach((checkbox) => options.set(checkbox.id, checkbox.checked));
 
   passwordField.value = generatePassword(lengthSlider.value, options);
@@ -88,7 +89,7 @@ generateBtn.addEventListener("click", () => {
 copyBtn.addEventListener("click", async () => {
   if (passwordField.value) {
     await navigator.clipboard.writeText(passwordField.value);
-    copyMsg.style.visibility = "visible"
+    copyMsg.style.visibility = "visible";
   }
 });
 
