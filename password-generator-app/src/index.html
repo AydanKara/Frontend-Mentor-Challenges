@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Password Generator</h1>
+
+      <!-- Generated password display -->
+      <div class="password-display">
+        <input type="text" id="password" readonly />
+        <span class="copy-msg">COPIED</span>
+        <button id="copy-btn" aria-label="Copy password">
+          <img src="assets/images/icon-copy.svg" alt="Copy Icon" />
+        </button>
+      </div>
+
+      <!-- Options section -->
+      <section class="options">
+        <div class="char-length">
+          <label for="length">Character Length</label>
+          <span id="length-value">10</span>
+        </div>
+
+        <input type="range" id="length" min="6" max="14" value="10" />
+
+        <label
+          ><input type="checkbox" id="uppercase" /> Include Uppercase
+          Letters</label
+        >
+        <label
+          ><input type="checkbox" id="lowercase" checked /> Include Lowercase
+          Letters</label
+        >
+        <label><input type="checkbox" id="numbers" /> Include Numbers</label>
+        <label><input type="checkbox" id="symbols" /> Include Symbols</label>
+
+        <!-- Strength Indicator -->
+        <div class="strength">
+          <span>STRENGTH</span>
+          <div class="strength-states">
+            <span id="strength-state">MEDIUM</span>
+            <span id="strength-meter"></span>
+            <span id="strength-meter"></span>
+            <span id="strength-meter"></span>
+            <span id="strength-meter"></span>
+          </div>
+        </div>
+
+        <!-- Generate Button -->
+        <button id="generate-btn">
+          GENERATE
+          <img
+            class="arrow"
+            src="assets/images/icon-arrow-right.svg"
+            alt="Icon Arrow Right"
+          />
+        </button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

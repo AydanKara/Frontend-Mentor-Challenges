@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading-m: 24px;
+  --heading-l: 32px;
+  --body-m: 18px;
+  --bg-body: #18171f;
+  --bg-section: #24232c;
+  --text-color: #e6e5ea;
+  --grey: #817d92;
+  --primary-green: #a4ffaf;
+  --weak-red: #f64a4a;
+  --weak-orange: #fb7c58;
+  --medium-yellow: #f8cd65;
+  --font-family: "JetBrains Mono", monospace;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-body);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  width: 540px;
+}
+
+h1 {
+  font-size: var(--heading-m);
+  line-height: 43px;
+}
+
+.password-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-section);
+  margin-block: 30px 24px;
+}
+
+#password {
+  border: none;
+  background: transparent;
+  color: var(--text-color);
+  font-size: var(--heading-l);
+  font-weight: 600;
+  padding: 20px 0px 20px 32px;
+  width: 100%;
+}
+
+.copy-msg {
+    visibility: hidden;
+  font-size: var(--body-m);
+  color: var(--primary-green);
+  margin-right: 16px;
+}
+
+#copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-green);
+  padding-right: 32px;
+}
+
+.options {
+  padding: 24px 32px 32px 32px;
+  background-color: var(--bg-section);
+  text-align: left;
+}
+
+label {
+  width: fit-content;
+  font-size: var(--body-m);
+  display: block;
+  padding-block: 10px;
+  cursor: pointer;
+}
+
+.char-length {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#length-value {
+  font-size: var(--heading-l);
+  color: var(--primary-green);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  /* Remove default styles */
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  margin-block: 12px 22px;
+  background: var(--primary-green);
+  outline: none;
+  transition: background 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: var(--text-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: var(--bg-body);
+  border: 1px solid var(--primary-green);
+}
+
+/* Hide default checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  /* Remove default checkbox */
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 1px solid var(--text-color);
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom Checkbox when checked */
+input[type="checkbox"]:checked {
+  border-color: var(--primary-green);
+  background-color: var(--primary-green);
+  background-image: url("./assets/images/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+}
+
+/* Hover effect */
+input[type="checkbox"]:hover {
+  border-color: var(--primary-green);
+}
+
+/* Focus state (for accessibility) */
+input[type="checkbox"]:focus-visible {
+  outline: 2px solid var(--primary-green);
+  outline-offset: 2px;
+}
+
+.strength {
+  height: 72px;
+  padding-inline: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 32px;
+  font-size: var(--body-m);
+  color: var(--grey);
+  background-color: var(--bg-body);
+}
+
+.strength-states {
+  display: flex;
+  align-items: center;
+}
+
+#strength-state {
+  color: var(--text-color);
+  margin-right: 6px;
+}
+
+#strength-meter {
+  width: 10px;
+  height: 28px;
+  margin-left: 9px;
+  border: 1px solid var(--text-color);
+}
+
+#generate-btn {
+  background: var(--primary-green);
+  border: none;
+  font-family: inherit;
+  font-size: var(--body-m);
+  cursor: pointer;
+  width: 100%;
+  height: 65px;
+  transition: 0.2s ease-in-out;
+}
+
+#generate-btn:hover {
+  background: transparent;
+  border: 1px solid var(--primary-green);
+  color: var(--primary-green);
+}
+
+#copy-btn img {
+  transition: filter 0.3s ease;
+}
+
+#copy-btn:hover img {
+  filter: brightness(0) saturate(100%) invert(91%) sepia(5%) saturate(200%)
+    hue-rotate(180deg);
+}
+
+#generate-btn img {
+  transition: filter 0.3s ease;
+}
+
+#generate-btn:hover img {
+  filter: brightness(0) saturate(100%) invert(77%) sepia(39%) saturate(589%)
+    hue-rotate(85deg);
+}
