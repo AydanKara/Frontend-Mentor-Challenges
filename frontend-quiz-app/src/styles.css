@@ -1,0 +1,119 @@
+/* Import Rubik Font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+:root {
+    font-size: 16px;
+    /* Colors */
+    --primary-color: #A729F5;
+    --dark-blue: #313E51;
+    --medium-blue: #3B4D66;
+    --light-blue: #626C7F;
+    --border-blue: #ABC1E1;
+    --background-light: #F4F6FA;
+    --white: #FFFFFF;
+}
+
+/* Body */
+body {
+    background: var(--background-light);
+    color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Theme Toggle (Top Right) */
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--dark-blue);
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1100px;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Left Section */
+#welcome-section {
+    align-self: flex-start;
+    flex: 1;
+    display: flex;
+}
+
+#welcome-section h1 {
+    align-self: flex-start;
+    font-size: 64px; /* Display Rubik Medium */
+    font-weight: 300;
+    line-height: 100%;
+}
+
+#welcome-section strong {
+    font-weight: 700;
+}
+
+/* Right Section */
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+.quiz-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    border: 2px solid var(--border-blue);
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--white);
+    color: var(--dark-blue);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quiz-option img {
+    width: 32px;
+    height: 32px;
+}
+
+.quiz-option:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #welcome-section h1 {
+        font-size: 64px;
+    }
+}
