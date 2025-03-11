@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header (Theme Toggle) -->
+    <header class="container">
+      <h1 class="quiz-title">
+        <img
+          class="img-accessibility"
+          src="./assets/images/icon-accessibility.svg"
+          alt="Accessibility icon"
+        />
+        Accessibility
+      </h1>
+      <div class="switch-container">
+        <img
+          src="./assets/images/icon-sun-dark.svg"
+          class="icon"
+          alt="Sun Icon"
+        />
+        <button class="switch" id="themeSwitch"></button>
+        <img
+          src="./assets/images/icon-moon-dark.svg"
+          class="icon"
+          alt="Moon Icon"
+        />
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Left Section -->
+      <section id="welcome-section">
+        <h1>Quiz completed <br /><strong>You scored...</strong></h1>
+      </section>
+
+      <!-- Right Section -->
+      <section class="quiz-score-container">
+        <article class="quiz-score-wrapper">
+          <h2 class="quiz-title">
+            <img
+              class="img-accessibility"
+              src="./assets/images/icon-accessibility.svg"
+              alt="Accessibility icon"
+            />
+            Accessibility
+          </h2>
+          <article class="quiz-results">
+            <p class="quiz-score">8</p>
+            <p class="quiz-score-text">out of 10</p>
+          </article>
+        </article>
+        <button class="quiz-retry">Play Again</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

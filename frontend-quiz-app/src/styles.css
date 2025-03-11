@@ -193,20 +193,6 @@ header .switch-container {
     border-color: var(--purple);
 }
 
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #welcome-section h1 {
-        font-size: 64px;
-    }
-}
-
 /*! Question Page Specific Styles */
 .question-header {
     display: flex;
@@ -220,7 +206,7 @@ header .switch-container {
     height: 5.6rem;
 }
 
-#quiz-title {
+.quiz-title {
     display: flex;
     align-items: center;
     gap: 2.4rem;
@@ -229,7 +215,7 @@ header .switch-container {
     color: var(--dark-navy);
 }
 
-#quiz-title img {
+.quiz-title img {
     width: 5.6rem;
     height: 5.6rem;
     padding: 1rem;
@@ -348,6 +334,66 @@ progress::-webkit-progress-value {
     justify-content: center;
     align-items: center;
     gap: .8rem;
+}
+
+/*! Completed Page Specific Styles */
+.quiz-score-container {
+    max-width: 56.4rem;
+    flex: 1;
+}
+
+.quiz-score-wrapper {
+    background: var(--pure-white);
+    padding: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    border-radius: 24px;
+    box-shadow: 0 16px 40px rgba(143, 160, 193, 14%);
+}
+
+.quiz-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.quiz-results .quiz-score {
+    font-size: var(--display-rubik-medium);
+    font-weight: var(--heading-medium);
+    color: var(--dark-navy);
+    line-height: var(--display-line-height);
+}
+
+.quiz-score-text {
+    font-size: var(--body-m);
+    line-height: var(--body-line-height);
+    color: var(--grey-navy);
+}
+
+.quiz-retry {
+    margin-top: 3.2rem;
+    width: 100%;
+    height: 9.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    font-size: var(--heading-s);
+    font-weight: var(--heading-medium);
+    background: var(--purple);
+    color: var(--pure-white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 16px 40px rgba(143, 160, 193, 14%);
+}
+
+.quiz-retry:hover {
+    opacity: .5;
 }
 
 /* Responsive Design */
