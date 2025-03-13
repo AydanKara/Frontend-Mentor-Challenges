@@ -10,14 +10,7 @@
   <body>
     <!-- Header (Theme Toggle) -->
     <header class="container">
-      <h1 id="quiz-title">
-        <img
-          class="img-accessibility"
-          src="./assets/images/icon-accessibility.svg"
-          alt="Accessibility icon"
-        />
-        Accessibility
-      </h1>
+      <h1 id="quiz-title"></h1>
       <div class="switch-container">
         <img
           src="./assets/images/icon-sun-dark.svg"
@@ -37,50 +30,17 @@
     <main class="container">
       <!-- Left Section (Question Info) -->
       <section id="question-info">
-        <p>Question <span id="question-number">6</span> of 10</p>
-        <p id="question-text">
-          Which of these color contrast ratios defines the minimum WCAG 2.1
-          Level AA requirement for normal text?
-        </p>
+        <p>Question <span id="question-number"></span> of 10</p>
+        <p id="question-text"></p>
         <progress id="progress-bar" value="0" max="10"></progress>
       </section>
 
       <!-- Right Section (Answer Options) -->
       <section class="quiz-answers">
-        <button class="answer-option correct" data-answer="A">
-          <strong class="correct">A</strong>4.5 : 1
-          <img
-            id="answer-icon"
-            src="./assets/images/icon-correct.svg"
-            alt="Answer Icon"
-          />
-        </button>
-        <button class="answer-option incorrect" data-answer="B">
-          <strong class="incorrect">B</strong>3 : 1
-          <img
-            id="answer-icon"
-            src="./assets/images/icon-incorrect.svg"
-            alt="Answer Icon"
-          />
-        </button>
-        <button class="answer-option" data-answer="C">
-          <strong>C</strong>2.5 : 1
-          <img
-            id="answer-icon"
-            src="./assets/images/icon-correct.svg"
-            alt="Answer Icon"
-            hidden
-          />
-        </button>
-        <button class="answer-option" data-answer="D">
-          <strong>D</strong>5 : 1
-          <img
-            id="answer-icon"
-            src="./assets/images/icon-correct.svg"
-            alt="Answer Icon"
-            hidden
-          />
-        </button>
+        <button class="answer-option" data-answer="A"></button>
+        <button class="answer-option" data-answer="B"></button>
+        <button class="answer-option" data-answer="C"></button>
+        <button class="answer-option" data-answer="D"></button>
         <button class="answer-option submit">Submit answer</button>
         <p id="answer-validation">
           <img

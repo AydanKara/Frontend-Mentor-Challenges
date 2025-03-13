@@ -214,7 +214,7 @@
         },
         {
             "title": "JavaScript",
-            "icon": "./assets/images/icon-js.svg",
+            "icon": "./assets/images/icon-javascript.svg",
             "questions": [
                 {
                     "question": "Which syntax is correct to output 'Hello World' in an alert box?",
@@ -279,10 +279,10 @@
                 {
                     "question": "What is the correct way to write a JavaScript array?",
                     "options": [
-                        "var colors = (1:'red', 2:'green', 3:'blue')",
-                        "var colors = ['red', 'green', 'blue']",
-                        "var colors = 'red', 'green', 'blue'",
-                        "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')"
+                        "const colors = (1:'red', 2:'green', 3:'blue')",
+                        "const colors = ['red', 'green', 'blue']",
+                        "const colors = 'red', 'green', 'blue'",
+                        "const colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')"
                     ],
                     "answer": "var colors = ['red', 'green', 'blue']"
                 },

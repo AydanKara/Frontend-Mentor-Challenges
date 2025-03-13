@@ -206,7 +206,7 @@ header .switch-container {
     height: 5.6rem;
 }
 
-.quiz-title {
+#quiz-title {
     display: flex;
     align-items: center;
     gap: 2.4rem;
@@ -215,7 +215,7 @@ header .switch-container {
     color: var(--dark-navy);
 }
 
-.quiz-title img {
+#quiz-title img {
     width: 5.6rem;
     height: 5.6rem;
     padding: 1rem;
@@ -292,7 +292,7 @@ progress::-webkit-progress-value {
 }
 
 .answer-option #answer-icon {
-    visibility: visible;
+    visibility: hidden;
     margin-inline: auto 2.4rem;
 }
 
