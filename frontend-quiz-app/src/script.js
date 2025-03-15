@@ -65,12 +65,13 @@ function loadSelectedQuiz() {
 
 /* Load a Question */
 function loadQuestion() {
+  const progressBar = document.querySelector("#progress-bar");
   const questionData = currentQuiz.questions[currentQuestionIndex];
   document.querySelector("#question-number").textContent =
     currentQuestionIndex + 1;
   document.querySelector("#question-text").textContent = questionData.question;
-  document.querySelector("#progress-bar").max = currentQuiz.questions.length;
-  document.querySelector("#progress-bar").value = currentQuestionIndex;
+  progressBar.max = currentQuiz.questions.length;
+  progressBar.value = currentQuestionIndex + 1;
 
   const answerButtons = document.querySelectorAll(".answer-option");
   answerButtons.forEach((button, index) => {
@@ -129,7 +130,7 @@ function submitAnswer() {
   }
 
   document.querySelector("#answer-validation").style.visibility = "hidden";
-  console.log(selectedOption);
+
   const correctAnswer = currentQuiz.questions[currentQuestionIndex].answer;
   if (selectedOption.dataset.answer === correctAnswer) {
     selectedOption.classList.add("correct");
@@ -143,7 +144,7 @@ function submitAnswer() {
     selectedOption.lastChild.src = "./assets/images/icon-incorrect.svg";
     selectedOption.lastChild.style.visibility = "visible";
   }
-
+  submitButton.textContent = "Next Question";
   setTimeout(nextQuestion, 1000);
 }
 const submitButton = document.querySelector(".submit");
@@ -155,6 +156,7 @@ if (submitButton) {
 
 /* Move to Next Question */
 function nextQuestion() {
+  submitButton.textContent = "Submit Answer";
   currentQuestionIndex++;
   if (currentQuestionIndex < currentQuiz.questions.length) {
     loadQuestion();
@@ -189,6 +191,7 @@ document.addEventListener("DOMContentLoaded", showFinalScore);
 const quizRetry = document.querySelector(".quiz-retry");
 if (quizRetry) {
   quizRetry.addEventListener("click", () => {
+    localStorage.clear();
     window.location.href = "index.html";
   });
 } else {
@@ -198,6 +201,8 @@ if (quizRetry) {
 /* Implement Dark Mode Toggle */
 const themeSwitch = document.getElementById("themeSwitch");
 const body = document.body;
+const sunIcon = document.getElementById("sunIcon");
+const moonIcon = document.getElementById("moonIcon");
 
 themeSwitch.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
@@ -210,5 +215,11 @@ themeSwitch.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark-mode");
+    sunIcon.src = "./assets/images/icon-sun-light.svg";
+    moonIcon.src = "./assets/images/icon-moon-light.svg";
+  } else {
+    body.classList.remove("dark-mode");
+    sunIcon.src = "./assets/images/icon-sun-dark.svg";
+    moonIcon.src = "./assets/images/icon-moon-dark.svg";
   }
 });
