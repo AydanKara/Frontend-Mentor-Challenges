@@ -15,6 +15,7 @@
 }
 
 #welcome-section strong {
+    display: block;
     margin-top: .8rem;
     font-weight: var(--heading-medium);
     line-height: var(--heading-line-height);
