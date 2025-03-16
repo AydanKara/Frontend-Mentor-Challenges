@@ -39,5 +39,7 @@ header {
 }
 
 header .switch-container {
+    display: flex;
+    align-items: center;
     margin-left: auto;
 }

@@ -45,6 +45,9 @@ async function initApp() {
   // Initialize keyboard navigation for the entire app
   initKeyboardNavigation();
 
+  // Set dark mode at the beginning
+  localStorage.setItem("theme", "dark");
+
   const path = window.location.pathname;
 
   // Check which page is active and initialize accordingly
@@ -85,11 +88,6 @@ function initStartMenu() {
     });
     // Optionally, add keyboard event listeners here if needed.
   });
-
-  // Auto-focus the first quiz button for keyboard users.
-  if (quizButtons.length > 0) {
-    quizButtons[0].focus();
-  }
 }
 
 /* --------------------- Quiz Page Initialization --------------------- */
@@ -211,9 +209,6 @@ function initCompletedPage() {
       localStorage.removeItem("selectedQuiz");
       window.location.href = "index.html";
     });
-
-    // Auto-focus the retry button for keyboard users
-    retryButton.focus();
   }
 }
 
