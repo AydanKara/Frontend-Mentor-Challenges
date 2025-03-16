@@ -1,0 +1,33 @@
+:root {
+    /* Font Family */
+    --font-primary: 'Rubik', sans-serif;
+
+    /* Display */
+    --display-rubik-medium: 14.4rem;
+    --display-line-height: 100%;
+
+    /* Headings */
+    --heading-l: 6.4rem;
+    --heading-m: 3.6rem;
+    --heading-s: 2.8rem;
+    --heading-medium: 500;
+    --heading-light: 300;
+    --heading-line-height: 100%;
+
+    /* Body */
+    --body-m: 2.4rem;
+    --body-s: 2rem;
+    --body-regular: 400;
+    --body-line-height: 150%;
+
+    /* Colors */
+    --purple: #A729F5;
+    --dark-navy: #313E51;
+    --navy: #3B4D66;
+    --grey-navy: #626C7F;
+    --light-bluish: #ABC1E1;
+    --light-grey: #F4F6FA;
+    --pure-white: #FFFFFF;
+    --green: #26d782;
+    --red: #ee5454;
+}

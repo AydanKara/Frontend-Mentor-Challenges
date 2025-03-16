@@ -1,0 +1,9 @@
+@import url('./variables.css');
+@import url('./base.css');
+@import url('./layout.css');
+@import url('./start-menu.css');
+@import url('./components.css');
+@import url('./quiz.css');
+@import url('./completed.css');
+@import url('./dark-mode.css');
+@import url('./responsive.css');

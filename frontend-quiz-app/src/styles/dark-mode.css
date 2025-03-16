@@ -1,0 +1,39 @@
+/*! Dark Mode  */
+.dark-mode .switch::before {
+    transform: translateX(2rem);
+}
+
+body.dark-mode {
+    background-color: var(--dark-navy);
+    color: var(--pure-white);
+}
+
+body.dark-mode::before {
+    background: url("../assets/images/pattern-background-desktop-dark.svg");
+    background-size: cover;
+}
+
+body.dark-mode #welcome-section p,
+body.dark-mode #question-info p,
+body.dark-mode .quiz-score-text {
+    color: var(--light-bluish);
+}
+
+body.dark-mode .quiz-option,
+body.dark-mode .answer-option:not(.submit) {
+    background: var(--navy);
+    color: var(--pure-white);
+}
+
+body.dark-mode #question-info #question-text,
+body.dark-mode .quiz-results .quiz-score {
+    color: var(--pure-white);
+}
+
+body.dark-mode .quiz-score-wrapper {
+    background: var(--navy);
+}
+
+body.dark-mode .quiz-retry.active {
+    border: 3px solid var(--pure-white);
+}

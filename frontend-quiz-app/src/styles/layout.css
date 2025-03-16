@@ -1,0 +1,43 @@
+/* Body */
+body {
+    position: relative;
+    background-color: var(--light-grey);
+    color: var(--dark-navy);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/pattern-background-desktop-light.svg");
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 144rem;
+    padding-inline: 14rem;
+    width: 100%;
+}
+
+header {
+    margin-block: 8.3rem;
+    height: 5.6rem;
+}
+
+header .switch-container {
+    margin-left: auto;
+}

@@ -1,0 +1,23 @@
+/* Theme Toggle (Top Right) */
+.switch {
+    width: 4.8rem;
+    height: 2.8rem;
+    margin-inline: 1.6rem;
+    background: var(--purple);
+    border-radius: 5rem;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.switch::before {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: var(--pure-white);
+    border-radius: 50%;
+    top: .4rem;
+    left: .4rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}

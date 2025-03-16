@@ -1,3 +1,14 @@
+/* 
+* This file is the first variant of the javascript file for the quiz app.
+* It contains the main logic for the quiz app, including loading quiz data,
+ * handling quiz selection, question display, and user interaction.
+ * It also includes the logic for the completed page and dark mode toggle.
+ * The code is not modularized and contains a mix of UI and logic.
+ * The code is not organized into functions or modules, making it difficult to read and maintain.
+ * The code is not reusable and does not follow best practices for separation of concerns.
+ * The code is not structured for scalability and may be difficult to extend or modify in the future.
+*/
+
 let quizData = {};
 let currentQuiz = {};
 let currentQuestionIndex = 0;
@@ -26,11 +37,15 @@ function setupEventListeners() {
   const quizButtons = document.querySelectorAll(".quiz-option");
   quizButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      const selectedSubject = button.dataset.subject;
-      localStorage.setItem("selectedQuiz", selectedSubject);
-      window.location.href = "quiz.html";
+      handleQuizSelection(button);
     });
   });
+}
+
+function handleQuizSelection(button) {
+  const selectedSubject = button.dataset.subject;
+  localStorage.setItem("selectedQuiz", selectedSubject);
+  window.location.href = "quiz.html";
 }
 
 /* Ensure loadSelectedQuiz() Runs on quiz.html */
@@ -75,10 +90,9 @@ function loadQuestion() {
 
   const answerButtons = document.querySelectorAll(".answer-option");
   answerButtons.forEach((button, index) => {
-    if (index === answerButtons.length - 1) return; // Skip the last button
-
     // Clear previous event listeners
-    button.replaceWith(button.cloneNode(true));
+    const newButton = button.cloneNode(true);
+    button.replaceWith(newButton);
     button = document.querySelectorAll(".answer-option")[index];
 
     // Create a strong element for the letter (A, B, C, D)
@@ -113,7 +127,8 @@ function loadQuestion() {
 
 /* Handle Answer Selection */
 function selectAnswer(event) {
-  const selectedOption = event.target;
+  const selectedOption = event.target.closest(".answer-option");
+  if (!selectedOption) return;
   document
     .querySelectorAll(".answer-option")
     .forEach((btn) => btn.classList.remove("selected"));
@@ -147,7 +162,7 @@ function submitAnswer() {
   submitButton.textContent = "Next Question";
   setTimeout(nextQuestion, 1000);
 }
-const submitButton = document.querySelector(".submit");
+const submitButton = document.querySelector("#submit");
 if (submitButton) {
   submitButton.addEventListener("click", submitAnswer);
 } else {
@@ -191,7 +206,8 @@ document.addEventListener("DOMContentLoaded", showFinalScore);
 const quizRetry = document.querySelector(".quiz-retry");
 if (quizRetry) {
   quizRetry.addEventListener("click", () => {
-    localStorage.clear();
+    localStorage.removeItem("finalScore");
+    localStorage.removeItem("selectedQuiz");
     window.location.href = "index.html";
   });
 } else {
@@ -210,16 +226,157 @@ themeSwitch.addEventListener("click", () => {
     "theme",
     body.classList.contains("dark-mode") ? "dark" : "light"
   );
+
+  // Update icons dynamically
+  if (body.classList.contains("dark-mode")) {
+    sunIcon.src = "./assets/images/icon-sun-light.svg";
+    moonIcon.src = "./assets/images/icon-moon-light.svg";
+  } else {
+    sunIcon.src = "./assets/images/icon-sun-dark.svg";
+    moonIcon.src = "./assets/images/icon-moon-dark.svg";
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
   if (localStorage.getItem("theme") === "dark") {
     body.classList.add("dark-mode");
-    sunIcon.src = "./assets/images/icon-sun-light.svg";
-    moonIcon.src = "./assets/images/icon-moon-light.svg";
   } else {
     body.classList.remove("dark-mode");
-    sunIcon.src = "./assets/images/icon-sun-dark.svg";
-    moonIcon.src = "./assets/images/icon-moon-dark.svg";
   }
 });
+
+// Keyboard navigation
+document.addEventListener("keydown", handleKeyboardNavigation);
+
+function handleKeyboardNavigation(event) {
+  if (window.location.pathname.includes("index.html")) {
+    handleStartMenuKeyboardNavigation(event);
+  } else if (window.location.pathname.includes("quiz.html")) {
+    handleQuizKeyboardNavigation(event);
+  } else if (window.location.pathname.includes("completed.html")) {
+    handleCompletedKeyboardNavigation(event);
+  }
+
+  function handleStartMenuKeyboardNavigation(event) {
+    const quizButtons = document.querySelectorAll(".quiz-option");
+    let active = document.querySelector(".quiz-option.active");
+    // Move selection with Arrow Keys
+    if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+      event.preventDefault();
+      if (!active) {
+        quizButtons[0].classList.add("active");
+      } else {
+        let next = active.nextElementSibling;
+        if (next && next.classList.contains("quiz-option")) {
+          active.classList.remove("active");
+          next.classList.add("active");
+        }
+      }
+    } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+      event.preventDefault();
+      if (!active) {
+        quizButtons[quizButtons.length - 1].classList.add("active");
+      } else {
+        let prev = active.previousElementSibling;
+        if (prev && prev.classList.contains("quiz-option")) {
+          active.classList.remove("active");
+          prev.classList.add("active");
+        }
+      }
+    }
+
+    // Select Subject with Enter or Space
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      if (active) {
+        handleQuizSelection(active);
+      }
+    }
+  }
+
+  function handleQuizKeyboardNavigation(event) {
+    const answerOptions = document.querySelectorAll(".answer-option");
+    const submitButton = document.querySelector("#submit");
+    let selected = document.querySelector(".answer-option.selected");
+
+    // Move selection with Arrow Keys
+    if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+      event.preventDefault();
+      if (!selected) {
+        answerOptions[0].classList.add("selected");
+      } else {
+        let next = selected.nextElementSibling;
+        if (next && next.classList.contains("answer-option")) {
+          selected.classList.remove("selected");
+          next.classList.add("selected");
+        }
+      }
+    } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+      event.preventDefault();
+      if (!selected) {
+        answerOptions[answerOptions.length - 1].classList.add("selected");
+      } else {
+        let prev = selected.previousElementSibling;
+        if (prev && prev.classList.contains("answer-option")) {
+          selected.classList.remove("selected");
+          prev.classList.add("selected");
+        }
+      }
+    }
+
+    // Select Answer with Enter or Space
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      if (selected) {
+        submitAnswer();
+      } else if (!selected || submitButton) {
+        submitButton.click();
+      }
+    }
+  }
+
+  function handleCompletedKeyboardNavigation(event) {
+    const playAgainButton = document.querySelector(".quiz-retry");
+    let active = document.querySelector(".quiz-retry.active");
+
+    if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+      event.preventDefault();
+      if (!active) {
+        playAgainButton.classList.add("active");
+      } else {
+        playAgainButton.classList.remove("active");
+      }
+    }
+
+    // Select Play Again Button with Enter or Space
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      if (active) {
+        localStorage.removeItem("finalScore");
+        localStorage.removeItem("selectedQuiz");
+        window.location.href = "index.html";
+      }
+    }
+  }
+
+  function handleDarkModeKeyboardNavigation(event) {
+    if (event.key === "d" || event.key === "D") {
+      event.preventDefault();
+      if (body.classList.contains("dark-mode")) {
+        return;
+      } else {
+        themeSwitch.click();
+      }
+    }
+    if (event.key === "l" || event.key === "L") {
+      event.preventDefault();
+      if (body.classList.contains("dark-mode")) {
+        themeSwitch.click();
+      } else {
+        return;
+      }
+    }
+  }
+
+  handleDarkModeKeyboardNavigation(event);
+}
