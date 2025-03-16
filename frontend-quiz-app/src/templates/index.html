@@ -16,7 +16,11 @@
           id="sunIcon"
           alt="Sun Icon"
         />
-        <button class="switch" id="themeSwitch"></button>
+        <button
+          class="switch"
+          id="themeSwitch"
+          aria-label="Toggle theme"
+        ></button>
         <img
           src="../assets/images/icon-moon-dark.svg"
           class="icon"
@@ -33,6 +37,7 @@
         <p>Pick a subject to get started.</p>
       </section>
       <section class="quiz-options">
+        <h2 class="sr-only">Quiz Options</h2>
         <button class="quiz-option" data-subject="html">
           <img
             class="img-html"

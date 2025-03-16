@@ -18,7 +18,11 @@
           id="sunIcon"
           alt="Sun Icon"
         />
-        <button class="switch" id="themeSwitch"></button>
+        <button
+          class="switch"
+          id="themeSwitch"
+          aria-label="Toggle theme"
+        ></button>
         <img
           src="../assets/images/icon-moon-dark.svg"
           class="icon"
@@ -32,6 +36,7 @@
     <main class="container">
       <!-- Left Section (Question Info) -->
       <section id="question-info">
+        <h2 class="sr-only">Question Info</h2>
         <p>Question <span id="question-number"></span> of 10</p>
         <p id="question-text"></p>
         <progress id="progress-bar"></progress>
@@ -39,6 +44,7 @@
 
       <!-- Right Section (Answer Options) -->
       <section class="quiz-answers">
+        <h2 class="sr-only">Answer Options</h2>
         <button class="answer-option" data-answer="A"></button>
         <button class="answer-option" data-answer="B"></button>
         <button class="answer-option" data-answer="C"></button>
