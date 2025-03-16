@@ -38,8 +38,11 @@ Users should be able to:
 
 ### 📸 Screenshots
 
-![](./screenshots/Start Menu - Light.png)
-![](./screenshots/Start Menu - Dark.png)
+*Light Mode*
+![](./screenshots/Start-Menu-Light.png)
+
+*Dark Mode*
+![](./screenshots/Start-Menu-Dark.png)
 
 ### 🔗 Links
 
