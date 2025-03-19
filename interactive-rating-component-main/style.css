@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    /*! Primary  */
+    --Orange: hsl(25, 97%, 53%);
+
+    /*! Neutral */
+    --Neutral-White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2 {
+    font-size: 2.8rem;
+    line-height: 4.3rem;
+    color: var(--Neutral-White);
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: var(--Light-Grey);
+}
+
+/* Container */
+.rating-container {
+    background-image: linear-gradient(0deg,
+            hsl(215deg 20% 17%) 0%,
+            hsl(216deg 24% 12%) 100%);
+    padding: 3.2rem;
+    border-radius: 3rem;
+    max-width: 41.2rem;
+    width: 100%;
+}
+
+/* Rating State Styling */
+.rating-state .media {
+    background-color: var(--Dark-Blue);
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.rating-state h1 {
+    margin-top: 3rem;
+}
+
+.rating-state p {
+    margin-block: .7rem 2.4rem;
+    line-height: 2.4rem;
+}
+
+/* Rating options */
+.rating-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.2rem;
+    border: none;
+    padding: 0;
+}
+
+.rating-item {
+    text-align: center;
+}
+
+.rating-item input[type="radio"] {
+    display: none;
+}
+
+.rating-item label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.1rem;
+    height: 5.1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: var(--Dark-Blue);
+    color: var(--Light-Grey);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover and focus states for interactive feedback */
+.rating-item label:hover,
+.rating-item input[type="radio"]:focus+label {
+    background-color: var(--Orange);
+    color: var(--Dark-Blue);
+}
+
+/* Checked state styling */
+.rating-item input[type="radio"]:checked+label {
+    background-color: var(--Neutral-White);
+    color: var(--Dark-Blue);
+}
+
+/* Submit Button */
+#submit-btn {
+    width: 100%;
+    height: 4.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 2.25rem;
+    color: var(--Very-Dark-Blue);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-btn:hover,
+#submit-btn:focus {
+    background-color: var(--Neutral-White);
+}
+
+/* Thank You State Styling */
+.thank-you-state {
+    margin-block: 1.3rem;
+    text-align: center;
+}
+
+.thank-you-state img {
+    max-width: 100%;
+}
+
+.thank-you-state h2 {
+    margin-bottom: .7rem;
+}
+
+#selected-rating {
+    display: inline-block;
+    background-color: var(--Dark-Blue);
+    line-height: 2.4rem;
+    color: var(--Orange);
+    padding: 0.4rem 2rem;
+    border-radius: 22.5rem;
+    margin-block: 3.2rem;
+}
+
+/* Visually hidden utility class for accessibility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
