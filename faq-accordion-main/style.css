@@ -11,6 +11,7 @@
 :root {
     /*! Colors */
     --Neutral-White: hsl(0, 0%, 100%);
+    --Pink: hsl(281, 83%, 54%);
     --Light-Pink: hsl(275, 100%, 97%);
     --Grayish-Purple: hsl(292, 16%, 49%);
     --Dark-Purple: hsl(292, 42%, 14%);
@@ -21,6 +22,8 @@ html {
 }
 
 body {
+    position: relative;
+    background-color: var(--Light-Pink);
     color: var(--Dark-Purple);
     font-size: 1.6rem;
     line-height: 1.5;
@@ -40,4 +43,84 @@ body::before {
     background: url("./assets/images/background-pattern-desktop.svg") no-repeat;
     background-size: cover;
     z-index: -1;
+}
+
+.faq-accordion-container {
+    background-color: var(--Neutral-White);
+    padding: 4rem;
+    border-radius: 1.6rem;
+    max-width: 60rem;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+header .media {
+    display: flex;
+}
+
+header h1 {
+    font-size: 5.6rem;
+}
+
+.accordion-section {
+    margin-top: 3.2rem;
+}
+
+.accordion-section .accordion-item {
+    border-top: .5px solid var(--Light-Pink);
+    border-bottom: .5px solid var(--Light-Pink);
+    padding: 2.4rem 0;
+}
+
+.accordion-section .accordion-item:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+.accordion-section .accordion-item:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.accordion-section .accordion-item h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.accordion-section .accordion-item h2 button {
+    width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.accordion-section .accordion-item h2 button:hover {
+    color: var(--Pink);
+}
+
+.accordion-section .accordion-content {
+    color: var(--Grayish-Purple);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-content.expanded {
+    margin-top: 2.4rem;
+    max-height: 9.6rem;
 }
