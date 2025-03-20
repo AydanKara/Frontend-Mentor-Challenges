@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+:root {
+    /*! Colors */
+    --Neutral-White: hsl(0, 0%, 100%);
+    --Light-Pink: hsl(275, 100%, 97%);
+    --Grayish-Purple: hsl(292, 16%, 49%);
+    --Dark-Purple: hsl(292, 42%, 14%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--Dark-Purple);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32rem;
+    background: url("./assets/images/background-pattern-desktop.svg") no-repeat;
+    background-size: cover;
+    z-index: -1;
+}

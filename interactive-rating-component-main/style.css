@@ -108,11 +108,15 @@ p {
 }
 
 /* Hover and focus states for interactive feedback */
-.rating-item label:hover,
-.rating-item input[type="radio"]:focus+label {
+.rating-item label:hover {
     background-color: var(--Orange);
     color: var(--Dark-Blue);
 }
+
+.rating-item input[type="radio"]:focus + label {
+    outline: 2px solid var(--Orange);
+    outline-offset: 4px;
+  }
 
 /* Checked state styling */
 .rating-item input[type="radio"]:checked+label {
