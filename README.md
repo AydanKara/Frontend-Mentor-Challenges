@@ -16,7 +16,7 @@ This repository contains my solutions to various **🎨 Frontend Mentor** challe
 | **Single-page developer portfolio** | [Live](https://aydankara.github.io/Frontend-Mentor-Challenges/single-page-developer-portfolio/starter-code/) | [Code](https://github.com/AydanKara/Frontend-Mentor-Challenges/tree/main/single-page-developer-portfolio) |
 | **Equalizer landing page** | [Live](https://aydankara.github.io/Frontend-Mentor-Challenges/equalizer-landing-page/starter-code/) | [Code](https://github.com/AydanKara/Frontend-Mentor-Challenges/tree/main/equalizer-landing-page) |
 | **REST Countries API with color theme switcher** | [Live](https://frontend-mentor-challenges-cxu6.vercel.app/) | [Code](https://github.com/AydanKara/Frontend-Mentor-Challenges/tree/main/rest-countries-api-with-color-theme-switcher-master) |
-| **Audiophile e-commerce website** | [Live]() | [Code]() |
+| **Audiophile e-commerce website** | [Live](https://mern-audiophile.vercel.app/) | [Code](https://github.com/AydanKara/mern-audiophile) |
 | **Article preview component** | [Live](https://aydankara.github.io/Frontend-Mentor-Challenges/article-preview-component-master/) | [Code](https://github.com/AydanKara/Frontend-Mentor-Challenges/tree/main/article-preview-component-master) |
 | **Newsletter sign-up form with success message** | [Live](https://aydankara.github.io/Frontend-Mentor-Challenges/newsletter-sign-up-with-success-message-main/) | [Code](https://github.com/AydanKara/Frontend-Mentor-Challenges/tree/main/newsletter-sign-up-with-success-message-main) |
 | **Time tracking dashboard** | [Live](https://aydankara.github.io/Frontend-Mentor-Challenges/time-tracking-dashboard-main/) | [Code](https://github.com/AydanKara/Frontend-Mentor-Challenges/tree/main/time-tracking-dashboard-main) |
