@@ -1,6 +1,7 @@
-# 🎨 Frontend Mentor Challenges
 
-This repository contains my solutions to various **Frontend Mentor** challenges. 🚀 I aim to improve my frontend skills by building real-world projects.
+This repository contains my solutions to various **🎨 Frontend Mentor** challenges. 
+
+🚀 I aim to improve my frontend skills by building real-world projects.
 
 ## 🏆 Challenges  
 
