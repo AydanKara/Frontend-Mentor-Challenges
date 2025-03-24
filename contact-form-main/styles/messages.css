@@ -1,0 +1,29 @@
+/* ✅ Success Message Styling */
+#success-message {
+    position: absolute;
+    max-width: min(45rem, 85%);
+    margin-inline: auto;
+    inset: 2.4rem 0 auto;
+    background-color: var(--Grey-900);
+    color: var(--White);
+    padding: 2.4rem;
+    border-radius: 12px;
+    display: none;
+    text-align: start;
+    font-weight: bold;
+}
+
+#success-message header {
+    display: flex;
+    gap: .8rem;
+}
+
+#success-message header h2 {
+    font-size: var(--body-md);
+}
+
+#success-message p {
+    font-size: var(--body-sm);
+    color: var(--Green-200);
+    margin-top: .8rem;
+}

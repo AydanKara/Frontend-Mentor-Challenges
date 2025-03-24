@@ -1,0 +1,44 @@
+.container {
+    background-color: var(--White);
+    max-width: 73.6rem;
+    /* default max-width for desktops */
+    width: 90%;
+    /* responsiveness for smaller screens */
+    margin-inline: auto;
+    /* Centers the container */
+    margin-block: min(12.8rem, 9%);
+    /* Dynamic values */
+    padding: 4rem;
+    border-radius: 1.6rem;
+}
+
+/* 📱 Tablet adjustments */
+@media (max-width: 768px) {
+    .container {
+        max-width: 69rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        margin: 3.2rem auto;
+        padding: 2.4rem;
+    }
+
+    .name-fields,
+    .query-type {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    textarea {
+        height: 24rem;
+    }
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+    }
+}

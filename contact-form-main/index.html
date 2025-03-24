@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Contact Us</h1>
+
+      <svg id="definition" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <symbol id="required" viewbox="0 0 128 128">
+            <g>
+              <path
+                d="M110.1,16.4L75.8,56.8l0.3,1l50.6-10.2v32.2l-50.9-8.9l-0.3,1l34.7,39.1l-28.3,16.5L63.7,78.2L63,78.5   l-18.5,49L17.2,111l34.1-39.8v-0.6l-50,9.2V47.6l49.3,9.9l0.3-0.6L17.2,16.7L45.5,0.5l17.8,48.7H64L82.1,0.5L110.1,16.4z"
+              ></path>
+            </g>
+          </symbol>
+        </defs>
+      </svg>
+      <form id="contact-form" novalidate>
+        <!-- First Name & Last Name -->
+        <fieldset class="name-fields">
+          <legend class="sr-only">Full Name</legend>
+          <div class="form-group">
+            <label for="first-name"
+              >First Name
+              <svg class="icon" focusable="false">
+                <use xlink:href="#required"></use>
+              </svg>
+              <div class="sr-only">required</div></label
+            >
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              autocomplete="given-name"
+              aria-describedby="first-name-error"
+              required
+            />
+            <p class="error-msg" id="first-name-error" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="last-name"
+              >Last Name
+              <svg class="icon" focusable="false">
+                <use xlink:href="#required"></use>
+              </svg>
+              <div class="sr-only">required</div></label
+            >
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              autocomplete="family-name"
+              aria-describedby="last-name-error"
+              required
+            />
+            <p class="error-msg" id="last-name-error" aria-live="polite"></p>
+          </div>
+        </fieldset>
+
+        <!-- Email Address -->
+        <div class="form-group">
+          <label for="email"
+            >Email Address
+            <svg class="icon" focusable="false">
+              <use xlink:href="#required"></use>
+            </svg>
+            <div class="sr-only">required</div></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            inputmode="email"
+            aria-describedby="email-error"
+            required
+          />
+          <p class="error-msg" id="email-error" aria-live="polite"></p>
+        </div>
+
+        <!-- Query Type -->
+        <fieldset class="form-group">
+          <legend>
+            Query Type
+            <svg class="icon" focusable="false">
+              <use xlink:href="#required"></use>
+            </svg>
+            <div class="sr-only">required</div>
+          </legend>
+          <div class="query-type">
+            <label class="radio-option" for="general-enquiry">
+              <input
+                type="radio"
+                id="general-enquiry"
+                name="query-type"
+                value="General Enquiry"
+                aria-describedby="query-type-error"
+                required
+              />
+              <span>General Enquiry</span>
+            </label>
+            <label class="radio-option" for="support-request">
+              <input
+                type="radio"
+                id="support-request"
+                name="query-type"
+                value="Support Request"
+                aria-describedby="query-type-error"
+                required
+              />
+              <span>Support Request</span>
+            </label>
+          </div>
+          <p class="error-msg" id="query-type-error" aria-live="polite"></p>
+        </fieldset>
+
+        <!-- Message -->
+        <div class="form-group">
+          <label for="message"
+            >Message
+            <svg class="icon" focusable="false">
+              <use xlink:href="#required"></use>
+            </svg>
+            <div class="sr-only">required</div></label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="3"
+            required
+            aria-describedby="message-error"
+            autocomplete="off"
+          ></textarea>
+          <p class="error-msg" id="message-error" aria-live="polite"></p>
+        </div>
+
+        <!-- Consent Checkbox -->
+        <div class="form-group">
+          <label for="consent" class="checkbox-label">
+            <input
+              type="checkbox"
+              id="consent"
+              name="consent"
+              required
+              aria-describedby="consent-error"
+            />
+            <span
+              >I consent to being contacted by the team
+              <svg class="icon" focusable="false">
+                <use xlink:href="#required"></use>
+              </svg>
+              <div class="sr-only">required</div></span
+            >
+          </label>
+          <p class="error-msg" id="consent-error" aria-live="polite"></p>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Success Message (Initially Hidden) -->
+      <div id="success-message" class="hidden" aria-live="polite">
+        <header>
+          <img
+            src="./assets/images/icon-success-check.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <h2>Message Sent!</h2>
+        </header>
+
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

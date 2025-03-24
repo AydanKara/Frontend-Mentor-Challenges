@@ -1,0 +1,176 @@
+form {
+    margin-top: 3.2rem;
+}
+
+.form-group {
+    margin-bottom: 2.4rem;
+}
+
+.name-fields {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.name-fields .form-group {
+    flex: 1;
+}
+
+label,
+legend {
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+legend {
+    padding-bottom: .8rem;
+}
+
+input,
+textarea,
+.query-type .radio-option {
+    width: 100%;
+    padding: 1.4rem 2.4rem;
+    border: 1px solid var(--Grey-500);
+    border-radius: .8rem;
+    font-size: var(--body-md);
+    transition: border-color 0.3s ease;
+}
+
+textarea {
+    height: 10.5rem;
+    resize: none;
+}
+
+/* 🔵 Hover States */
+input:hover,
+textarea:hover,
+.query-type .radio-option:hover {
+    border-color: var(--Green-600);
+    background-color: var(--White) !important;
+}
+
+.query-type .radio-option.active {
+    background-color: var(--Green-200);
+    accent-color: var(--Green-600);
+}
+
+fieldset {
+    border: 0;
+}
+
+/* Query Type (Radio Buttons) - Inline Layout */
+.query-type {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    /* Align radio button & label vertically */
+}
+
+/* Style for each radio option */
+.query-type .radio-option {
+    display: flex;
+    align-items: center;
+    /* Centers radio button & text */
+    gap: 1.2rem;
+    cursor: pointer;
+}
+
+.radio-option>label,
+.radio-option>input {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0;
+}
+
+.radio-option span {
+    line-height: 1.2rem;
+}
+
+.form-group label[for="message"] {
+    line-height: 1;
+}
+
+.form-group #consent {
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px solid var(--Grey-500);
+    margin-right: 1.6rem;
+}
+
+/* 🛑 Error Message Styling */
+.error-msg {
+    color: var(--Red);
+    margin-top: 0.3rem;
+    display: none;
+    /* Hidden by default */
+}
+
+#consent-error {
+    margin: 0;
+}
+
+/* 🟢 Show error when invalid */
+input.invalid,
+textarea.invalid {
+    border-color: var(--Red);
+}
+
+.error-active {
+    display: block;
+}
+
+/* Custom checkbox */
+.checkbox-label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-block: 1.2rem 1.4rem;
+}
+
+.checkbox-label input[type="checkbox"] {
+    /* default checkbox */
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.checkbox-label span {
+    padding-left: 4rem;
+    /* space for custom checkbox */
+    position: relative;
+}
+
+/* Custom checkbox design using ::before */
+.checkbox-label input[type="checkbox"]+span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: var(--White);
+    border: 2px solid var(--Grey-500);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* success checkmark icon when the checkbox is checked */
+.checkbox-label input[type="checkbox"]:checked+span::before {
+    background-color: transparent;
+    border-color: var(--Green-600);
+    border-radius: 5px;
+    /* SVG icon as the checkmark */
+    background-image: url('../assets/images/icon-checkbox-check.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.checkbox-label:hover input[type="checkbox"]+span::before {
+    border-color: var(--Green-600);
+}
+
+.checkbox-label:focus-within input[type="checkbox"]+span::before {
+    outline: 2px solid var(--Grey-900);
+    outline-offset: 2px;
+}

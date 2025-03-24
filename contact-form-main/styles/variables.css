@@ -1,0 +1,14 @@
+:root {
+    /*! Colors */
+    --Grey-900: hsl(187, 24%, 22%);
+    --Grey-500: hsl(186, 15%, 59%);
+    --White: hsl(0, 0%, 100%);
+    --Green-600: hsl(169, 82%, 27%);
+    --Green-200: hsl(148, 38%, 91%);
+    --Yellow-600: hsl(48, 100%, 50%);
+    --Red: hsl(0, 66%, 54%);
+
+    /*! Font Sizes */
+    --body-md: 1.8rem;
+    --body-sm: 1.6rem;
+}

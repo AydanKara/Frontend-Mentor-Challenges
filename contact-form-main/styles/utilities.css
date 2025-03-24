@@ -1,0 +1,22 @@
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+svg#definition {
+    display: none;
+}
+
+.icon {
+    width: 0.5em;
+    height: 0.5em;
+    margin-left: .8rem;
+    fill: var(--Green-600);
+    vertical-align: top;
+}

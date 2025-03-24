@@ -1,0 +1,18 @@
+/* 🌟 Submit Button */
+button {
+    width: 100%;
+    padding: 1.8rem;
+    font-size: var(--body-md);
+    font-weight: 700;
+    background-color: var(--Green-600);
+    color: var(--White);
+    border: none;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* 🔵 Hover & Focus for Button */
+button:hover {
+    background-color: var(--Grey-900);
+}
