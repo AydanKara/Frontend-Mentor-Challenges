@@ -33,7 +33,7 @@ Users should be able to:
 - ✅ View the optimal layout for the interface depending on their device's screen size
 - ✅ See hover and focus states for all interactive elements on the page
 
-### 📸 Screenshot
+### 📸 Screenshots
 
 _Desktop screenshot_
 ![](./design/desktop.png)
@@ -41,13 +41,15 @@ _Desktop screenshot_
 _Error states_
 ![](./design/error-state.png)
 
+
 _Mobile screenshot_
+
 ![](./design/mobile.png)
 
 ### 🔗 Links
 
-- [Solution URL:](https://www.frontendmentor.io/solutions/accessible-contact-form-Zl5EO5PrNF)
-- [Live Site URL:](https://aydankara.github.io/Frontend-Mentor-Challenges/contact-form-main/)
+- [Solution URL](https://www.frontendmentor.io/solutions/accessible-contact-form-Zl5EO5PrNF)
+- [Live Site URL](https://aydankara.github.io/Frontend-Mentor-Challenges/contact-form-main/)
 
 ## ⚙️ My Process
 
@@ -62,7 +64,7 @@ _Mobile screenshot_
 
 During this project, i applied best practices in **CSS modularization, JavaScript validation, and accessibility, making the form more maintainable, scalable, and user-friendly**.
 
-♿ Accessibility - Ensuring an Inclusive User Experience
+♿ **Accessibility** - Ensuring an Inclusive User Experience
 I focused on **making the form accessible** for users who rely on **screen readers and keyboard navigation**:
 
 ✅ **Semantic HTML**: Used appropriate `<fieldset>`, `<legend>`, and `<label>` elements to improve usability.
@@ -110,7 +112,9 @@ Example of an accessible error message implementation:
 I structured the JavaScript code to follow the **DRY (Don't Repeat Yourself) principle**, improving code readability and reducing redundancy.
 
 ✅ **Reusable functions:** Extracted **repeated logic** into **helper functions**, making validation cleaner and more reusable.
+
 ✅ **Object-based logic:** Used an **object to manage validation messages**, making the code easier to modify and extend.
+
 ✅ **Pure functions:** Ensured that validation logic **does not mutate global variables**, making debugging simpler.
 
 Example of how i structured the validation logic efficiently:
@@ -144,8 +148,11 @@ This ensures **all validation errors appear at once**, instead of stopping at th
 I structured the CSS in a modular fashion to improve **maintainability and scalability**:
 
 ✅ **Better organization:** Each module has a **clear responsibility** (e.g., form styles, validation styles).
+
 ✅ **Easier maintenance:** Update or replace parts **without affecting the whole file**.
+
 ✅ **Improved readability:** Developers can **quickly find** relevant styles without scanning an entire file.
+
 ✅ **Reusability:** Components can be **reused across different projects**, keeping the CSS **efficient**.
 
 ### 🔄 Continued Development
