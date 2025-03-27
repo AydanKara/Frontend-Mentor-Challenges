@@ -50,7 +50,7 @@
     background-color: var(--Very-dark-blue);
     display: flex;
     flex-direction: column;
-    padding: 3.2rem 2.4rem 0;
+    padding: 3rem 2.4rem 0;
 }
 
 .new article {
