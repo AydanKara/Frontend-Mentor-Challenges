@@ -51,8 +51,11 @@ Users should be able to:
 This project reinforced several important concepts, including:
 
 🔹 The importance of **CSS modularization** – initially, my CSS grew too large, so i refactored it into **smaller reusable styles**.
+
 🔹 How to implement **ARIA attributes and keyboard navigation** to improve **accessibility**.
+
 🔹 Using **CSS Grid and Flexbox** together for a **fully responsive layout**.
+
 🔹 Handling **mobile navigation** efficiently with **JavaScript event listeners**.
 
 ### 🔄 Continued Development
@@ -60,6 +63,7 @@ This project reinforced several important concepts, including:
 🚀 Future improvements:
 
 🔹 **CSS Refactoring** – Explore **SCSS** for better organization.
+
 🔹 **JavaScript Enhancements** – Consider a framework (e.g., **React**) for complex UI elements.
 
 ### 📚 Useful Resources
