@@ -1,0 +1,26 @@
+button {
+    background-color: transparent;
+    border: 0;
+}
+
+.btn {
+    background-color: var(--Dark-grayish-blue);
+    color: var(--Very-dark-blue);
+    padding: 1.3rem 3.1rem;
+    margin-top: 2.9rem;
+    font-size: 1.7rem;
+    font-weight: var(--bold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--Off-white);
+    background-color: var(--Very-dark-blue);
+    transform: scale(1.05);
+    outline: none;
+    cursor: pointer;
+}

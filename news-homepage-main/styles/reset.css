@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: var(--Dark-grayish-blue);
+}
+
+*:focus {
+    outline: 2px solid var(--Very-dark-blue);
+    outline-offset: 2px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--Off-white);
+    font-size: var(--body);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

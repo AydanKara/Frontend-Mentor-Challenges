@@ -1,0 +1,87 @@
+@media (min-width: 991px) {
+    .container {
+        grid-template-areas:
+            "banner banner new"
+            "content content new"
+            "blogs blogs blogs";
+        padding-inline: 1.6rem;
+        max-width: 113.2rem;
+        margin-top: 5.5rem;
+        margin-bottom: 13rem;
+    }
+
+    .content {
+        grid-area: content;
+        display: flex;
+        flex-direction: row;
+        margin-top: 3.2rem;
+        margin-bottom: 0;
+    }
+
+    .blogs {
+        flex-direction: row;
+    }
+
+    .blogs-article-img img {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 580px) {
+    header {
+        margin-top: 2.8rem;
+        transition: 0.3s ease;
+    }
+
+    header .navbar-list {
+        flex-direction: column;
+        gap: 3rem;
+        position: fixed;
+        top: -5rem;
+        right: 0;
+        background-color: var(--Off-white);
+        height: 100vh;
+        z-index: 2;
+        padding: 10rem 10rem 3rem 3rem;
+        border-left: 1px solid var(--Very-dark-blue);
+        transition: transform 0.3s ease;
+    }
+
+    header .navbar {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    header .navbar a {
+        color: var(--Very-dark-blue);
+    }
+
+    header .menu-list {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+
+    header .navbar .menu-close {
+        display: block;
+        position: absolute;
+        top: -2rem;
+        right: 2rem;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    header .menu-list,
+    header .menu-close img {
+        display: block;
+        cursor: pointer;
+        width: auto;
+        height: auto;
+    }
+
+    .container .banner {
+        height: 30rem;
+    }
+}

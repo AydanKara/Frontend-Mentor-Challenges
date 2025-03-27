@@ -1,0 +1,120 @@
+.container {
+    display: grid;
+    padding-inline: 1.6rem;
+    margin: 2.4rem auto 0 auto;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+        "banner"
+        "content"
+        "new"
+        "blogs";
+    column-gap: 3rem;
+}
+
+.container .banner {
+    grid-area: banner;
+}
+
+.banner .banner-media {
+    height: 100%;
+}
+
+.container .blogs {
+    grid-area: blogs;
+}
+
+.banner section {
+    display: flex;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.4rem;
+    margin-bottom: 10rem;
+}
+
+.content h1 {
+    padding-right: 1rem;
+    flex: 1 0 52%;
+    font-size: clamp(var(--heading-l), calc(4vw + 1rem), var(--heading-xl));
+}
+
+.content article {
+    padding-right: 1rem;
+}
+
+.new {
+    grid-area: new;
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem 2.4rem 0;
+}
+
+.new article {
+    padding-block: 2.9rem;
+    border-bottom: 1px solid var(--Dark-grayish-blue);
+}
+
+.new article p {
+    color: var(--Grayish-blue);
+}
+
+.new .new-link {
+    display: block;
+    margin-bottom: .8rem;
+    font-size: var(--heading-xs);
+    line-height: 2.4rem;
+    font-weight: var(--extra-bold);
+    color: var(--Off-white);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.new .new-link:hover {
+    color: var(--Soft-orange);
+}
+
+.new article:last-child {
+    border-bottom: none;
+}
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 7.1rem;
+    margin-bottom: 13rem;
+}
+
+.blogs article {
+    flex: 1;
+    display: flex;
+    gap: 2.4rem;
+}
+
+.blogs article h4 {
+    padding-left: .2rem;
+    letter-spacing: 3px;
+}
+
+.blogs article .blogs-link {
+    display: block;
+    font-size: var(--heading-xs);
+    font-weight: var(--extra-bold);
+    line-height: 2.4rem;
+    color: var(--Very-dark-blue);
+    margin-block: .8rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.blogs article .blogs-link:hover {
+    color: var(--Soft-red);
+}
+
+.blogs-article-img img {
+    width: min(20rem, 22vw);
+}

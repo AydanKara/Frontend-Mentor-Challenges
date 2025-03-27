@@ -1,0 +1,40 @@
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 9rem auto auto;
+    padding-inline: 1.6rem;
+    max-width: 113.2rem;
+}
+
+
+header .navbar.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+header .logo {
+    display: flex;
+}
+
+header .menu-list {
+    display: none;
+    cursor: pointer;
+}
+
+header .navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+header .navbar a:hover {
+    cursor: pointer;
+    color: var(--Soft-orange);
+}
+
+header .navbar .menu-close {
+    display: none;
+}

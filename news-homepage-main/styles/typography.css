@@ -1,0 +1,28 @@
+p {
+    line-height: 2.6rem;
+}
+
+h1 {
+    font-size: var(--heading-xl);
+    font-weight: var(--extra-bold);
+    color: var(--Very-dark-blue);
+    line-height: 5.6rem;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-size: var(--heading-l);
+    color: var(--Soft-orange);
+}
+
+h3 {
+    font-size: var(--heading-xs);
+    line-height: 2.4rem;
+    font-weight: var(--extra-bold);
+    color: var(--Off-white);
+}
+
+h4 {
+    font-size: var(--heading-m);
+    color: var(--Soft-red);
+}
