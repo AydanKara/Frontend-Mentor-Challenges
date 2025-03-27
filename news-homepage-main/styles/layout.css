@@ -108,7 +108,7 @@
 .blogs article .blogs-link {
     display: block;
     font-size: var(--heading-xs);
-    font-weight: var(--extra-bold);
+    font-weight: var(--bold);
     line-height: 2.4rem;
     color: var(--Very-dark-blue);
     margin-block: .8rem;
