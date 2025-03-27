@@ -77,6 +77,11 @@
     color: var(--Soft-orange);
 }
 
+.new .new-link:focus {
+    outline: 2px solid var(--Off-white);
+    outline-offset: 2px;
+}
+
 .new article:last-child {
     border-bottom: none;
 }
