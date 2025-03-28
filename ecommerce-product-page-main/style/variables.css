@@ -1,0 +1,23 @@
+:root {
+    /* Colors */
+    --color-primary: hsl(26, 100%, 55%);
+    --color-primary-pale: hsl(26, 100%, 71%);
+    --color-very-dark-blue: hsl(220, 13%, 13%);
+    --color-dark-grayish-blue: hsl(219, 9%, 45%);
+    --color-grayish-blue: hsl(221, 22%, 81%);
+    --color-light-gray: hsl(219, 35%, 92%);
+    --color-light-grayish-blue: hsl(223, 64%, 98%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-overlay: hsla(0, 0%, 0%, 0.75);
+  
+    /* Typography */
+    --font-family: 'Kumbh Sans', sans-serif;
+    --font-size-base: 16px;
+  
+    /* Layout */
+    --container-max-width: 1110px;
+    --border-radius-sm: 6px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 15px;
+  }

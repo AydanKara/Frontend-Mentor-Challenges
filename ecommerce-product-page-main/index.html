@@ -1,161 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style/style.css">
-  <title>Frontend Mentor | E-commerce product page</title>
-</head>
-
-<body>
-  <!-- header start -->
-  <header>
-    <div class="header-row">
-      <div class="container">
-        <div class="header-wrapper">
-          <div class="menu-btn" id="btn-menu">
-            <img src="./images/icon-menu.svg" alt="menu button">
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style/main.css" rel="stylesheet" />
+    <title>Sneakers | E-commerce product page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container header-wrapper">
+        <div class="header-left">
+          <button
+            class="menu-btn"
+            id="btn-menu"
+            aria-expanded="false"
+            aria-label="Open navigation menu"
+          >
+            <img src="./images/icon-menu.svg" alt="Menu icon" />
+          </button>
           <div class="header-logo">
-            <img src="./images/logo.svg" alt="logo">
+            <img src="./images/logo.svg" alt="sneakers" />
           </div>
-          <div class="header-navigation" id="sidebar">
-            <nav class="navigation">
-              <img class="nav-close" id="close-sidebar" src="./images/nav-close.svg" alt="navigation close">
-              <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="menu-link">Collections</a></li>
-                <li class="nav-item"><a href="#" class="menu-link">Men</a></li>
-                <li class="nav-item"><a href="#" class="menu-link">Women</a></li>
-                <li class="nav-item"><a href="#" class="menu-link">About</a></li>
-                <li class="nav-item"><a href="#" class="menu-link">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header-profile">
-            <div class="cart-wrapper">
-              <img class="profile-cart" src="./images/icon-cart.svg" alt="cart icon">
-              <div class="cart-container hidden" id="cart-container">
-                <p class="cart-title">Cart</p>
-                <div class="cart-content">
-                  <p class="cart-empty">Your cart is empty.</p>
-                </div>
-                <div class="added-product hidden">
-                  <!-- displayed content when is product added -->
-                </div>
+          <nav class="header-navigation" id="sidebar">
+            <button
+              class="nav-close"
+              id="close-sidebar"
+              aria-label="Close navigation menu"
+            >
+              <img src="./images/nav-close.svg" alt="Close icon" />
+            </button>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#">Collections</a>
+              </li>
+              <li class="nav-item"><a href="#">Men</a></li>
+              <li class="nav-item"><a href="#">Women</a></li>
+              <li class="nav-item"><a href="#">About</a></li>
+              <li class="nav-item"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-right">
+          <div class="cart-wrapper">
+            <button class="cart-icon-btn" aria-label="Open shopping cart" aria-expanded="false">
+              <img src="./images/icon-cart.svg" alt="Cart" />
+              <span class="cart-count" style="display: none">0</span>
+            </button>
+            <div class="cart-container hidden" id="cart-container">
+              <h3 class="cart-title">Cart</h3>
+              <div class="cart-content">
+                <p class="cart-empty">Your cart is empty</p>
               </div>
-              <span class="cart-count">0</span>
+              <div class="added-product hidden"></div>
             </div>
-            <div class="profile-avatar">
-              <img src="./images/image-avatar.png" alt="avatar image">
+          </div>
+          <a href="#" class="profile-avatar">
+            <img src="./images/image-avatar.png" alt="Profile avatar" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+      <section class="container product-wrapper">
+        <!-- Product Gallery -->
+        <div class="product-gallery">
+          <div class="single-image-wrapper">
+            <img
+              id="single-image"
+              class="single-image"
+              src="./images/image-product-1.jpg"
+              alt="product image"
+            />
+            <div class="slider-nav">
+              <button class="previous" id="previous">
+                <img src="./images/mobile-slider-previous.svg" alt="Previous" />
+              </button>
+              <button class="next" id="next">
+                <img src="./images/mobile-slider-next.svg" alt="Next" />
+              </button>
+            </div>
+          </div>
+          <div class="product-thumb">
+            <div class="gallery-thumbs">
+              <button class="thumb-img active">
+                <img
+                  class="img-fluid active-opacity"
+                  src="./images/image-product-1-thumbnail.jpg"
+                  alt="Product thumbnail"
+                />
+              </button>
+              <button class="thumb-img">
+                <img
+                  class="img-fluid"
+                  src="./images/image-product-2-thumbnail.jpg"
+                  alt="Product thumbnail"
+                />
+              </button>
+              <button class="thumb-img">
+                <img
+                  class="img-fluid"
+                  src="./images/image-product-3-thumbnail.jpg"
+                  alt="Product thumbnail"
+                />
+              </button>
+              <button class="thumb-img">
+                <img
+                  class="img-fluid"
+                  src="./images/image-product-4-thumbnail.jpg"
+                  alt="Product thumbnail"
+                />
+              </button>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="horizontal-line"></div>
-    </div>
 
-  </header>
-
-  <!-- main start -->
-
-  <main class="container">
-    <section class="product-wrapper">
-      <div class="product-gallery">
-        <div class="single-image-wrapper">
-          <img src="./images/image-product-1.jpg" class="single-image" id="single-image" alt="image of product-1"
-            onclick="currentSlide(1)">
-          <div class="slider-nav">
-            <button class="next" id="next"><img src="./images/mobile-slider-next.svg" alt="next icon"></button>
-            <button class="previous" id="previous"><img src="./images/mobile-slider-previous.svg"
-                alt="previous icon"></button>
-          </div>
-        </div>
-        <div class="product-thumb">
-          <ul class="gallery-thumbs">
-            <li class="glide__slide">
-              <div class="thumb-img" id="thumb-img"><img src="./images/image-product-1-thumbnail.jpg"
-                  alt="product-1-thumbnail" class="img-fluid active-opacity"></div>
-            </li>
-            <li class="glide__slide">
-              <div class="thumb-img"></div>
-              <img src="./images/image-product-2-thumbnail.jpg" alt="product-2-thumbnail" class="img-fluid">
-            </li>
-            <li class="glide__slide">
-              <div class="thumb-img"><img src="./images/image-product-3-thumbnail.jpg" alt="product-3-thumbnail"
-                  class="img-fluid"></div>
-
-            </li>
-            <li class="glide__slide">
-              <div class="thumb-img"><img src="./images/image-product-4-thumbnail.jpg" alt="product-4-thumbnail"
-                  class="img-fluid"></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="product-info">
-        <div class="product-details">
-          <strong class="product-title">Sneaker Company</strong>
+        <!-- Product Info -->
+        <div class="product-info">
+          <p class="product-company">Sneaker Company</p>
           <h1 class="product-heading">Fall Limited Edition Sneakers</h1>
-          <p class="product-desc">These low-profile sneakers are your perfect casual wear companion. Featuring a
-            durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <p class="product-desc">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+          <div class="product-price">
+            <div class="price-discount">
+              <span class="new-price">$125.00</span>
+              <span class="discount-badge">50%</span>
+            </div>
+            <span class="old-price">$250.00</span>
+          </div>
+          <div class="cart-actions">
+            <div class="quantity-selector">
+              <button class="btn-minus">
+                <img src="./images/icon-minus.svg" alt="Minus" />
+              </button>
+              <div class="quantity">
+                <span id="quantity">0</span>
+              </div>
+              <button class="btn-plus">
+                <img src="./images/icon-plus.svg" alt="Plus" />
+              </button>
+            </div>
+            <button class="btn-add-to-cart">
+              <img src="./images/icon-cart-shape.svg" alt="Cart" />
+              Add to cart
+            </button>
+          </div>
         </div>
-        <div class="product-price">
-          <div class="price-discount">
-            <strong class="new-price">$125.00</strong>
-            <em>50%</em>
-          </div>
-          <s class="old-price">$250.00</s>
-        </div>
-        <div class="cart-button">
-          <div class="btn-quantity">
-            <i class="btn-minus"><img src="./images/icon-minus.svg" alt="minus"></i>
-            <strong class="quantity" id="quantity">0</strong>
-            <i class="btn-plus"><img src="./images/icon-plus.svg" alt="plus"></i>
-          </div>
-          <div class="btn-add">
-            <img src="./images/icon-cart-shape.svg" alt="icon cart">
-            Add to cart
-          </div>
+      </section>
+    </main>
 
+    <!-- Lightbox -->
+    <div class="lightbox" role="dialog">
+      <div class="lightbox-wrapper">
+        <button class="close-lightbox" aria-label="Close lightbox slider">
+          <img src="./images/lightbox-close.svg" alt="Close" />
+        </button>
+        <div class="lightbox-content">
+          <div class="lightbox-main">
+            <div class="lightbox-images">
+              <img
+                class="lightbox-product-img"
+                src="./images/image-product-1.jpg"
+                alt="Fall Limited Edition Sneakers - Image 1"
+              />
+              <img
+                class="lightbox-product-img"
+                src="./images/image-product-2.jpg"
+                alt="Fall Limited Edition Sneakers - Image 2"
+              />
+              <img
+                class="lightbox-product-img"
+                src="./images/image-product-3.jpg"
+                alt="Fall Limited Edition Sneakers - Image 3"
+              />
+              <img
+                class="lightbox-product-img"
+                src="./images/image-product-4.jpg"
+                alt="Fall Limited Edition Sneakers - Image 4"
+              />
+            </div>
+            <button
+              class="previous"
+              id="prev-lightbox"
+              aria-label="Previous image"
+            >
+              <img src="./images/icon-previous.svg" alt="Previous Icon" />
+            </button>
+            <button class="next" id="next-lightbox" aria-label="Next image">
+              <img src="./images/icon-next.svg" alt="Next icon" />
+            </button>
+          </div>
+          <div class="lightbox-thumbnails">
+            <button class="lightbox-thumb active">
+              <img
+                src="./images/image-product-1-thumbnail.jpg"
+                alt="Fall Limited Edition Sneakers - Thumbnail 1"
+              />
+            </button>
+            <button class="lightbox-thumb">
+              <img
+                src="./images/image-product-2-thumbnail.jpg"
+                alt="Fall Limited Edition Sneakers - Thumbnail 2"
+              />
+            </button>
+            <button class="lightbox-thumb">
+              <img
+                src="./images/image-product-3-thumbnail.jpg"
+                alt="Fall Limited Edition Sneakers - Thumbnail 3"
+              />
+            </button>
+            <button class="lightbox-thumb">
+              <img
+                src="./images/image-product-4-thumbnail.jpg"
+                alt="Fall Limited Edition Sneakers - Thumbnail 4"
+              />
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- lightbox -->
-  <div class="lightbox">
-    <div class="lightbox-wrapper">
-      <button class="close-lightbox"><img src="./images/lightbox-close.svg" alt="lightbox close button"></button>
-      <div class="lightbox-nav">
-        <img class="lightbox-product-img" src="./images/image-product-1.jpg" alt="product image">
-        <img class="lightbox-product-img" src="./images/image-product-2.jpg" alt="product image">
-        <img class="lightbox-product-img" src="./images/image-product-3.jpg" alt="product image">
-        <img class="lightbox-product-img" src="./images/image-product-4.jpg" alt="product image">
-        <button class="next" id="next-lightbox" onclick="plusSlides(1)"><img src="./images/icon-next.svg"
-            alt="next icon"></button>
-        <button class="previous" id="prev-lightbox" onclick="plusSlides(-1)"><img src="./images/icon-previous.svg"
-            alt="previous icon"></button>
-      </div>
-      <div class="lightbox-thumbnail-wrapper">
-        <img class="img-fluid-lightbox" src="./images/image-product-1-thumbnail.jpg" onclick="currentSlide(1)"
-          alt="product-1-thumbnail">
-        <img class="img-fluid-lightbox" src="./images/image-product-2-thumbnail.jpg" onclick="currentSlide(2)"
-          alt="product-2-thumbnail">
-        <img class="img-fluid-lightbox" src="./images/image-product-3-thumbnail.jpg" onclick="currentSlide(3)"
-          alt="product-3-thumbnail">
-        <img class="img-fluid-lightbox" src="./images/image-product-4-thumbnail.jpg" onclick="currentSlide(4)"
-          alt="product-4-thumbnail">
       </div>
     </div>
-  </div>
 
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>

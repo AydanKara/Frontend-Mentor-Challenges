@@ -1,0 +1,113 @@
+.cart-icon-btn {
+    position: relative;
+    padding: 0.5rem;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 0.6rem;
+    font-weight: 700;
+    width: 19px;
+    height: 13px;
+    border-radius: 6.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-container {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: calc(1% + 0.5rem);
+    width: 360px;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 20px 50px -20px rgba(29, 32, 38, 0.503143);
+    z-index: 100;
+}
+
+.cart-title {
+    padding: 1.5rem;
+    font-weight: 700;
+    color: var(--color-very-dark-blue);
+    border-bottom: 1px solid var(--color-grayish-blue);
+}
+
+.cart-content,
+.added-product {
+    padding: 1.5rem;
+}
+
+.cart-empty {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--color-dark-grayish-blue);
+}
+
+.product-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-content img {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius-sm);
+}
+
+.cart-container .delete-img {
+    width: 14px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.product-desc {
+    flex-grow: 1;
+}
+
+.product-name {
+    color: var(--color-dark-grayish-blue);
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    color: var(--color-dark-grayish-blue);
+}
+
+.price .total {
+    color: var(--color-very-dark-blue);
+    margin-left: 0.5rem;
+}
+
+.delete-btn {
+    color: var(--color-grayish-blue);
+}
+
+.delete-btn:hover {
+    color: var(--color-primary);
+}
+
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: 700;
+    border-radius: var(--border-radius-md);
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.checkout-btn:hover {
+    opacity: 0.7;
+}

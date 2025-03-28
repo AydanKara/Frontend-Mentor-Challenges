@@ -1,0 +1,129 @@
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-overlay);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-wrapper {
+    width: 550px;
+    position: relative;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.close-lightbox:hover {
+    color: var(--color-primary);
+}
+
+.lightbox-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.lightbox-main {
+    position: relative;
+}
+
+.lightbox-images {
+    position: relative;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+.lightbox-product-img {
+    display: none;
+    width: 100%;
+}
+
+.lightbox-product-img:first-child {
+    display: block;
+}
+
+.lightbox-main .previous,
+.lightbox-main .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: color 0.3s ease;
+}
+
+.lightbox-main .previous {
+    left: -28px;
+}
+
+.lightbox-main .next {
+    right: -28px;
+}
+
+.lightbox-main .previous:hover,
+.lightbox-main .next:hover {
+    color: var(--color-primary);
+}
+
+.lightbox-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.lightbox-thumb {
+    width: 88px;
+    height: 88px;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.lightbox-thumb.active {
+    border-color: var(--color-primary);
+}
+
+.lightbox-thumb.active img {
+    opacity: 0.4;
+}
+
+.lightbox-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.lightbox-thumb:hover img {
+    opacity: 0.7;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-overlay);
+    z-index: 50;
+    display: none;
+}
